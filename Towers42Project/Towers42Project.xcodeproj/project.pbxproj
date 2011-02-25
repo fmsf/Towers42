@@ -460,6 +460,7 @@
 		B6AD09D3131809D200152052 /* TestCreep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCreep.m; sourceTree = "<group>"; };
 		B6AD09D613180B2600152052 /* Tower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tower.h; sourceTree = "<group>"; };
 		B6AD09D713180B2600152052 /* Tower.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Tower.mm; sourceTree = "<group>"; };
+		B6AD0A0513181F3900152052 /* defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -569,6 +570,7 @@
 				B6AD09D01318095400152052 /* Creep.mm */,
 				B6AD09D613180B2600152052 /* Tower.h */,
 				B6AD09D713180B2600152052 /* Tower.mm */,
+				B6AD0A0513181F3900152052 /* defs.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

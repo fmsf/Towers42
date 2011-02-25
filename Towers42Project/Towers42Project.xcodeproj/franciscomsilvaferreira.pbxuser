@@ -25,7 +25,6 @@
 		activeExecutable = B6AD098E1317CB6F00152052 /* Towers42Project */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Towers42Project */;
 		addToTargets = (
-			1D6058900D05DD3D006BFB54 /* Towers42Project */,
 		);
 		codeSenseManager = B6AD09A21317CB9A00152052 /* Code sense */;
 		executables = (

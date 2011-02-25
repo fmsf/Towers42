@@ -90,7 +90,7 @@
 			sepNavVisRange = "{0, 384}";
 		};
 	};
-	506EDC30102F528A00A389B3 /* MainScene.m */ = {
+	506EDC30102F528A00A389B3 /* MainScene.mm */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {523, 897}}";
 			sepNavSelRange = "{386, 0}";
@@ -147,7 +147,7 @@
 	B6AD09B61317FD3000152052 /* XCBuildMessageTextBookmark */ = {
 		isa = PBXTextBookmark;
 		comments = "'HelloWorld' undeclared (first use in this function)";
-		fRef = 506EDC30102F528A00A389B3 /* MainScene.m */;
+		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
 		rLoc = 20;
@@ -155,7 +155,7 @@
 	};
 	B6AD09B71317FD3000152052 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 506EDC30102F528A00A389B3 /* MainScene.m */;
+		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		name = "MainScene.m: 21";
 		rLen = 0;
 		rLoc = 386;
@@ -235,7 +235,7 @@
 	};
 	B6AD09E113180FC500152052 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 506EDC30102F528A00A389B3 /* MainScene.m */;
+		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		name = "MainScene.m: 21";
 		rLen = 0;
 		rLoc = 386;
@@ -294,7 +294,7 @@
 	};
 	B6AD09EF13180FD900152052 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 506EDC30102F528A00A389B3 /* MainScene.m */;
+		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		name = "MainScene.m: 21";
 		rLen = 0;
 		rLoc = 416;

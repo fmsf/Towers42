@@ -25,6 +25,11 @@
 	return towers;
 }
 
+- (bool) execute{
+	return true;
+}
+
+
 
 
 - (id)init {

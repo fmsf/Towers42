@@ -1,7 +1,7 @@
 Tcocos2d libraries
 v7
 r0
-t320344011.553850
+t320347878.173528
 cCheck dependencies
 cCompileC "build/Towers42Project.build/Debug-iphoneos/cocos2d libraries.build/Objects-normal/armv6/FontLabel.o" /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/libs/FontLabel/FontLabel.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC "build/Towers42Project.build/Debug-iphoneos/cocos2d libraries.build/Objects-normal/armv6/FontLabelStringDrawing.o" /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/libs/FontLabel/FontLabelStringDrawing.m normal armv6 objective-c com.apple.compilers.gcc.4_2
@@ -2252,7 +2252,7 @@ i<UIKit/UIKit.h>
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies320344011#320344011#0(0"0(0#1#0"8648409152#0"0#
+lSLF07#2@18"Check dependencies320347878#320347878#0(0"0(0#1#0"8652096768#0"0#
 
 CCompileC "build/Towers42Project.build/Debug-iphoneos/cocos2d libraries.build/Objects-normal/armv6/CCAction.o" /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/libs/cocos2d/CCAction.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s320326544.460252

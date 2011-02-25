@@ -18,5 +18,7 @@
 - (NSMutableArray*) getMapPath;
 - (NSMutableArray*) getCreeeps;
 - (NSMutableArray*) getTowers;
+- (bool) execute;
+
 
 @end

@@ -1,7 +1,7 @@
 TTowers42Project
 v7
 r0
-t320344012.359954
+t320347879.138178
 cCheck dependencies
 cCpResource build/Debug-iphoneos/Towers42Project.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Info.plist Resources/Info.plist
@@ -12,7 +12,7 @@ cProcessPCH /var/folders/XP/XP7jKgEcF7y11EUjdyHUHk+++TI/-Caches-/com.apple.Xcode
 cProcessPCH++ /var/folders/XP/XP7jKgEcF7y11EUjdyHUHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-gdyouqccrsfyeegykyfnevuvlgpv/Towers42Project_Prefix.pch.gch Towers42Project_Prefix.pch normal armv6 objective-c++ com.apple.compilers.gcc.4_2
 cCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/main.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Towers42ProjectAppDelegate.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/MainScene.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/MainScene.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
 cCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Controller.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
 cCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Entity.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Entity.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
 cCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Creep.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Creep.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
@@ -166,9 +166,9 @@ t1287718208
 s135152
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.h
-c000000004D67D7320000000000000237
-t1298650930
-s567
+c000000004D67E6DB000000000000024A
+t1298654939
+s586
 i<Foundation/Foundation.h>
 i"cocos2d.h"
 
@@ -179,9 +179,9 @@ s209
 i"Controller.h"
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.mm
-c000000004D67D78E0000000000000379
-t1298651022
-s889
+c000000004D67E6E6000000000000039D
+t1298654950
+s925
 i"Controller.h"
 i"TestCreep.h"
 
@@ -224,15 +224,22 @@ s1500
 i"HelloWorldScene.h"
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.h
-c000000004D67C46F0000000000000180
-t1298646127
-s384
+c000000004D67E71700000000000001AE
+t1298654999
+s430
 i"cocos2d.h"
+i"Controller.h"
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.m
 c000000004D67C5B800000000000005D3
 t1298646456
 s1491
+i"MainScene.h"
+
+N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.mm
+c000000004D67E763000000000000068B
+t1298655075
+s1675
 i"MainScene.h"
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/TestCreep.h
@@ -311,11 +318,11 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app
-t1298651212
+t1298655079
 s408
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app.dSYM
-t1298651212
+t1298655078
 s102
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Default.png
@@ -339,8 +346,8 @@ t1298633756
 s485
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project
-t1298651212
-s1507952
+t1298655078
+s1508260
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/embedded.mobileprovision
 t1298633759
@@ -356,8 +363,8 @@ t1298633756
 s4061872
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Controller.o
-t1298651198
-s12760
+t1298655078
+s13056
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Creep.o
 t1298651198
@@ -372,8 +379,8 @@ t1298633758
 s49848
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/MainScene.o
-t1298646457
-s49816
+t1298655078
+s50028
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/TestCreep.o
 t1298651198
@@ -389,8 +396,8 @@ t1298651024
 s1442
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Towers42ProjectAppDelegate.o
-t1298646443
-s64036
+t1298655078
+s64180
 
 N/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/main.o
 t1298633758
@@ -1031,22 +1038,22 @@ s910
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies320344011#320344011#0(0"0(0#1#0"8649444320#0"0#
+lSLF07#2@18"Check dependencies320347878#320347878#0(0"0(0#1#0"8641776864#0"0#
 
 CCodeSign /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app
-s320344012.137304
-e320344012.359915
+s320347878.937167
+e320347879.138136
 r1
 xCodeSign
 x/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app
-lSLF07#2@49"CodeSign build/Debug-iphoneos/Towers42Project.app320344012#320344012#0(0"0(0#0#122"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app8646675488#866"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Francisco Ferreira (84R85PG8GC)" --resource-rules=/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/ResourceRules.plist --entitlements /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project.xcent /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app0#
+lSLF07#2@49"CodeSign build/Debug-iphoneos/Towers42Project.app320347878#320347879#0(0"0(0#0#122"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app8647489568#866"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Francisco Ferreira (84R85PG8GC)" --resource-rules=/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/ResourceRules.plist --entitlements /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project.xcent /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app0#
 
 CCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Controller.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Controller.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
-s320343997.964205
-e320343998.144213
+s320347878.383181
+e320347878.609349
 r1
 xCompileC
 xbuild/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Controller.o
@@ -1055,7 +1062,7 @@ xnormal
 xarmv6
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@111"Compile /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.mm320343997#320343998#0(0"0(0#0#103"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.mm8637822592#2447"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mno-thumb -miphoneos-version-min=3.0 -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-generated-files.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-own-target-headers.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-all-target-headers.hmap -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-project-headers.hmap -Wall -F/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/include -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources/armv6 -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources -include /var/folders/XP/XP7jKgEcF7y11EUjdyHUHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-gdyouqccrsfyeegykyfnevuvlgpv/Towers42Project_Prefix.pch -c /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.mm -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Controller.o0#
+lSLF07#2@111"Compile /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.mm320347878#320347878#0(0"0(0#0#103"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.mm8650350848#2447"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mno-thumb -miphoneos-version-min=3.0 -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-generated-files.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-own-target-headers.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-all-target-headers.hmap -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-project-headers.hmap -Wall -F/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/include -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources/armv6 -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources -include /var/folders/XP/XP7jKgEcF7y11EUjdyHUHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-gdyouqccrsfyeegykyfnevuvlgpv/Towers42Project_Prefix.pch -c /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Controller.mm -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Controller.o0#
 
 CCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Creep.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Creep.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
 s320343998.144318
@@ -1109,6 +1116,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@109"Compile /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.m320339257#320339257#0(0"0(0#0#101"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.m8642186816#2423"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mno-thumb -miphoneos-version-min=3.0 -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-generated-files.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-own-target-headers.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-all-target-headers.hmap -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-project-headers.hmap -Wall -F/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/include -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources/armv6 -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources -include /var/folders/XP/XP7jKgEcF7y11EUjdyHUHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-cuqbsksxxtnhcthddrifafmeuqzj/Towers42Project_Prefix.pch -c /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.m -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/MainScene.o0#
 
+CCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/MainScene.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+s320347878.183152
+e320347878.538881
+r1
+xCompileC
+xbuild/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/MainScene.o
+x/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.mm
+xnormal
+xarmv6
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@110"Compile /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.mm320347878#320347878#0(0"0(0#0#102"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.mm8641182176#2445"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mno-thumb -miphoneos-version-min=3.0 -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-generated-files.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-own-target-headers.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-all-target-headers.hmap -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-project-headers.hmap -Wall -F/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/include -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources/armv6 -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources -include /var/folders/XP/XP7jKgEcF7y11EUjdyHUHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-gdyouqccrsfyeegykyfnevuvlgpv/Towers42Project_Prefix.pch -c /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/MainScene.mm -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/MainScene.o0#
+
 CCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/TestCreep.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/TestCreep.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s320343998.236595
 e320343998.363308
@@ -1136,8 +1156,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@106"Compile /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Tower.mm320344011#320344011#0(0"0(0#0#98"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Tower.mm8644909536#2437"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mno-thumb -miphoneos-version-min=3.0 -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-generated-files.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-own-target-headers.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-all-target-headers.hmap -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-project-headers.hmap -Wall -F/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/include -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources/armv6 -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources -include /var/folders/XP/XP7jKgEcF7y11EUjdyHUHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-gdyouqccrsfyeegykyfnevuvlgpv/Towers42Project_Prefix.pch -c /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Tower.mm -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Tower.o0#
 
 CCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Towers42ProjectAppDelegate.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s320339242.865035
-e320339243.117703
+s320347878.181759
+e320347878.383086
 r1
 xCompileC
 xbuild/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Towers42ProjectAppDelegate.o
@@ -1146,7 +1166,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@126"Compile /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m320339242#320339243#0(0"0(0#0#118"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m8641381024#2457"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mno-thumb -miphoneos-version-min=3.0 -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-generated-files.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-own-target-headers.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-all-target-headers.hmap -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-project-headers.hmap -Wall -F/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/include -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources/armv6 -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources -include /var/folders/XP/XP7jKgEcF7y11EUjdyHUHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-cuqbsksxxtnhcthddrifafmeuqzj/Towers42Project_Prefix.pch -c /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Towers42ProjectAppDelegate.o0#
+lSLF07#2@126"Compile /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m320347878#320347878#0(0"0(0#0#118"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m8641314528#2457"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mno-thumb -miphoneos-version-min=3.0 -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-generated-files.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-own-target-headers.hmap -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-all-target-headers.hmap -iquote /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project-project-headers.hmap -Wall -F/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/include -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources/armv6 -I/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/DerivedSources -include /var/folders/XP/XP7jKgEcF7y11EUjdyHUHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-cuqbsksxxtnhcthddrifafmeuqzj/Towers42Project_Prefix.pch -c /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Towers42ProjectAppDelegate.o0#
 
 CCompileC build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/main.o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s320326558.047550
@@ -1201,23 +1221,23 @@ x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceR
 lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist320326556#320326556#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist8643143616#588"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app0#
 
 CGenerateDSYMFile /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app.dSYM /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project
-s320344012.014085
-e320344012.134000
+s320347878.810654
+e320347878.933525
 r1
 xGenerateDSYMFile
 x/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app.dSYM
 x/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project
-lSLF07#2@119"GenerateDSYMFile build/Debug-iphoneos/Towers42Project.app.dSYM build/Debug-iphoneos/Towers42Project.app/Towers42Project320344012#320344012#0(0"0(0#0#138"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project8647969920#515"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app.dSYM0#
+lSLF07#2@119"GenerateDSYMFile build/Debug-iphoneos/Towers42Project.app.dSYM build/Debug-iphoneos/Towers42Project.app/Towers42Project320347878#320347878#0(0"0(0#0#138"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project8631825248#515"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app.dSYM0#
 
 CLd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project normal armv6
-s320344011.690071
-e320344012.013985
+s320347878.609453
+e320347878.810547
 r1
 xLd
 x/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project
 xnormal
 xarmv6
-lSLF07#2@143"Link /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project320344011#320344012#0(0"0(0#0#0"8651541440#1227"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/g++-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -F/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -filelist /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Towers42Project.LinkFileList -dead_strip -all_load -ObjC -miphoneos-version-min=3.0 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project0#
+lSLF07#2@143"Link /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project320347878#320347878#0(0"0(0#0#0"8643736288#1227"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/g++-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -F/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos -filelist /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Objects-normal/armv6/Towers42Project.LinkFileList -dead_strip -all_load -ObjC -miphoneos-version-min=3.0 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Towers42Project0#
 
 CProcessInfoPlistFile /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app/Info.plist Resources/Info.plist
 s320326556.770455
@@ -1273,10 +1293,10 @@ x/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Proje
 lSLF07#2@199"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project.xcent320326559#320326559#0(0"0(0#0#168"/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project.xcent8614924128#542"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphoneos/Towers42Project.build/Towers42Project.xcent0#
 
 CTouch /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app
-s320344012.134204
-e320344012.137134
+s320347878.933734
+e320347878.936996
 r1
 xTouch
 x/Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app
-lSLF07#2@128"Touch /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app320344012#320344012#0(0"0(0#0#0"8647407872#358"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app0#
+lSLF07#2@128"Touch /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app320347878#320347878#0(0"0(0#0#0"8647948480#358"    cd /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/franciscomsilvaferreira/Documents/iphone/Towers42/Towers42/Towers42Project/build/Debug-iphoneos/Towers42Project.app0#
 

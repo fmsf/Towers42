@@ -78,6 +78,12 @@
 			B6AD09F813180FD900152052 /* PBXTextBookmark */ = B6AD09F813180FD900152052 /* PBXTextBookmark */;
 			B6AD09F913180FD900152052 /* XCBuildMessageTextBookmark */ = B6AD09F913180FD900152052 /* XCBuildMessageTextBookmark */;
 			B6AD09FA13180FD900152052 /* PBXTextBookmark */ = B6AD09FA13180FD900152052 /* PBXTextBookmark */;
+			B6AD09FF13181EF500152052 /* PBXTextBookmark */ = B6AD09FF13181EF500152052 /* PBXTextBookmark */;
+			B6AD0A0013181EF500152052 /* PBXTextBookmark */ = B6AD0A0013181EF500152052 /* PBXTextBookmark */;
+			B6AD0A0113181EF500152052 /* PBXTextBookmark */ = B6AD0A0113181EF500152052 /* PBXTextBookmark */;
+			B6AD0A0213181EF500152052 /* PBXTextBookmark */ = B6AD0A0213181EF500152052 /* PBXTextBookmark */;
+			B6AD0A0313181EF500152052 /* PBXTextBookmark */ = B6AD0A0313181EF500152052 /* PBXTextBookmark */;
+			B6AD0A0413181EF500152052 /* PBXTextBookmark */ = B6AD0A0413181EF500152052 /* PBXTextBookmark */;
 		};
 		sourceControlManager = B6AD09A11317CB9A00152052 /* Source Control */;
 		userBuildSettings = {
@@ -85,16 +91,16 @@
 	};
 	506EDC2F102F528A00A389B3 /* MainScene.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 452}}";
-			sepNavSelRange = "{283, 0}";
-			sepNavVisRange = "{0, 384}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 592}}";
+			sepNavSelRange = "{341, 0}";
+			sepNavVisRange = "{0, 430}";
 		};
 	};
 	506EDC30102F528A00A389B3 /* MainScene.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {523, 897}}";
-			sepNavSelRange = "{386, 0}";
-			sepNavVisRange = "{259, 267}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 923}}";
+			sepNavSelRange = "{1310, 0}";
+			sepNavVisRange = "{386, 1223}";
 		};
 	};
 	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {
@@ -166,15 +172,15 @@
 	B6AD09C71318043300152052 /* Controller.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1223, 592}}";
-			sepNavSelRange = "{498, 62}";
-			sepNavVisRange = "{0, 567}";
+			sepNavSelRange = "{561, 18}";
+			sepNavVisRange = "{0, 586}";
 		};
 	};
 	B6AD09C81318043300152052 /* Controller.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 676}}";
-			sepNavSelRange = "{799, 0}";
-			sepNavVisRange = "{0, 823}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 715}}";
+			sepNavSelRange = "{411, 0}";
+			sepNavVisRange = "{0, 836}";
 		};
 	};
 	B6AD09CA1318052E00152052 /* Entity.h */ = {
@@ -267,7 +273,7 @@
 		fRef = 506EDC2F102F528A00A389B3 /* MainScene.h */;
 		name = "MainScene.h: 14";
 		rLen = 0;
-		rLoc = 283;
+		rLoc = 305;
 		rType = 0;
 		vrLen = 384;
 		vrLoc = 0;
@@ -327,7 +333,7 @@
 		fRef = B6AD09C81318043300152052 /* Controller.mm */;
 		name = "Controller.mm: 41";
 		rLen = 0;
-		rLoc = 799;
+		rLoc = 835;
 		rType = 0;
 		vrLen = 823;
 		vrLoc = 0;
@@ -410,5 +416,65 @@
 		rType = 0;
 		vrLen = 237;
 		vrLoc = 0;
+	};
+	B6AD09FF13181EF500152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09D613180B2600152052 /* Tower.h */;
+		name = "Tower.h: 10";
+		rLen = 0;
+		rLoc = 198;
+		rType = 0;
+		vrLen = 237;
+		vrLoc = 0;
+	};
+	B6AD0A0013181EF500152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09C71318043300152052 /* Controller.h */;
+		name = "Controller.h: 21";
+		rLen = 18;
+		rLoc = 561;
+		rType = 0;
+		vrLen = 586;
+		vrLoc = 0;
+	};
+	B6AD0A0113181EF500152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09C81318043300152052 /* Controller.mm */;
+		name = "Controller.mm: 29";
+		rLen = 0;
+		rLoc = 411;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 0;
+	};
+	B6AD0A0213181EF500152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 506EDC2F102F528A00A389B3 /* MainScene.h */;
+		name = "MainScene.h: 15";
+		rLen = 0;
+		rLoc = 341;
+		rType = 0;
+		vrLen = 430;
+		vrLoc = 0;
+	};
+	B6AD0A0313181EF500152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
+		name = "MainScene.mm: 56";
+		rLen = 0;
+		rLoc = 1333;
+		rType = 0;
+		vrLen = 1149;
+		vrLoc = 348;
+	};
+	B6AD0A0413181EF500152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
+		name = "MainScene.mm: 57";
+		rLen = 0;
+		rLoc = 1310;
+		rType = 0;
+		vrLen = 1223;
+		vrLoc = 386;
 	};
 }

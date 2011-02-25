@@ -45,8 +45,17 @@
 		
 		// add the label as a child to this Layer
 		[self addChild: label];
+		controller = [[Controller alloc] init];
+		[self schedule:@selector(tick:)];
+
 	}
 	return self;
+}
+
+- (void)tick:(ccTime) dt {
+/*	int t=123;
+	NSLog(@"Um exemplo de log %d", t);*/
+	[controller execute];
 }
 
 // on "dealloc" you need to release all your retained objects

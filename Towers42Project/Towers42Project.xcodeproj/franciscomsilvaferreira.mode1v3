@@ -271,7 +271,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
+									<integer>9</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Tower.h</string>
+								<string>MainScene.mm</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,27 +322,27 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Tower.h</string>
+										<string>MainScene.mm</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B6AD09FA13180FD900152052</string>
+										<string>B6AD0A0413181EF500152052</string>
 										<key>history</key>
 										<array>
-											<string>B6AD09EC13180FD900152052</string>
 											<string>B6AD09ED13180FD900152052</string>
 											<string>B6AD09EE13180FD900152052</string>
-											<string>B6AD09EF13180FD900152052</string>
 											<string>B6AD09F013180FD900152052</string>
-											<string>B6AD09F113180FD900152052</string>
-											<string>B6AD09F213180FD900152052</string>
 											<string>B6AD09F313180FD900152052</string>
 											<string>B6AD09F413180FD900152052</string>
 											<string>B6AD09F513180FD900152052</string>
 											<string>B6AD09F613180FD900152052</string>
 											<string>B6AD09F713180FD900152052</string>
 											<string>B6AD09F813180FD900152052</string>
-											<string>B6AD09F913180FD900152052</string>
+											<string>B6AD09FF13181EF500152052</string>
+											<string>B6AD0A0013181EF500152052</string>
+											<string>B6AD0A0113181EF500152052</string>
+											<string>B6AD0A0213181EF500152052</string>
+											<string>B6AD0A0313181EF500152052</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

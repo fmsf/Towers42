@@ -6,10 +6,27 @@
 			B6AD098E1317CB6F00152052 /* Towers42Project */,
 		);
 	};
+	1F3B9A2B0EF2145700286867 /* Towers42ProjectAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1157}}";
+			sepNavSelRange = "{1567, 0}";
+			sepNavVisRange = "{911, 1010}";
+		};
+	};
+	1F3B9A2C0EF2145700286867 /* Towers42ProjectAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 452}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 343}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = B6AD098E1317CB6F00152052 /* Towers42Project */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Towers42Project */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Towers42Project */,
+		);
 		codeSenseManager = B6AD09A21317CB9A00152052 /* Code sense */;
 		executables = (
 			B6AD098E1317CB6F00152052 /* Towers42Project */,
@@ -20,9 +37,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					833,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -37,11 +54,47 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 320326511;
-			PBXWorkspaceStateSaveDate = 320326511;
+			PBXPerProjectTemplateStateSaveDate = 320338880;
+			PBXWorkspaceStateSaveDate = 320338880;
+		};
+		perUserProjectItems = {
+			B6AD09B61317FD3000152052 /* XCBuildMessageTextBookmark */ = B6AD09B61317FD3000152052 /* XCBuildMessageTextBookmark */;
+			B6AD09B71317FD3000152052 /* PBXTextBookmark */ = B6AD09B71317FD3000152052 /* PBXTextBookmark */;
+			B6AD09E113180FC500152052 /* PBXTextBookmark */ = B6AD09E113180FC500152052 /* PBXTextBookmark */;
+			B6AD09E213180FC500152052 /* XCBuildMessageTextBookmark */ = B6AD09E213180FC500152052 /* XCBuildMessageTextBookmark */;
+			B6AD09E313180FC500152052 /* PBXTextBookmark */ = B6AD09E313180FC500152052 /* PBXTextBookmark */;
+			B6AD09EC13180FD900152052 /* PBXTextBookmark */ = B6AD09EC13180FD900152052 /* PBXTextBookmark */;
+			B6AD09ED13180FD900152052 /* PBXTextBookmark */ = B6AD09ED13180FD900152052 /* PBXTextBookmark */;
+			B6AD09EE13180FD900152052 /* PBXTextBookmark */ = B6AD09EE13180FD900152052 /* PBXTextBookmark */;
+			B6AD09EF13180FD900152052 /* PBXTextBookmark */ = B6AD09EF13180FD900152052 /* PBXTextBookmark */;
+			B6AD09F013180FD900152052 /* PBXTextBookmark */ = B6AD09F013180FD900152052 /* PBXTextBookmark */;
+			B6AD09F113180FD900152052 /* PBXTextBookmark */ = B6AD09F113180FD900152052 /* PBXTextBookmark */;
+			B6AD09F213180FD900152052 /* PBXTextBookmark */ = B6AD09F213180FD900152052 /* PBXTextBookmark */;
+			B6AD09F313180FD900152052 /* PBXTextBookmark */ = B6AD09F313180FD900152052 /* PBXTextBookmark */;
+			B6AD09F413180FD900152052 /* PBXTextBookmark */ = B6AD09F413180FD900152052 /* PBXTextBookmark */;
+			B6AD09F513180FD900152052 /* PBXTextBookmark */ = B6AD09F513180FD900152052 /* PBXTextBookmark */;
+			B6AD09F613180FD900152052 /* PBXTextBookmark */ = B6AD09F613180FD900152052 /* PBXTextBookmark */;
+			B6AD09F713180FD900152052 /* PBXTextBookmark */ = B6AD09F713180FD900152052 /* PBXTextBookmark */;
+			B6AD09F813180FD900152052 /* PBXTextBookmark */ = B6AD09F813180FD900152052 /* PBXTextBookmark */;
+			B6AD09F913180FD900152052 /* XCBuildMessageTextBookmark */ = B6AD09F913180FD900152052 /* XCBuildMessageTextBookmark */;
+			B6AD09FA13180FD900152052 /* PBXTextBookmark */ = B6AD09FA13180FD900152052 /* PBXTextBookmark */;
 		};
 		sourceControlManager = B6AD09A11317CB9A00152052 /* Source Control */;
 		userBuildSettings = {
+		};
+	};
+	506EDC2F102F528A00A389B3 /* MainScene.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 452}}";
+			sepNavSelRange = "{283, 0}";
+			sepNavVisRange = "{0, 384}";
+		};
+	};
+	506EDC30102F528A00A389B3 /* MainScene.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {523, 897}}";
+			sepNavSelRange = "{386, 0}";
+			sepNavVisRange = "{259, 267}";
 		};
 	};
 	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {
@@ -90,5 +143,272 @@
 	B6AD09A21317CB9A00152052 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	B6AD09B61317FD3000152052 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'HelloWorld' undeclared (first use in this function)";
+		fRef = 506EDC30102F528A00A389B3 /* MainScene.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 20;
+		rType = 1;
+	};
+	B6AD09B71317FD3000152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 506EDC30102F528A00A389B3 /* MainScene.m */;
+		name = "MainScene.m: 21";
+		rLen = 0;
+		rLoc = 386;
+		rType = 0;
+		vrLen = 269;
+		vrLoc = 259;
+	};
+	B6AD09C71318043300152052 /* Controller.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1223, 592}}";
+			sepNavSelRange = "{498, 62}";
+			sepNavVisRange = "{0, 567}";
+		};
+	};
+	B6AD09C81318043300152052 /* Controller.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 676}}";
+			sepNavSelRange = "{799, 0}";
+			sepNavVisRange = "{0, 823}";
+		};
+	};
+	B6AD09CA1318052E00152052 /* Entity.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 592}}";
+			sepNavSelRange = "{389, 0}";
+			sepNavVisRange = "{0, 450}";
+		};
+	};
+	B6AD09CB1318052E00152052 /* Entity.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 663}}";
+			sepNavSelRange = "{325, 72}";
+			sepNavVisRange = "{37, 620}";
+		};
+	};
+	B6AD09CF1318095400152052 /* Creep.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 592}}";
+			sepNavSelRange = "{198, 0}";
+			sepNavVisRange = "{0, 258}";
+		};
+	};
+	B6AD09D01318095400152052 /* Creep.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 592}}";
+			sepNavSelRange = "{253, 0}";
+			sepNavVisRange = "{0, 339}";
+		};
+	};
+	B6AD09D2131809D200152052 /* TestCreep.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 592}}";
+			sepNavSelRange = "{221, 0}";
+			sepNavVisRange = "{0, 284}";
+		};
+	};
+	B6AD09D3131809D200152052 /* TestCreep.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 592}}";
+			sepNavSelRange = "{220, 0}";
+			sepNavVisRange = "{0, 529}";
+		};
+	};
+	B6AD09D613180B2600152052 /* Tower.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 592}}";
+			sepNavSelRange = "{198, 0}";
+			sepNavVisRange = "{0, 237}";
+		};
+	};
+	B6AD09D713180B2600152052 /* Tower.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 592}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 195}";
+		};
+	};
+	B6AD09E113180FC500152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 506EDC30102F528A00A389B3 /* MainScene.m */;
+		name = "MainScene.m: 21";
+		rLen = 0;
+		rLoc = 386;
+		rType = 0;
+		vrLen = 267;
+		vrLoc = 259;
+	};
+	B6AD09E213180FC500152052 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Cannot find interface declaration for 'Entity', superclass of 'Tower'";
+		fRef = B6AD09D613180B2600152052 /* Tower.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 11;
+		rType = 1;
+	};
+	B6AD09E313180FC500152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09D613180B2600152052 /* Tower.h */;
+		name = "Tower.h: 12";
+		rLen = 0;
+		rLoc = 200;
+		rType = 0;
+		vrLen = 216;
+		vrLoc = 3;
+	};
+	B6AD09EC13180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 506EDC2F102F528A00A389B3 /* MainScene.h */;
+		name = "MainScene.h: 14";
+		rLen = 0;
+		rLoc = 283;
+		rType = 0;
+		vrLen = 384;
+		vrLoc = 0;
+	};
+	B6AD09ED13180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F3B9A2C0EF2145700286867 /* Towers42ProjectAppDelegate.h */;
+		name = "Towers42ProjectAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 343;
+		vrLoc = 0;
+	};
+	B6AD09EE13180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F3B9A2B0EF2145700286867 /* Towers42ProjectAppDelegate.m */;
+		name = "Towers42ProjectAppDelegate.m: 53";
+		rLen = 0;
+		rLoc = 1567;
+		rType = 0;
+		vrLen = 1010;
+		vrLoc = 911;
+	};
+	B6AD09EF13180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 506EDC30102F528A00A389B3 /* MainScene.m */;
+		name = "MainScene.m: 21";
+		rLen = 0;
+		rLoc = 416;
+		rType = 0;
+		vrLen = 719;
+		vrLoc = 0;
+	};
+	B6AD09F013180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09D713180B2600152052 /* Tower.mm */;
+		name = "Tower.mm: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 195;
+		vrLoc = 0;
+	};
+	B6AD09F113180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09C71318043300152052 /* Controller.h */;
+		name = "Controller.h: 19";
+		rLen = 62;
+		rLoc = 498;
+		rType = 0;
+		vrLen = 567;
+		vrLoc = 0;
+	};
+	B6AD09F213180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09C81318043300152052 /* Controller.mm */;
+		name = "Controller.mm: 41";
+		rLen = 0;
+		rLoc = 799;
+		rType = 0;
+		vrLen = 823;
+		vrLoc = 0;
+	};
+	B6AD09F313180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09D2131809D200152052 /* TestCreep.h */;
+		name = "TestCreep.h: 11";
+		rLen = 0;
+		rLoc = 221;
+		rType = 0;
+		vrLen = 284;
+		vrLoc = 0;
+	};
+	B6AD09F413180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09D01318095400152052 /* Creep.mm */;
+		name = "Creep.mm: 20";
+		rLen = 0;
+		rLoc = 253;
+		rType = 0;
+		vrLen = 339;
+		vrLoc = 0;
+	};
+	B6AD09F513180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09CF1318095400152052 /* Creep.h */;
+		name = "Creep.h: 10";
+		rLen = 0;
+		rLoc = 198;
+		rType = 0;
+		vrLen = 258;
+		vrLoc = 0;
+	};
+	B6AD09F613180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09D3131809D200152052 /* TestCreep.m */;
+		name = "TestCreep.m: 14";
+		rLen = 0;
+		rLoc = 220;
+		rType = 0;
+		vrLen = 529;
+		vrLoc = 0;
+	};
+	B6AD09F713180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09CB1318052E00152052 /* Entity.mm */;
+		name = "Entity.mm: 24";
+		rLen = 72;
+		rLoc = 325;
+		rType = 0;
+		vrLen = 620;
+		vrLoc = 37;
+	};
+	B6AD09F813180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09CA1318052E00152052 /* Entity.h */;
+		name = "Entity.h: 21";
+		rLen = 0;
+		rLoc = 389;
+		rType = 0;
+		vrLen = 450;
+		vrLoc = 0;
+	};
+	B6AD09F913180FD900152052 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Cannot find interface declaration for 'Entity', superclass of 'Tower'";
+		fRef = B6AD09D613180B2600152052 /* Tower.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 11;
+		rType = 1;
+	};
+	B6AD09FA13180FD900152052 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09D613180B2600152052 /* Tower.h */;
+		name = "Tower.h: 10";
+		rLen = 0;
+		rLoc = 198;
+		rType = 0;
+		vrLen = 237;
+		vrLoc = 0;
 	};
 }

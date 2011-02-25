@@ -7,10 +7,10 @@
 //
 
 // Import the interfaces
-#import "HelloWorldScene.h"
+#import "MainScene.h"
 
 // HelloWorld implementation
-@implementation HelloWorld
+@implementation MainScene
 
 +(id) scene
 {
@@ -18,7 +18,7 @@
 	CCScene *scene = [CCScene node];
 	
 	// 'layer' is an autorelease object.
-	HelloWorld *layer = [HelloWorld node];
+	MainScene *layer = [MainScene node];
 	
 	// add layer as a child to scene
 	[scene addChild: layer];

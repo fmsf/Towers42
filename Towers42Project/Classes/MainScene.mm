@@ -73,7 +73,7 @@
 // You have to over-ride this method
 -(void)draw{
     glColor4f(0.8, 1.0, 0.76, 1.0);  
-    glLineWidth(2.0f);
+    glLineWidth(7.0f);
 	//ccDrawLine(ccp(300,470), ccp(100,100));
 //    drawLine(10,100,50,79);
 	int i;
@@ -83,6 +83,13 @@
 		CGPoint p1 = [val CGPointValue];
 		val = [path objectAtIndex:i];
 		CGPoint p2 = [val CGPointValue];
+		
+		glColor4f(0.8, 1.0, 0.76, 0.3);  
+		glLineWidth(7.0f);
+		ccDrawLine(p1,p2);
+		
+		glColor4f(0.3, 0.3, 1.0, 0.7);  
+		glLineWidth(3.0f);
 		ccDrawLine(p1,p2);
 	}
 

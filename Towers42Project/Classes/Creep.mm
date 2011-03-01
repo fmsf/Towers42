@@ -8,6 +8,7 @@
 
 #import <math.h>
 #import "Creep.h"
+#import "defs.h"
 
 
 @implementation Creep

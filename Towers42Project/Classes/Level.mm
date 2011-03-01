@@ -41,14 +41,14 @@
     if ((self=[super init])) {
 		// code here
 		levelPath = [[NSMutableArray alloc] initWithObjects:
-					 [NSValue valueWithCGPoint:CGPointMake(100, 100)],
+					 [NSValue valueWithCGPoint:CGPointMake(160, 100)],
 					 [NSValue valueWithCGPoint:CGPointMake(100, 200)],
-					 [NSValue valueWithCGPoint:CGPointMake(150, 250)],
-					 [NSValue valueWithCGPoint:CGPointMake(100, 250)],
+					 [NSValue valueWithCGPoint:CGPointMake(300, 250)],
+					 [NSValue valueWithCGPoint:CGPointMake(160, 250)],
 					 [NSValue valueWithCGPoint:CGPointMake(100, 230)],
 					 [NSValue valueWithCGPoint:CGPointMake(80,  230)],
-					 [NSValue valueWithCGPoint:CGPointMake(100, 280)],
-					 [NSValue valueWithCGPoint:CGPointMake(100, 320)],
+					 [NSValue valueWithCGPoint:CGPointMake(100, 380)],
+					 [NSValue valueWithCGPoint:CGPointMake(160, 480)],
 				   NULL];
 		
 		x_transform = 0.0f;

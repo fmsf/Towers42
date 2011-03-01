@@ -17,8 +17,11 @@
 	
 	NSMutableArray* mapDir; // array containing the waypoint directions
 	
+	
+	Level* newLvl;
 	int		pathLenght;
 	float	pathTransform;
+	bool ready;
 }
 
 - (NSMutableArray*) getMapPath;
@@ -31,5 +34,6 @@
 - (bool) setNewLevel:(Level*) n_level;
 
 - (int) getPathLenght;
+- (bool) isReady;
 
 @end

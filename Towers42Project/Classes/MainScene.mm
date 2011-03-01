@@ -65,7 +65,9 @@
 - (void)tick:(ccTime) dt {
 /*	int t=123;
 	NSLog(@"Um exemplo de log %d", t);*/
-	[controller execute: dt];
+	if([controller isReady]){
+		[controller execute: dt];
+	}
 }
 
 // You have to over-ride this method
@@ -74,9 +76,9 @@
     glLineWidth(2.0f);
 	//ccDrawLine(ccp(300,470), ccp(100,100));
 //    drawLine(10,100,50,79);
-	unsigned int i;
+	int i;
 	NSMutableArray* path = [controller getMapPath];
-	for(i=1;i<[path count];i++){ // TODO: FIXXX
+	for(i=1;i<[controller getPathLenght];i++){
 		NSValue *val = [path objectAtIndex:i-1]; 
 		CGPoint p1 = [val CGPointValue];
 		val = [path objectAtIndex:i];
@@ -84,7 +86,7 @@
 		ccDrawLine(p1,p2);
 	}
 
-} 
+}
 
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc

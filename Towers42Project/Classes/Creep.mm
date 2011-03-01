@@ -41,8 +41,9 @@
 			// multiply by velocity to get final movement vector (per second)
 			moveVector.x *= velocity;
 			moveVector.y *= velocity;
-			
+#ifdef GRAVE_DEBUG			
 			NSLog(@"New waypoint defined");
+#endif
 			
 		} else {
 			// reached the end of the path
@@ -55,8 +56,9 @@
 	
 	position.x += moveVector.x * d_time;
 	position.y += moveVector.y * d_time;
-	
+#ifdef GRAVE_DEBUG			
 	NSLog(@"(%d, %d)", position.x, position.y);
+#endif
 	
 	return true;
 }

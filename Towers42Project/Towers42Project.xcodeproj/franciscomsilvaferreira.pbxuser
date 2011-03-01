@@ -8,9 +8,9 @@
 	};
 	1F3B9A2B0EF2145700286867 /* Towers42ProjectAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 1170}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1183}}";
 			sepNavSelRange = "{1120, 0}";
-			sepNavVisRange = "{292, 1458}";
+			sepNavVisRange = "{249, 1540}";
 		};
 	};
 	1F3B9A2C0EF2145700286867 /* Towers42ProjectAppDelegate.h */ = {
@@ -27,6 +27,12 @@
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Towers42Project */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Towers42Project */,
+		);
+		breakpoints = (
+			B6C39DF6131D4EB000914963 /* MainScene.mm:81 */,
+			B6C39DF9131D4EDB00914963 /* Controller.mm:131 */,
+			B6C39DFE131D4EF200914963 /* Controller.mm:37 */,
+			B6C39E26131D532A00914963 /* MainScene.mm:69 */,
 		);
 		codeSenseManager = B6AD09A21317CB9A00152052 /* Code sense */;
 		executables = (
@@ -112,27 +118,48 @@
 	};
 	506EDC2F102F528A00A389B3 /* MainScene.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 641}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 618}}";
 			sepNavSelRange = "{397, 0}";
 			sepNavVisRange = "{0, 486}";
 		};
 	};
 	506EDC30102F528A00A389B3 /* MainScene.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 1300}}";
-			sepNavSelRange = "{1445, 0}";
-			sepNavVisRange = "{1152, 1132}";
+			sepNavIntBoundsRect = "{{0, 0}, {777, 1326}}";
+			sepNavSelRange = "{1748, 0}";
+			sepNavVisRange = "{1343, 961}";
 		};
 	};
 	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {
 		activeExec = 0;
 	};
+	507ED25F11C62F03002ED3FC /* CCDirector.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1041, 15730}}";
+			sepNavSelRange = "{6057, 0}";
+			sepNavVisRange = "{5601, 664}";
+		};
+	};
+	507ED27F11C62F04002ED3FC /* CCNode.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {796, 10101}}";
+			sepNavSelRange = "{4835, 0}";
+			sepNavVisRange = "{4563, 362}";
+		};
+	};
 	84451D99131D009200B3027B /* Level.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 754}}";
-			sepNavSelRange = "{462, 280}";
-			sepNavVisRange = "{0, 1092}";
-			sepNavWindowFrame = "{{15, 4}, {1265, 774}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 884}}";
+			sepNavSelRange = "{706, 0}";
+			sepNavVisRange = "{251, 1046}";
+			sepNavWindowFrame = "{{265, 1076}, {1265, 774}}";
+		};
+	};
+	84451D9D131D00BC00B3027B /* Level.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 618}}";
+			sepNavSelRange = "{303, 0}";
+			sepNavVisRange = "{0, 540}";
 		};
 	};
 	B6AD098E1317CB6F00152052 /* Towers42Project */ = {
@@ -165,6 +192,22 @@
 		sourceDirectories = (
 		);
 		variableFormatDictionary = {
+			$lr = 1;
+			$pc = 1;
+			$r0 = 1;
+			$r1 = 1;
+			$r10 = 1;
+			$r11 = 1;
+			$r12 = 1;
+			$r2 = 1;
+			$r3 = 1;
+			$r4 = 1;
+			$r5 = 1;
+			$r6 = 1;
+			$r7 = 1;
+			$r8 = 1;
+			$r9 = 1;
+			$sp = 1;
 		};
 	};
 	B6AD09A11317CB9A00152052 /* Source Control */ = {
@@ -183,16 +226,16 @@
 	};
 	B6AD09C71318043300152052 /* Controller.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1223, 641}}";
-			sepNavSelRange = "{338, 13}";
-			sepNavVisRange = "{0, 826}";
+			sepNavIntBoundsRect = "{{0, 0}, {1223, 618}}";
+			sepNavSelRange = "{571, 0}";
+			sepNavVisRange = "{0, 875}";
 		};
 	};
 	B6AD09C81318043300152052 /* Controller.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 1963}}";
-			sepNavSelRange = "{247, 10}";
-			sepNavVisRange = "{0, 797}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 2015}}";
+			sepNavSelRange = "{2640, 0}";
+			sepNavVisRange = "{1813, 1027}";
 		};
 	};
 	B6AD09CA1318052E00152052 /* Entity.h */ = {
@@ -218,9 +261,9 @@
 	};
 	B6AD09D01318095400152052 /* Creep.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {781, 1496}}";
-			sepNavSelRange = "{253, 0}";
-			sepNavVisRange = "{0, 339}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1001}}";
+			sepNavSelRange = "{1610, 0}";
+			sepNavVisRange = "{330, 1367}";
 		};
 	};
 	B6AD09D2131809D200152052 /* TestCreep.h */ = {
@@ -283,8 +326,8 @@
 	};
 	B6AD0A0513181F3900152052 /* defs.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 641}}";
-			sepNavSelRange = "{151, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 618}}";
+			sepNavSelRange = "{172, 0}";
 			sepNavVisRange = "{0, 194}";
 		};
 	};
@@ -383,7 +426,7 @@
 		fRef = B6AD09C71318043300152052 /* Controller.h */;
 		name = "Controller.h: 21";
 		rLen = 18;
-		rLoc = 561;
+		rLoc = 579;
 		rType = 0;
 		vrLen = 586;
 		vrLoc = 0;
@@ -434,7 +477,7 @@
 	};
 	B6C39D50131D361D00914963 /* GameGUI.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 618}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 641}}";
 			sepNavSelRange = "{200, 0}";
 			sepNavVisRange = "{0, 309}";
 		};
@@ -490,7 +533,7 @@
 		isa = PBXTextBookmark;
 		fRef = 84451D99131D009200B3027B /* Level.mm */;
 		name = "Level.mm: 31";
-		rLen = 280;
+		rLen = 287;
 		rLoc = 462;
 		rType = 0;
 		vrLen = 781;
@@ -645,7 +688,7 @@
 		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		name = "MainScene.mm: 78";
 		rLen = 0;
-		rLoc = 1578;
+		rLoc = 1609;
 		rType = 0;
 		vrLen = 1074;
 		vrLoc = 950;
@@ -655,7 +698,7 @@
 		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		name = "MainScene.mm: 78";
 		rLen = 0;
-		rLoc = 1573;
+		rLoc = 1604;
 		rType = 0;
 		vrLen = 1150;
 		vrLoc = 950;
@@ -665,7 +708,7 @@
 		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		name = "MainScene.mm: 67";
 		rLen = 0;
-		rLoc = 1445;
+		rLoc = 1472;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 1179;
@@ -675,7 +718,7 @@
 		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		name = "MainScene.mm: 67";
 		rLen = 0;
-		rLoc = 1445;
+		rLoc = 1472;
 		rType = 0;
 		vrLen = 1132;
 		vrLoc = 1152;
@@ -684,7 +727,7 @@
 		isa = PBXTextBookmark;
 		fRef = 84451D99131D009200B3027B /* Level.mm */;
 		name = "Level.mm: 31";
-		rLen = 280;
+		rLen = 287;
 		rLoc = 462;
 		rType = 0;
 		vrLen = 1092;
@@ -694,7 +737,7 @@
 		isa = PBXTextBookmark;
 		fRef = 84451D99131D009200B3027B /* Level.mm */;
 		name = "Level.mm: 31";
-		rLen = 280;
+		rLen = 287;
 		rLoc = 462;
 		rType = 0;
 		vrLen = 1092;
@@ -719,5 +762,77 @@
 		rType = 0;
 		vrLen = 826;
 		vrLoc = 0;
+	};
+	B6C39DF6131D4EB000914963 /* MainScene.mm:81 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 506EDC30102F528A00A389B3 /* MainScene.mm */;
+		functionName = "-draw";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 81;
+		location = Towers42Project;
+		modificationTime = 320689783.994678;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B6C39DF9131D4EDB00914963 /* Controller.mm:131 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = B6AD09C81318043300152052 /* Controller.mm */;
+		functionName = "-init";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 131;
+		location = Towers42Project;
+		modificationTime = 320689777.459733;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B6C39DFE131D4EF200914963 /* Controller.mm:37 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = B6AD09C81318043300152052 /* Controller.mm */;
+		functionName = "-execute:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 37;
+		location = Towers42Project;
+		modificationTime = 320689773.282818;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B6C39E26131D532A00914963 /* MainScene.mm:69 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 506EDC30102F528A00A389B3 /* MainScene.mm */;
+		functionName = "-tick:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 69;
+		location = Towers42Project;
+		modificationTime = 320689793.907815;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
 	};
 }

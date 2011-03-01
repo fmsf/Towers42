@@ -50,12 +50,8 @@
 	 *Process waypoint directions
 	 */
 	
-	// remove previous elements if they exist
-	[mapDir release];
-	
 	// allocate space for new direction array
-	mapDir = [NSMutableArray alloc];
-	[mapDir initWithCapacity:pathLenght];
+	mapDir = [[NSMutableArray alloc] initWithCapacity:pathLenght];
 	
 	CGPoint vector;
 	CGPoint start;
@@ -100,7 +96,7 @@
 		
 		[mapDir addObject:val];
 	}
-	
+
 	return true;
 }
 
@@ -109,15 +105,14 @@
 	
     if ((self=[super init])) {
 		// code here
-		mapPath = [[NSMutableArray alloc] init];
-		mapDir	= [[NSMutableArray alloc] init];
+		//mapPath = [[NSMutableArray alloc] init];
+		//mapDir	= [[NSMutableArray alloc] init];
 		creeps	= [[NSMutableArray alloc] init];
 		
-		Level* newLvl = [[Level alloc] init];
+		newLvl = [[Level alloc] init];
 		
 		[self setNewLevel:newLvl];
-		
-		creeps = [NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
+		[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
 		
 		for (Creep* c in creeps) {
 			[c initStuff:self :0];
@@ -133,16 +128,21 @@
 		
 		creeps = [NSMutableArray arrayWithObjects:[[TestCreep alloc]init],nil];
 		 */
+		ready = true;
 		
 	}
 	return self;
 }
 
+- (bool) isReady{
+	return ready;
+}
+
 - (void)dealloc {
 	// release here
-	[mapPath	release];
+	/*[mapPath	release];
 	[mapDir		release];
-	[creeps		release];
+	[creeps		release];*/
 	
     [super dealloc];
 }

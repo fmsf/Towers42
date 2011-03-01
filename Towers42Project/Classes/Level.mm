@@ -40,7 +40,7 @@
 	
     if ((self=[super init])) {
 		// code here
-		levelPath = [NSMutableArray arrayWithObjects:
+		levelPath = [[NSMutableArray alloc] initWithObjects:
 					 [NSValue valueWithCGPoint:CGPointMake(100, 100)],
 					 [NSValue valueWithCGPoint:CGPointMake(100, 200)],
 					 [NSValue valueWithCGPoint:CGPointMake(150, 250)],
@@ -52,6 +52,8 @@
 				   NULL];
 		
 		x_transform = 0.0f;
+		
+		pathLenght=8;
 		
 	}
 	return self;

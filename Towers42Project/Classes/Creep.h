@@ -11,6 +11,18 @@
 
 @interface Creep : Entity {
 	// mrda que quiseres
+	NSMutableArray* mapPath;
+	int targetPathNode;
+	
+	float pathTransform;
+	float velocity;
+	float armor;
+	float hp;
 }
+
+- (void) initStuff:(NSMutableArray*) n_path:(float) n_transform;
+
+- (void) updatePosition:(float) d_time;
+- (void) receiveAttack:(float) damage: (float) armorPenetration;
 
 @end

@@ -11,7 +11,20 @@
 
 @implementation Creep
 
+- (void) initStuff:(NSMutableArray*) n_path:(float) n_transform {
+	mapPath			= n_path;
+	pathTransform	= n_transform;
+}
 
+- (void) updatePosition:(float) d_time {
+	position.x;
+	position.y;
+	
+}
+
+- (void) receiveAttack:(float) damage: (float) armorPenetration{
+	
+}
 
 - (id)init {
 	

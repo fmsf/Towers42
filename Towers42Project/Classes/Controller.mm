@@ -29,7 +29,12 @@
 	return true;
 }
 
-
+- (bool) setNewLevel:(Level*) n_level {
+	mapPath			= [n_level getLevelPath];
+	pathTransform	= [n_level getLevelTransform];
+	
+	return true;
+}
 
 
 - (id)init {

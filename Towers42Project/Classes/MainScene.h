@@ -9,7 +9,9 @@
 
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
+#import "Level.h"
 #import "Controller.h"
+
 // HelloWorld Layer
 @interface MainScene : CCLayer{
 	Controller* controller;

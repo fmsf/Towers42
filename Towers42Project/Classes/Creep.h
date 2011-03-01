@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "Entity.h"
+#import "Controller.h"
 
 @interface Creep : Entity {
-	// mrda que quiseres
-	NSMutableArray* mapPath;
-	int targetPathNode;
+	Controller* c_ref;
+	int waypointIndex;
+	
+	CGPoint waypoint;
+	CGPoint moveVector;
 	
 	float pathTransform;
 	float velocity;
@@ -20,9 +23,9 @@
 	float hp;
 }
 
-- (void) initStuff:(NSMutableArray*) n_path:(float) n_transform;
+- (void) initStuff:(Controller*) n_controller:(float) n_transform;
 
-- (void) updatePosition:(float) d_time;
+- (bool) updatePosition:(float) d_time;
 - (void) receiveAttack:(float) damage: (float) armorPenetration;
 
 @end

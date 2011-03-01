@@ -6,20 +6,59 @@
 //  Copyright 2011 Student. All rights reserved.
 //
 
+#import <math.h>
 #import "Creep.h"
 
 
 @implementation Creep
 
-- (void) initStuff:(NSMutableArray*) n_path:(float) n_transform {
-	mapPath			= n_path;
+- (void) initStuff:(Controller*) n_controller:(float) n_transform {
+	c_ref			= n_controller;
 	pathTransform	= n_transform;
+	waypointIndex	= 0;
+	
+	waypoint		= [[[c_ref getMapPath] objectAtIndex:0] CGPointValue];
 }
 
-- (void) updatePosition:(float) d_time {
-	position.x;
-	position.y;
+- (bool) updatePosition:(float) d_time {
+	int p_delta = 5; // box around waypoint that defines it as being reached
 	
+	int distToWaypoint = abs(position.x - waypoint.x) + abs( position.y - waypoint.y );
+	
+	// Check if reached current waypoint
+	if ( distToWaypoint <= p_delta ) {
+		// Check if we did not reach the end of the path
+		if (waypointIndex != [c_ref getPathLenght] ) {
+			// we haven't so continue to next waypoint
+			waypointIndex++;
+			
+			NSValue *val	= [[c_ref getMapPath] objectAtIndex:waypointIndex];
+			waypoint		= [val CGPointValue]; // new waypoint coordinates
+			
+			val			= [[c_ref getMapDir] objectAtIndex:waypointIndex];
+			moveVector	= [val CGPointValue]; // new waypoint direction
+			
+			// multiply by velocity to get final movement vector (per second)
+			moveVector.x *= velocity;
+			moveVector.y *= velocity;
+			
+			NSLog(@"New waypoint defined");
+			
+		} else {
+			// reached the end of the path
+			NSLog(@"Reached the end of the path");
+			return false;
+		}
+	}
+	
+	// Perform movement
+	
+	position.x += moveVector.x * d_time;
+	position.y += moveVector.y * d_time;
+	
+	NSLog(@"(%d, %d)", position.x, position.y);
+	
+	return true;
 }
 
 - (void) receiveAttack:(float) damage: (float) armorPenetration{

@@ -1,7 +1,7 @@
 TTowers42Project
 v7
 r0
-t320671785.231828
+t320686249.024254
 cCheck dependencies
 cProcessInfoPlistFile "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Info.plist" Resources/Info.plist
 cCpResource build/Debug-iphonesimulator/Towers42Project.app/Default.png Resources/Default.png
@@ -154,31 +154,33 @@ t1287719363
 s74672
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Controller.h
-c000000004D6CD7DD000000000000029B
-t1298978781
-s667
+c000000004D6D09EA000000000000033A
+t1298991594
+s826
 i<Foundation/Foundation.h>
 i"cocos2d.h"
 i"Level.h"
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Controller.mm
-c000000004D6CD8A30000000000000429
-t1298978979
-s1065
+c000000004D6D10AA0000000000000AA3
+t1298993322
+s2723
 i"Controller.h"
-i"TestCreep.h"
+i"CreepNormal.h"
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.h
-c000000004D6CD719000000000000021F
-t1298978585
-s543
+c000000004D6D0F6F0000000000000245
+t1298993007
+s581
 i<Foundation/Foundation.h>
 i"Entity.h"
+i"Controller.h"
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm
-c000000004D6CD8110000000000000257
-t1298978833
-s599
+c000000004D6D101B0000000000000703
+t1298993179
+s1795
+i<math.h>
 i"Creep.h"
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/CreepNormal.h
@@ -207,16 +209,16 @@ s658
 i"Entity.h"
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Level.h
-c000000004D6CD76D00000000000001C4
-t1298978669
-s452
+c000000004D6D07A1000000000000021C
+t1298991009
+s540
 i<Foundation/Foundation.h>
 i"cocos2d.h"
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Level.mm
-c000000004D6CD8940000000000000329
-t1298978964
-s809
+c000000004D6D0C5900000000000004FB
+t1298992217
+s1275
 i"Level.h"
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/MainScene.h
@@ -228,9 +230,9 @@ i"Level.h"
 i"Controller.h"
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/MainScene.mm
-c000000004D6CC4BE000000000000068B
-t1298973886
-s1675
+c000000004D6D08CA000000000000068F
+t1298991306
+s1679
 i"MainScene.h"
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/TestCreep.h
@@ -297,11 +299,11 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app
-t1298978985
+t1298993337
 s272
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app.dSYM
-t1298978985
+t1298993337
 s102
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Default.png
@@ -321,8 +323,8 @@ t1298978602
 s8
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project
-t1298978985
-s1414440
+t1298993337
+s1423408
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/fps_images.png
 t1298978603
@@ -334,12 +336,12 @@ t1298978602
 s4022896
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Controller.o
-t1298978984
-s14128
+t1298993337
+s17776
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Creep.o
-t1298978833
-s11120
+t1298993180
+s14296
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/CreepNormal.o
 t1298978965
@@ -350,16 +352,16 @@ t1298978604
 s16172
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Level.o
-t1298978965
-s12140
+t1298992720
+s14132
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/MainScene.o
-t1298978782
-s50004
+t1298991596
+s50056
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/TestCreep.o
-t1298978604
-s15936
+t1298993017
+s16156
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Tower.o
 t1298978604
@@ -371,8 +373,8 @@ t1298978602
 s1770
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Towers42ProjectAppDelegate.o
-t1298978782
-s64488
+t1298991596
+s64528
 
 N/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/main.o
 t1298978604
@@ -1000,11 +1002,11 @@ s910
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies320671784#320671784#0(0"0(0#1#0"8622660768#0"0#
+lSLF07#2@18"Check dependencies320686249#320686249#0(0"0(0#1#0"8615377600#0"0#
 
 CCompileC build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Controller.o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Controller.mm" normal i386 objective-c++ com.apple.compilers.gcc.4_2
-s320671784.781775
-e320671784.941371
+s320686137.415793
+e320686137.596633
 r1
 xCompileC
 xbuild/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Controller.o
@@ -1013,11 +1015,11 @@ xnormal
 xi386
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@102"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Controller.mm320671784#320671784#0(0"0(0#0#94"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Controller.mm8618849376#2565"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Controller.mm" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Controller.o"0#
+lSLF07#2@102"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Controller.mm320686137#320686137#0(0"0(0#0#94"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Controller.mm8624733408#2565"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Controller.mm" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Controller.o"0#
 
 CCompileC build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Creep.o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm" normal i386 objective-c++ com.apple.compilers.gcc.4_2
-s320671633.670779
-e320671633.961721
+s320685980.408589
+e320685980.575553
 r1
 xCompileC
 xbuild/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Creep.o
@@ -1026,10 +1028,7 @@ xnormal
 xi386
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-o/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm: In function 'void -[Creep updatePosition:](Creep*, objc_selector*, float)':
-o/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm:20: warning: statement has no effect
-o/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm:21: warning: statement has no effect
-lSLF07#2@97"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm320671633#320671633#0(421"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm: In function 'void -[Creep updatePosition:](Creep*, objc_selector*, float)':/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm:20: warning: statement has no effect/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm:21: warning: statement has no effect2(22@23"Statement has no effect320671633#167#127#0(6@89"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm320671633#20#0#20#0#0"0(22@23"Statement has no effect320671633#294#127#0(6@89"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm320671633#21#0#21#0#0"0(0#0#89"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm8621190400#2555"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Creep.o"0#
+lSLF07#2@97"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm320685980#320685980#0(0"0(0#0#89"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm8626205888#2555"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Creep.mm" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Creep.o"0#
 
 CCompileC build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/CreepNormal.o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/CreepNormal.mm" normal i386 objective-c++ com.apple.compilers.gcc.4_2
 s320671765.388365
@@ -1058,8 +1057,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@98"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Entity.mm320671404#320671404#0(0"0(0#0#90"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Entity.mm8614388736#2557"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Entity.mm" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Entity.o"0#
 
 CCompileC build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Level.o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Level.mm" normal i386 objective-c++ com.apple.compilers.gcc.4_2
-s320671765.241497
-e320671765.465765
+s320685520.684543
+e320685520.874636
 r1
 xCompileC
 xbuild/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Level.o
@@ -1068,11 +1067,11 @@ xnormal
 xi386
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@97"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Level.mm320671765#320671765#0(0"0(0#0#89"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Level.mm8621492480#2555"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Level.mm" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Level.o"0#
+lSLF07#2@97"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Level.mm320685520#320685520#0(0"0(0#0#89"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Level.mm8624168864#2555"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Level.mm" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Level.o"0#
 
 CCompileC build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/MainScene.o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/MainScene.mm" normal i386 objective-c++ com.apple.compilers.gcc.4_2
-s320671581.836799
-e320671582.037270
+s320684396.762770
+e320684396.919241
 r1
 xCompileC
 xbuild/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/MainScene.o
@@ -1081,11 +1080,11 @@ xnormal
 xi386
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@101"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/MainScene.mm320671581#320671582#0(0"0(0#0#93"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/MainScene.mm8620061408#2563"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/MainScene.mm" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/MainScene.o"0#
+lSLF07#2@101"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/MainScene.mm320684396#320684396#0(0"0(0#0#93"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/MainScene.mm8621150272#2563"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/MainScene.mm" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/MainScene.o"0#
 
 CCompileC build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/TestCreep.o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/TestCreep.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s320671404.610846
-e320671404.726047
+s320685817.126402
+e320685817.228874
 r1
 xCompileC
 xbuild/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/TestCreep.o
@@ -1094,7 +1093,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@100"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/TestCreep.m320671404#320671404#0(0"0(0#0#92"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/TestCreep.m8618763136#2541"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-gxuqdizjsphgwcecfvuprtedqerb/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/TestCreep.m" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/TestCreep.o"0#
+lSLF07#2@100"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/TestCreep.m320685817#320685817#0(0"0(0#0#92"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/TestCreep.m8622776320#2541"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-gxuqdizjsphgwcecfvuprtedqerb/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/TestCreep.m" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/TestCreep.o"0#
 
 CCompileC build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Tower.o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Tower.mm" normal i386 objective-c++ com.apple.compilers.gcc.4_2
 s320671404.639318
@@ -1110,8 +1109,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@97"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Tower.mm320671404#320671404#0(0"0(0#0#89"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Tower.mm8615230912#2555"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Tower.mm" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Tower.o"0#
 
 CCompileC build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Towers42ProjectAppDelegate.o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s320671581.835689
-e320671582.048753
+s320684396.760110
+e320684396.931503
 r1
 xCompileC
 xbuild/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Towers42ProjectAppDelegate.o
@@ -1120,7 +1119,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@117"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m320671581#320671582#0(0"0(0#0#109"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m8619962560#2575"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-gxuqdizjsphgwcecfvuprtedqerb/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Towers42ProjectAppDelegate.o"0#
+lSLF07#2@117"Compile /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m320684396#320684396#0(0"0(0#0#109"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m8624020224#2575"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -include /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-gxuqdizjsphgwcecfvuprtedqerb/Towers42Project_Prefix.pch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Classes/Towers42ProjectAppDelegate.m" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Towers42ProjectAppDelegate.o"0#
 
 CCompileC build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/main.o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s320671404.274220
@@ -1163,23 +1162,23 @@ xResources/fps_images.png
 lSLF07#2@29"Copy Resources/fps_images.png320671402#320671403#0(0"0(0#0#97"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Resources/fps_images.png8618790912#604"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Resources/fps_images.png" "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app"0#
 
 CGenerateDSYMFile "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app.dSYM" "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project"
-s320671785.120066
-e320671785.229562
+s320686137.779898
+e320686137.891936
 r1
 xGenerateDSYMFile
 x/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app.dSYM
 x/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project
-lSLF07#2@133"GenerateDSYMFile build/Debug-iphonesimulator/Towers42Project.app.dSYM build/Debug-iphonesimulator/Towers42Project.app/Towers42Project320671785#320671785#0(0"0(0#0#136"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project8621129856#521"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/usr/bin/dsymutil "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app.dSYM"0#
+lSLF07#2@133"GenerateDSYMFile build/Debug-iphonesimulator/Towers42Project.app.dSYM build/Debug-iphonesimulator/Towers42Project.app/Towers42Project320686137#320686137#0(0"0(0#0#136"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project8624964128#521"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/usr/bin/dsymutil "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app.dSYM"0#
 
 CLd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project" normal i386
-s320671784.941459
-e320671785.119972
+s320686137.596719
+e320686137.779806
 r1
 xLd
 x/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project
 xnormal
 xi386
-lSLF07#2@141"Link /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project320671784#320671785#0(0"0(0#0#0"8622132512#1278"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" -filelist "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Towers42Project.LinkFileList" -mmacosx-version-min=10.6 -all_load -ObjC -Xlinker -objc_abi_version -Xlinker 2 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project"0#
+lSLF07#2@141"Link /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project320686137#320686137#0(0"0(0#0#0"8626174432#1278"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" -filelist "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Objects-normal/i386/Towers42Project.LinkFileList" -mmacosx-version-min=10.6 -all_load -ObjC -Xlinker -objc_abi_version -Xlinker 2 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Towers42Project"0#
 
 CProcessInfoPlistFile "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app/Info.plist" Resources/Info.plist
 s320671402.968803
@@ -1217,10 +1216,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@37"Precompile Towers42Project_Prefix.pch320671403#320671404#0(0"0(0#0#99"/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Towers42Project_Prefix.pch8614405856#2392"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer32/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-generated-files.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-own-target-headers.hmap" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-all-target-headers.hmap" -iquote "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/Towers42Project-project-headers.hmap" -Wall "-F/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/include" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources/i386" "-I/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Towers42Project.build/Debug-iphonesimulator/Towers42Project.build/DerivedSources" -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/Towers42Project_Prefix.pch" -o /var/folders/-A/-AxjWAXAHWiWmGgyxmwEcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Towers42Project_Prefix-bvgrthkzjnwrbhesfcchosvnkchq/Towers42Project_Prefix.pch.gch0#
 
 CTouch "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app"
-s320671785.229647
-e320671785.231800
+s320686137.892011
+e320686137.894168
 r1
 xTouch
 x/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app
-lSLF07#2@126"Touch /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app320671785#320671785#0(0"0(0#0#0"8622001248#362"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app"0#
+lSLF07#2@126"Touch /Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app320686137#320686137#0(0"0(0#0#0"8623287488#362"    cd "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project"    setenv PATH "/Developer32/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer32/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/build/Debug-iphonesimulator/Towers42Project.app"0#
 

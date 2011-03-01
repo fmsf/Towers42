@@ -55,7 +55,7 @@
 - (void)tick:(ccTime) dt {
 /*	int t=123;
 	NSLog(@"Um exemplo de log %d", t);*/
-	[controller execute];
+	[controller execute: dt];
 }
 
 // on "dealloc" you need to release all your retained objects

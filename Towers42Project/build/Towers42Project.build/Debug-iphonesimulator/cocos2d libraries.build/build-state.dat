@@ -1,7 +1,7 @@
 Tcocos2d libraries
 v7
 r0
-t320671784.772267
+t320686249.017400
 cCheck dependencies
 cCompileC "build/Towers42Project.build/Debug-iphonesimulator/cocos2d libraries.build/Objects-normal/i386/FontLabel.o" "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/libs/FontLabel/FontLabel.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC "build/Towers42Project.build/Debug-iphonesimulator/cocos2d libraries.build/Objects-normal/i386/FontLabelStringDrawing.o" "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/libs/FontLabel/FontLabelStringDrawing.m" normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -2252,7 +2252,7 @@ i<UIKit/UIKit.h>
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies320671784#320671784#0(0"0(0#1#0"8615935200#0"0#
+lSLF07#2@18"Check dependencies320686248#320686249#0(0"0(0#1#0"8626130944#0"0#
 
 CCompileC "build/Towers42Project.build/Debug-iphonesimulator/cocos2d libraries.build/Objects-normal/i386/CCAction.o" "/Users/guilhermerodrigues/Desktop/Tower Defense/Towers42/Towers42Project/libs/cocos2d/CCAction.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s320671393.761926

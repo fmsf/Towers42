@@ -12,16 +12,24 @@
 @implementation Level
 
 
-- (NSMutableArray*) getLevelPath{
+- (NSMutableArray*) getLevelPath {
 	return levelPath;
 }
 
-- (float) getLevelTransform{
+- (int) getLevelPathLenght {
+	return pathLenght;
+}
+
+- (float) getLevelTransform {
 	return x_transform;
 }
 
 - (void) setLevelPath:(NSMutableArray*) n_levelPath {
 	levelPath = n_levelPath;
+}
+
+- (void) setPathLenght:(int) n_pathLenght {
+	pathLenght = n_pathLenght;
 }
 
 - (void) setTransform:(float) n_transform {
@@ -33,9 +41,15 @@
     if ((self=[super init])) {
 		// code here
 		levelPath = [NSMutableArray arrayWithObjects:
-				   [NSValue valueWithCGPoint:CGPointMake(100, 0)],
-				   [NSValue valueWithCGPoint:CGPointMake(100, 100)],
-				   nil];
+					 [NSValue valueWithCGPoint:CGPointMake(100, 100)],
+					 [NSValue valueWithCGPoint:CGPointMake(100, 200)],
+					 [NSValue valueWithCGPoint:CGPointMake(150, 250)],
+					 [NSValue valueWithCGPoint:CGPointMake(100, 250)],
+					 [NSValue valueWithCGPoint:CGPointMake(100, 230)],
+					 [NSValue valueWithCGPoint:CGPointMake(80,  230)],
+					 [NSValue valueWithCGPoint:CGPointMake(100, 280)],
+					 [NSValue valueWithCGPoint:CGPointMake(100, 320)],
+				   NULL];
 		
 		x_transform = 0.0f;
 		

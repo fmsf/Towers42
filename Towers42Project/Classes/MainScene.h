@@ -11,10 +11,12 @@
 #import "cocos2d.h"
 #import "Level.h"
 #import "Controller.h"
+#import "GameGUI.h"
 
 // HelloWorld Layer
 @interface MainScene : CCLayer{
 	Controller* controller;
+	GameGUI* myGui;
 }
 
 // returns a Scene that contains the HelloWorld as the only child

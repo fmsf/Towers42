@@ -65,8 +65,7 @@
 - (void)tick:(ccTime) dt {
 /*	int t=123;
 	NSLog(@"Um exemplo de log %d", t);*/
-	[controller execute];
-//	NSMutableArray *
+	[controller execute: dt];
 }
 
 // You have to over-ride this method

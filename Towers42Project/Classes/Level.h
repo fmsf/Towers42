@@ -13,12 +13,15 @@
 @interface Level : NSObject {
 	NSMutableArray* levelPath;
 	float x_transform;
+	int pathLenght;
 }
 
 - (NSMutableArray*) getLevelPath;
 - (float) getLevelTransform;
+- (int) getLevelPathLenght;
 
 - (void) setLevelPath:(NSMutableArray*) n_levelPath;
 - (void) setTransform:(float) n_transform;
+- (void) setPathLenght:(int) n_pathLenght;
 
 @end

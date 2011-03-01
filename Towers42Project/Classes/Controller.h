@@ -15,14 +15,21 @@
 	NSMutableArray* creeps; 
 	NSMutableArray* towers;
 	
-	float pathTransform;
+	NSMutableArray* mapDir; // array containing the waypoint directions
+	
+	int		pathLenght;
+	float	pathTransform;
 }
 
 - (NSMutableArray*) getMapPath;
+- (NSMutableArray*) getMapDir;
 - (NSMutableArray*) getCreeeps;
 - (NSMutableArray*) getTowers;
-- (bool) execute;
+
+- (bool) execute:(float) delta;
 
 - (bool) setNewLevel:(Level*) n_level;
+
+- (int) getPathLenght;
 
 @end

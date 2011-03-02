@@ -28,8 +28,8 @@
 			1D6058900D05DD3D006BFB54 /* Towers42Project */,
 		);
 		breakpoints = (
-			844B36CF131E609900203502 /* Creep.mm:50 */,
-			844B36D7131E60D300203502 /* Creep.mm:63 */,
+			844B36CF131E609900203502 /* Creep.mm:53 */,
+			844B36D7131E60D300203502 /* Creep.mm:66 */,
 		);
 		codeSenseManager = 84451D90131CFCA200B3027B /* Code sense */;
 		executables = (
@@ -167,6 +167,9 @@
 			844B36E9131E62C500203502 /* PBXTextBookmark */ = 844B36E9131E62C500203502 /* PBXTextBookmark */;
 			844B36EA131E62C500203502 /* PBXTextBookmark */ = 844B36EA131E62C500203502 /* PBXTextBookmark */;
 			844B36EB131E62C500203502 /* PBXTextBookmark */ = 844B36EB131E62C500203502 /* PBXTextBookmark */;
+			844B36EC131E653300203502 /* PBXTextBookmark */ = 844B36EC131E653300203502 /* PBXTextBookmark */;
+			844B36ED131E653300203502 /* PBXTextBookmark */ = 844B36ED131E653300203502 /* PBXTextBookmark */;
+			844B36EE131E653300203502 /* PBXTextBookmark */ = 844B36EE131E653300203502 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 84451D8F131CFCA200B3027B /* Source Control */;
 		userBuildSettings = {
@@ -490,7 +493,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 62";
 		rLen = 0;
-		rLoc = 1705;
+		rLoc = 1795;
 		rType = 0;
 		vrLen = 1312;
 		vrLoc = 143;
@@ -500,7 +503,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 62";
 		rLen = 0;
-		rLoc = 1705;
+		rLoc = 1795;
 		rType = 0;
 		vrLen = 1307;
 		vrLoc = 143;
@@ -640,7 +643,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 71";
 		rLen = 0;
-		rLoc = 1720;
+		rLoc = 1810;
 		rType = 0;
 		vrLen = 953;
 		vrLoc = 1135;
@@ -650,7 +653,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 66";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 1279;
 		vrLoc = 688;
@@ -790,7 +793,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 65";
 		rLen = 0;
-		rLoc = 1667;
+		rLoc = 1757;
 		rType = 0;
 		vrLen = 1331;
 		vrLoc = 634;
@@ -1087,7 +1090,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 52";
 		rLen = 19;
-		rLoc = 1426;
+		rLoc = 1516;
 		rType = 0;
 		vrLen = 915;
 		vrLoc = 1135;
@@ -1157,7 +1160,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 52";
 		rLen = 19;
-		rLoc = 1426;
+		rLoc = 1516;
 		rType = 0;
 		vrLen = 936;
 		vrLoc = 1115;
@@ -1167,12 +1170,12 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 66";
 		rLen = 0;
-		rLoc = 1705;
+		rLoc = 1795;
 		rType = 0;
 		vrLen = 880;
 		vrLoc = 1115;
 	};
-	844B36CF131E609900203502 /* Creep.mm:50 */ = {
+	844B36CF131E609900203502 /* Creep.mm:53 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1184,7 +1187,7 @@
 		functionName = "-updatePosition:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 50;
+		lineNumber = 53;
 		location = Towers42Project;
 		modificationTime = 320758221.399933;
 		originalNumberOfMultipleMatches = 1;
@@ -1195,7 +1198,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 63";
 		rLen = 0;
-		rLoc = 1627;
+		rLoc = 1717;
 		rType = 0;
 		vrLen = 1177;
 		vrLoc = 732;
@@ -1220,7 +1223,7 @@
 		vrLen = 630;
 		vrLoc = 0;
 	};
-	844B36D7131E60D300203502 /* Creep.mm:63 */ = {
+	844B36D7131E60D300203502 /* Creep.mm:66 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1232,7 +1235,7 @@
 		functionName = "-updatePosition:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 63;
+		lineNumber = 66;
 		location = Towers42Project;
 		modificationTime = 320758222.438331;
 		originalNumberOfMultipleMatches = 1;
@@ -1253,7 +1256,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 53";
 		rLen = 0;
-		rLoc = 1448;
+		rLoc = 1538;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 806;
@@ -1263,7 +1266,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 53";
 		rLen = 0;
-		rLoc = 1448;
+		rLoc = 1538;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 806;
@@ -1283,7 +1286,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 53";
 		rLen = 0;
-		rLoc = 1448;
+		rLoc = 1538;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 806;
@@ -1303,7 +1306,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 61";
 		rLen = 0;
-		rLoc = 1629;
+		rLoc = 1719;
 		rType = 0;
 		vrLen = 1347;
 		vrLoc = 143;
@@ -1348,6 +1351,36 @@
 		vrLen = 678;
 		vrLoc = 17;
 	};
+	844B36EC131E653300203502 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09CB1318052E00152052 /* Entity.mm */;
+		name = "Entity.mm: 24";
+		rLen = 0;
+		rLoc = 342;
+		rType = 0;
+		vrLen = 685;
+		vrLoc = 17;
+	};
+	844B36ED131E653300203502 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09CF1318095400152052 /* Creep.h */;
+		name = "Creep.h: 26";
+		rLen = 0;
+		rLoc = 447;
+		rType = 0;
+		vrLen = 581;
+		vrLoc = 0;
+	};
+	844B36EE131E653300203502 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B6AD09D01318095400152052 /* Creep.mm */;
+		name = "Creep.mm: 47";
+		rLen = 0;
+		rLoc = 1384;
+		rType = 0;
+		vrLen = 1293;
+		vrLoc = 587;
+	};
 	B6AD09C71318043300152052 /* Controller.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1223, 547}}";
@@ -1375,7 +1408,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {850, 806}}";
 			sepNavSelRange = "{342, 0}";
-			sepNavVisRange = "{17, 678}";
+			sepNavVisRange = "{17, 685}";
 		};
 	};
 	B6AD09CF1318095400152052 /* Creep.h */ = {
@@ -1387,9 +1420,9 @@
 	};
 	B6AD09D01318095400152052 /* Creep.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {850, 1131}}";
-			sepNavSelRange = "{1629, 0}";
-			sepNavVisRange = "{143, 1347}";
+			sepNavIntBoundsRect = "{{0, 0}, {850, 1053}}";
+			sepNavSelRange = "{1384, 0}";
+			sepNavVisRange = "{587, 1293}";
 			sepNavWindowFrame = "{{15, 91}, {1240, 787}}";
 		};
 	};

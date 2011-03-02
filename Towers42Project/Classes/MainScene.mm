@@ -53,11 +53,10 @@
 		// add the label as a child to this Layer
 		//[self addChild: label];
 		controller = [[Controller alloc] init];
+		
+				
+		
 		[self schedule:@selector(tick:)];
-		
-		
-		
-
 	}
 	return self;
 }
@@ -93,6 +92,21 @@
 		ccDrawLine(p1,p2);
 	}
 
+}
+
+
+- (void) updateCreeps:(NSMutableArray*)creepList{
+	for(Creep* c in creepList){
+		if([c getStatus]==CREEP_CREATED){
+			[self addChild:[c getSprite]];
+		}else if([c getStatus]==CREEP_ACTIVE){
+			CCSprite* sprite = [c getSprite];
+			sprite.position=[c getPosition];
+		}else if([c getStatus]==CREEP_DEAD){
+			[self removeChild:[c getSprite] cleanup:false];
+			[c setStatus:CREEP_TO_RELEASE];
+		}
+	}
 }
 
 // on "dealloc" you need to release all your retained objects

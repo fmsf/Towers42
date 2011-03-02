@@ -12,6 +12,8 @@
 #import "Level.h"
 #import "Controller.h"
 #import "GameGUI.h"
+#import "defs.h"
+#import "Creep.h"
 
 // HelloWorld Layer
 @interface MainScene : CCLayer{

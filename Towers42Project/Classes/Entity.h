@@ -8,17 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "defs.h"
 
 @interface Entity : NSObject {
 	NSMutableArray* textures;
 	int animationFrameRate;
 	int currentFrame;
 	CGPoint position;
+	int active;
 }
 
 - (CGPoint) getPosition;
 - (void) setPosition:(CGPoint) point;
 - (CCSprite*) getSprite;
 - (void) animate:(ccTime) dt;
+- (int) getStatus;
+- (void) setStatus:(int) new_status;
 
 @end

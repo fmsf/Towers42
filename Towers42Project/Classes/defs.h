@@ -11,3 +11,7 @@
 #define GRAVE_DEBUG
 
 
+#define CREEP_CREATED    0
+#define CREEP_ACTIVE     1
+#define CREEP_DEAD       2
+#define CREEP_TO_RELEASE 3

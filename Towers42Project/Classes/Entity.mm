@@ -12,6 +12,14 @@
 @implementation Entity
 
 
+- (int) getStatus{
+	return active;
+}
+
+- (void) setStatus:(int) new_status{
+	active = new_status;
+}
+
 - (CGPoint) getPosition{
 	return position;
 }

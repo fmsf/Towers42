@@ -32,7 +32,7 @@
 	return towers;
 }
 
-- (bool) execute:(float) delta{
+- (bool) execute:(float) delta {
 	
 	for ( Creep* c in creeps) {
 		[c updatePosition: delta];
@@ -112,10 +112,14 @@
 		newLvl = [[Level alloc] init];
 		
 		[self setNewLevel:newLvl];
+		
 		[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
+		
+		NSValue* val = [mapPath objectAtIndex:0];
 		
 		for (Creep* c in creeps) {
 			[c initStuff:self :0];
+			[c setPosition: [val CGPointValue]];
 		}
 		
 		/*

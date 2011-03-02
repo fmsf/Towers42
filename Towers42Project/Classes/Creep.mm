@@ -18,7 +18,14 @@
 	pathTransform	= n_transform;
 	waypointIndex	= 0;
 	
-	waypoint		= [[[c_ref getMapPath] objectAtIndex:0] CGPointValue];
+	NSValue *val	= [[c_ref getMapPath] objectAtIndex:waypointIndex];
+	waypoint		= [val CGPointValue]; // new waypoint coordinates
+	
+	waypoint		= [[[c_ref getMapPath] objectAtIndex:1] CGPointValue];
+	moveVector		= [[[c_ref getMapDir]  objectAtIndex:0] CGPointValue];
+	
+	moveVector.x *= velocity;
+	moveVector.y *= velocity;
 }
 
 - (bool) updatePosition:(float) d_time {
@@ -58,7 +65,7 @@
 	position.x += moveVector.x * d_time;
 	position.y += moveVector.y * d_time;
 #ifdef GRAVE_DEBUG			
-	NSLog(@"(%d, %d)", position.x, position.y);
+	NSLog(@"(%f, %f)", position.x, position.y);
 #endif
 	
 	return true;

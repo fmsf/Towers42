@@ -218,6 +218,7 @@
 		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
 		84451D9A131D009200B3027B /* Level.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451D99131D009200B3027B /* Level.mm */; };
 		84451DA3131D07C600B3027B /* CreepNormal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451DA2131D07C600B3027B /* CreepNormal.mm */; };
+		B6AAE716131E68D600F453D7 /* TowerSeed.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AAE715131E68D600F453D7 /* TowerSeed.png */; };
 		B6AD09C91318043300152052 /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09C81318043300152052 /* Controller.mm */; };
 		B6AD09CC1318052E00152052 /* Entity.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09CB1318052E00152052 /* Entity.mm */; };
 		B6AD09D11318095400152052 /* Creep.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09D01318095400152052 /* Creep.mm */; };
@@ -459,6 +460,7 @@
 		84451D9D131D00BC00B3027B /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		84451DA1131D07C600B3027B /* CreepNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepNormal.h; sourceTree = "<group>"; };
 		84451DA2131D07C600B3027B /* CreepNormal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepNormal.mm; sourceTree = "<group>"; };
+		B6AAE715131E68D600F453D7 /* TowerSeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TowerSeed.png; path = ../images/TowerSeed.png; sourceTree = SOURCE_ROOT; };
 		B6AD09C71318043300152052 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		B6AD09C81318043300152052 /* Controller.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Controller.mm; sourceTree = "<group>"; };
 		B6AD09CA1318052E00152052 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
@@ -865,6 +867,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B6AAE715131E68D600F453D7 /* TowerSeed.png */,
 				B6C39D53131D3F8800914963 /* menuMockUp.png */,
 				B6C39D54131D3F8800914963 /* TriangleCreep.png */,
 				50F414EC1069373D002A0D5E /* Default.png */,
@@ -1079,6 +1082,7 @@
 				50F414F21069373D002A0D5E /* Icon.png in Resources */,
 				B6C39D55131D3F8800914963 /* menuMockUp.png in Resources */,
 				B6C39D56131D3F8800914963 /* TriangleCreep.png in Resources */,
+				B6AAE716131E68D600F453D7 /* TowerSeed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

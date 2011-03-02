@@ -43,6 +43,9 @@
 			val			= [[c_ref getMapDir] objectAtIndex:waypointIndex];
 			moveVector	= [val CGPointValue]; // new waypoint direction
 			
+			// calculate 
+			rotation = CC_RADIANS_TO_DEGREES(ccpAngle(ccp(0,1), moveVector));
+			
 			// multiply by velocity to get final movement vector (per second)
 			moveVector.x *= velocity;
 			moveVector.y *= velocity;

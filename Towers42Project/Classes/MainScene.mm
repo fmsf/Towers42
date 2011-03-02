@@ -66,6 +66,7 @@
 	NSLog(@"Um exemplo de log %d", t);*/
 	if([controller isReady]){
 		[controller execute: dt];
+		[self updateCreeps:[controller getCreeeps]];
 	}
 }
 

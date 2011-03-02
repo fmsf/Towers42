@@ -8,9 +8,9 @@
 	};
 	1F3B9A2B0EF2145700286867 /* Towers42ProjectAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 1144}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1170}}";
 			sepNavSelRange = "{1120, 0}";
-			sepNavVisRange = "{0, 1251}";
+			sepNavVisRange = "{0, 1290}";
 		};
 	};
 	1F3B9A2C0EF2145700286867 /* Towers42ProjectAppDelegate.h */ = {
@@ -134,7 +134,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1011, 1612}}";
 			sepNavSelRange = "{2155, 50}";
-			sepNavVisRange = "{1367, 1141}";
+			sepNavVisRange = "{1367, 1176}";
 			sepNavWindowFrame = "{{15, 4}, {1265, 774}}";
 		};
 	};
@@ -391,7 +391,7 @@
 		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		name = "MainScene.mm: 101";
 		rLen = 0;
-		rLoc = 2303;
+		rLoc = 2334;
 		rType = 0;
 		vrLen = 1075;
 		vrLoc = 1505;
@@ -401,7 +401,7 @@
 		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		name = "MainScene.mm: 104";
 		rLen = 0;
-		rLoc = 2417;
+		rLoc = 2448;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 1505;

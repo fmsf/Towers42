@@ -100,6 +100,7 @@
 	for(Creep* c in creepList){
 		if([c getStatus]==CREEP_CREATED){
 			[self addChild:[c getSprite]];
+			[c setStatus:CREEP_ACTIVE];
 		}else if([c getStatus]==CREEP_ACTIVE){
 			CCSprite* sprite = [c getSprite];
 			sprite.position=[c getPosition];

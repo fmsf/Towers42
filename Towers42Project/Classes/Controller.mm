@@ -34,6 +34,12 @@
 
 - (bool) execute:(float) delta {
 	
+	#ifdef GRAVE_DEBUG
+	if (delta > 2) {
+		delta = 0;
+	}
+	#endif
+	
 	for ( Creep* c in creeps) {
 		[c updatePosition: delta];
 	}

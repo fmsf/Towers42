@@ -16,6 +16,8 @@
 	int currentFrame;
 	CGPoint position;
 	int active;
+	
+	float rotation;
 }
 
 - (CGPoint) getPosition;
@@ -24,5 +26,7 @@
 - (void) animate:(ccTime) dt;
 - (int) getStatus;
 - (void) setStatus:(int) new_status;
+- (void) setRotation:(float) n_rotation;
+- (float) getRotation;
 
 @end

@@ -16,6 +16,14 @@
 	return active;
 }
 
+- (void) setRotation:(float) n_rotation {
+	rotation = n_rotation;
+}
+
+- (float) getRotation {
+	return rotation;
+}
+
 - (void) setStatus:(int) new_status{
 	active = new_status;
 }

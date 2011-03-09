@@ -271,7 +271,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
+									<integer>27</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Controller.mm</string>
+								<string>Wave.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Controller.mm</string>
+										<string>Wave.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8453A1761327AC2E003A80D8</string>
+										<string>8453A1DB1327C15F003A80D8</string>
 										<key>history</key>
 										<array>
 											<string>844B3643131E510400203502</string>
@@ -338,20 +338,20 @@
 											<string>8453A0CE13279209003A80D8</string>
 											<string>8453A0CF13279209003A80D8</string>
 											<string>8453A0D413279209003A80D8</string>
-											<string>8453A0D813279209003A80D8</string>
-											<string>8453A0D913279209003A80D8</string>
 											<string>8453A0DB13279209003A80D8</string>
 											<string>8453A111132799D4003A80D8</string>
 											<string>8453A112132799D4003A80D8</string>
 											<string>8453A113132799D4003A80D8</string>
 											<string>8453A116132799D4003A80D8</string>
 											<string>8453A13913279DAC003A80D8</string>
-											<string>8453A1591327A85B003A80D8</string>
-											<string>8453A15B1327A85B003A80D8</string>
-											<string>8453A1601327ABE1003A80D8</string>
-											<string>8453A1611327ABE1003A80D8</string>
-											<string>8453A1741327AC2E003A80D8</string>
-											<string>8453A1751327AC2E003A80D8</string>
+											<string>8453A1C31327BFDB003A80D8</string>
+											<string>8453A1C41327BFDB003A80D8</string>
+											<string>8453A1C51327BFDB003A80D8</string>
+											<string>8453A1C61327BFDB003A80D8</string>
+											<string>8453A1C71327BFDB003A80D8</string>
+											<string>8453A1C81327BFDB003A80D8</string>
+											<string>8453A1D51327C12B003A80D8</string>
+											<string>8453A1D61327C12B003A80D8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -549,7 +549,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>8453A1771327AC2E003A80D8</string>
+		<string>8453A1DC1327C15F003A80D8</string>
 		<string>8453A1781327AC2E003A80D8</string>
 		<string>8453A1791327AC2E003A80D8</string>
 		<string>8453A1531327A703003A80D8</string>
@@ -580,7 +580,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Controller.mm</string>
+								<string>Wave.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -775,7 +775,7 @@
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

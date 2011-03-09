@@ -40,6 +40,10 @@
 	}
 	#endif
 	
+	for ( Wave* w in waves) {
+		[w update: delta];
+	}
+	
 	for ( Creep* c in creeps) {
 		[c updatePosition: delta];
 	}
@@ -123,9 +127,10 @@
 		[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
 		
 		Wave* normalWave = [[Wave alloc] init];
-		CreepNormal* nor = [[CreepNormal alloc] init];
 		
-		//[normalWave initStuff:nor :4];
+		[normalWave initStuff: self: [[CreepNormal alloc] init] :4];
+		
+		[waves addObject: normalWave];
 		
 		NSValue* val = [mapPath objectAtIndex:0];
 		

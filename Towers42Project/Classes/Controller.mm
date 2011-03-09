@@ -114,12 +114,18 @@
 		//mapPath = [[NSMutableArray alloc] init];
 		//mapDir	= [[NSMutableArray alloc] init];
 		creeps	= [[NSMutableArray alloc] init];
+		waves	= [[NSMutableArray alloc] init];
 		
 		newLvl = [[Level alloc] init];
 		
 		[self setNewLevel:newLvl];
 		
 		[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
+		
+		Wave* normalWave = [[Wave alloc] init];
+		CreepNormal* nor = [[CreepNormal alloc] init];
+		
+		//[normalWave initStuff:nor :4];
 		
 		NSValue* val = [mapPath objectAtIndex:0];
 		

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "Level.h"
+#import "Wave.h"
 
 // CGPoints ref: http://stackoverflow.com/questions/899600/how-can-i-add-cgpoint-objects-to-an-nsarray-the-easy-way
 
@@ -28,7 +29,7 @@
 	/*
 	 *	Wave variables
 	 */
-	
+	NSMutableArray* waves;
 	float timeTillNewWave;
 	
 	

@@ -110,6 +110,7 @@
 - (id)init {
 	
     if ((self=[super init])) {
+		towers = [[NSMutableArray alloc] init];
 		// code here
 		//mapPath = [[NSMutableArray alloc] init];
 		//mapDir	= [[NSMutableArray alloc] init];

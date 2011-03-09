@@ -11,6 +11,13 @@
 
 @implementation Entity
 
+- (void) inScene:(bool)_b{
+	addedToScene = _b;
+}
+
+- (bool) isInSceen{
+	return addedToScene;
+}
 
 - (int) getStatus{
 	return active;
@@ -34,6 +41,8 @@
 
 - (void) setPosition:(CGPoint) point{
 	position = point;
+	CCSprite* mysprite = (CCSprite*)[textures objectAtIndex:currentFrame];
+	mysprite.position = point;
 }
 
 - (CCSprite*) getSprite{
@@ -51,6 +60,7 @@
     if ((self=[super init])) {
 		// code here
 		currentFrame = 0;
+		addedToScene = false;
 	}
 	return self;
 }

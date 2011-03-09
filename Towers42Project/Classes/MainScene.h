@@ -14,6 +14,7 @@
 #import "GameGUI.h"
 #import "defs.h"
 #import "Creep.h"
+#import "Tower.h"
 
 #define TARGET_Y_OFFSET 70
 #define BOTTOM_LIMIT 100

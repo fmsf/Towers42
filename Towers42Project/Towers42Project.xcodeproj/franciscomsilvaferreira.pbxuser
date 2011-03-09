@@ -10,7 +10,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1011, 1170}}";
 			sepNavSelRange = "{1120, 0}";
-			sepNavVisRange = "{0, 1290}";
+			sepNavVisRange = "{0, 1288}";
 		};
 	};
 	1F3B9A2C0EF2145700286867 /* Towers42ProjectAppDelegate.h */ = {
@@ -30,7 +30,7 @@
 		);
 		breakpoints = (
 			B6C39DF6131D4EB000914963 /* MainScene.mm:80 */,
-			B6C39DF9131D4EDB00914963 /* Controller.mm:131 */,
+			B6C39DF9131D4EDB00914963 /* Controller.mm:132 */,
 			B6C39DFE131D4EF200914963 /* Controller.mm:37 */,
 			B6C39E26131D532A00914963 /* MainScene.mm:68 */,
 		);
@@ -134,15 +134,15 @@
 	506EDC2F102F528A00A389B3 /* MainScene.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1011, 584}}";
-			sepNavSelRange = "{374, 12}";
-			sepNavVisRange = "{0, 669}";
+			sepNavSelRange = "{355, 0}";
+			sepNavVisRange = "{0, 687}";
 		};
 	};
 	506EDC30102F528A00A389B3 /* MainScene.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 2236}}";
-			sepNavSelRange = "{870, 0}";
-			sepNavVisRange = "{203, 943}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 2197}}";
+			sepNavSelRange = "{2973, 0}";
+			sepNavVisRange = "{1992, 1427}";
 			sepNavWindowFrame = "{{15, 4}, {1265, 774}}";
 		};
 	};
@@ -207,7 +207,7 @@
 		fRef = 506EDC2F102F528A00A389B3 /* MainScene.h */;
 		name = "MainScene.h: 19";
 		rLen = 0;
-		rLoc = 530;
+		rLoc = 548;
 		rType = 0;
 		vrLen = 486;
 		vrLoc = 0;
@@ -247,7 +247,7 @@
 		fRef = B6AD09CB1318052E00152052 /* Entity.mm */;
 		name = "Entity.mm: 24";
 		rLen = 72;
-		rLoc = 425;
+		rLoc = 519;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 0;
@@ -257,7 +257,7 @@
 		fRef = B6AD09CA1318052E00152052 /* Entity.h */;
 		name = "Entity.h: 21";
 		rLen = 0;
-		rLoc = 419;
+		rLoc = 486;
 		rType = 0;
 		vrLen = 450;
 		vrLoc = 0;
@@ -315,7 +315,7 @@
 		fRef = 506EDC2F102F528A00A389B3 /* MainScene.h */;
 		name = "MainScene.h: 19";
 		rLen = 12;
-		rLoc = 374;
+		rLoc = 392;
 		rType = 0;
 		vrLen = 669;
 		vrLoc = 0;
@@ -325,7 +325,7 @@
 		fRef = 506EDC30102F528A00A389B3 /* MainScene.mm */;
 		name = "MainScene.mm: 134";
 		rLen = 0;
-		rLoc = 3597;
+		rLoc = 3860;
 		rType = 0;
 		vrLen = 1332;
 		vrLoc = 2304;
@@ -427,7 +427,7 @@
 		fRef = B6AD09CA1318052E00152052 /* Entity.h */;
 		name = "Entity.h: 19";
 		rLen = 0;
-		rLoc = 354;
+		rLoc = 374;
 		rType = 0;
 		vrLen = 536;
 		vrLoc = 0;
@@ -437,7 +437,7 @@
 		fRef = B6AD09CB1318052E00152052 /* Entity.mm */;
 		name = "Entity.mm: 20";
 		rLen = 0;
-		rLoc = 290;
+		rLoc = 384;
 		rType = 0;
 		vrLen = 650;
 		vrLoc = 0;
@@ -447,7 +447,7 @@
 		fRef = 506EDC2F102F528A00A389B3 /* MainScene.h */;
 		name = "MainScene.h: 15";
 		rLen = 0;
-		rLoc = 390;
+		rLoc = 408;
 		rType = 0;
 		vrLen = 503;
 		vrLoc = 0;
@@ -555,7 +555,7 @@
 		fRef = 506EDC2F102F528A00A389B3 /* MainScene.h */;
 		name = "MainScene.h: 16";
 		rLen = 0;
-		rLoc = 390;
+		rLoc = 408;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 0;
@@ -595,7 +595,7 @@
 		fRef = 506EDC2F102F528A00A389B3 /* MainScene.h */;
 		name = "MainScene.h: 26";
 		rLen = 0;
-		rLoc = 662;
+		rLoc = 680;
 		rType = 0;
 		vrLen = 571;
 		vrLoc = 0;
@@ -714,30 +714,30 @@
 	};
 	B6AD09C71318043300152052 /* Controller.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1223, 618}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1223, 584}}";
 			sepNavSelRange = "{571, 0}";
 			sepNavVisRange = "{0, 875}";
 		};
 	};
 	B6AD09C81318043300152052 /* Controller.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {481, 2002}}";
-			sepNavSelRange = "{512, 0}";
-			sepNavVisRange = "{228, 734}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 2054}}";
+			sepNavSelRange = "{1876, 0}";
+			sepNavVisRange = "{1459, 908}";
 		};
 	};
 	B6AD09CA1318052E00152052 /* Entity.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {501, 487}}";
-			sepNavSelRange = "{344, 0}";
-			sepNavVisRange = "{0, 536}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 584}}";
+			sepNavSelRange = "{395, 46}";
+			sepNavVisRange = "{0, 686}";
 		};
 	};
 	B6AD09CB1318052E00152052 /* Entity.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 702}}";
-			sepNavSelRange = "{290, 0}";
-			sepNavVisRange = "{0, 650}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 975}}";
+			sepNavSelRange = "{901, 0}";
+			sepNavVisRange = "{394, 595}";
 		};
 	};
 	B6AD09CF1318095400152052 /* Creep.h */ = {
@@ -771,16 +771,16 @@
 	};
 	B6AD09D613180B2600152052 /* Tower.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 590}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 584}}";
 			sepNavSelRange = "{228, 0}";
 			sepNavVisRange = "{0, 237}";
 		};
 	};
 	B6AD09D713180B2600152052 /* Tower.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 590}}";
-			sepNavSelRange = "{218, 13}";
-			sepNavVisRange = "{0, 609}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 584}}";
+			sepNavSelRange = "{361, 0}";
+			sepNavVisRange = "{0, 553}";
 		};
 	};
 	B6AD0A0513181F3900152052 /* defs.h */ = {
@@ -866,7 +866,7 @@
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
-	B6C39DF9131D4EDB00914963 /* Controller.mm:131 */ = {
+	B6C39DF9131D4EDB00914963 /* Controller.mm:132 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -878,7 +878,7 @@
 		functionName = "-init";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 131;
+		lineNumber = 132;
 		location = Towers42Project;
 		modificationTime = 320690090.105487;
 		originalNumberOfMultipleMatches = 1;

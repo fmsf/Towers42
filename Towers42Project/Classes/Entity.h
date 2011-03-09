@@ -16,10 +16,13 @@
 	int currentFrame;
 	CGPoint position;
 	int active;
+	bool addedToScene;
 	
 	float rotation;
 }
 
+- (void) inScene:(bool)_b;
+- (bool) isInSceen;
 - (CGPoint) getPosition;
 - (void) setPosition:(CGPoint) point;
 - (CCSprite*) getSprite;

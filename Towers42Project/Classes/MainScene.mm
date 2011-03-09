@@ -118,7 +118,12 @@
 	if(target_is_active){
 		target.opacity =0;
 		if(location.y>BOTTOM_LIMIT-TARGET_Y_OFFSET){
-			
+			NSMutableArray* towers  = [controller getTowers];
+			Tower* newTower = [[Tower alloc] init];
+			[newTower setPosition:ccp(location.x,location.y+TARGET_Y_OFFSET)];
+			[self addChild:[newTower getSprite]];
+			[newTower inScene:true];
+			[towers addObject:newTower];
 		}
 	}
     

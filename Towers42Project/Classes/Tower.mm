@@ -15,8 +15,9 @@
     if ((self=[super init])) {
 		// code here
 		textures = [[NSMutableArray alloc] init];
-		CCSprite* firstSprite = [CCSprite spriteWithFile:@"TriangleCreep.png"];
+		CCSprite* firstSprite = [CCSprite spriteWithFile:@"towerseed.jpeg"];
 		position = ccp(100,160);
+		firstSprite.scale = 0.5;
 		firstSprite.position = ccp(100,160);
 		[textures addObject:firstSprite];
 	}

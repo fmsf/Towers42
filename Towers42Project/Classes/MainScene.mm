@@ -34,15 +34,14 @@
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init] )) {
 		
-		// create and initialize a Label
-		CCLabel* label = [CCLabel labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
-
-		// ask director the the window size
-		CGSize size = [[CCDirector sharedDirector] winSize];
-	
-		// position the label on the center of the screen
-		label.position =  ccp( size.width /2 , size.height/2 );
+		target = [CCSprite spriteWithFile:@"target-icon-th.png"];
+		target.opacity = 0;
+		target.position = ccp(100,100);
 		
+		self.isTouchEnabled = YES;
+
+		
+		[self addChild:target];
 		
 		
 		myGui = [[GameGUI alloc] init];
@@ -109,6 +108,47 @@
 			[c setStatus:CREEP_TO_RELEASE];
 		}
 	}
+}
+
+
+- (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView:[touch view]];
+    location = [[CCDirector sharedDirector] convertToGL:location];
+	if(target_is_active){
+		target.opacity =0;
+		if(location.y>BOTTOM_LIMIT-TARGET_Y_OFFSET){
+			
+		}
+	}
+    
+}
+
+-(void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+	UITouch *touch = [touches anyObject];
+	CGPoint location = [touch locationInView:[touch view]];
+	location = [[CCDirector sharedDirector] convertToGL:location];
+	if(target_is_active){
+		if(location.y <= BOTTOM_LIMIT-TARGET_Y_OFFSET){
+			target.opacity = 0;
+		}else{
+			target.position = ccp(location.x,location.y+TARGET_Y_OFFSET);
+			target.opacity = 150;
+		}
+	}
+
+}
+
+- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *touch = [touches anyObject];
+	CGPoint location = [touch locationInView:[touch view]];
+	location = [[CCDirector sharedDirector] convertToGL:location];
+	if(location.y>BOTTOM_LIMIT-TARGET_Y_OFFSET){
+		target_is_active = true;
+		target.position = ccp(location.x,location.y+TARGET_Y_OFFSET);
+		target.opacity = 150;
+	}
+	
 }
 
 // on "dealloc" you need to release all your retained objects

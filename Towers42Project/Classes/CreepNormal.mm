@@ -18,7 +18,6 @@
 		hp		 = 20.0f;
 		armor	 = 0.0f;
 		velocity = 20.0f;
-		textures = [[NSMutableArray alloc] init];
 		CCSprite* firstSprite = [CCSprite spriteWithFile:@"TriangleCreep.png"];
 		position = ccp(100,160);
 		firstSprite.position = ccp(100,160);

@@ -17,7 +17,7 @@
 	CGPoint position;
 	int active;
 	bool addedToScene;
-	
+	CCSprite* spriteSelector;
 	float rotation;
 }
 
@@ -31,5 +31,6 @@
 - (void) setStatus:(int) new_status;
 - (void) setRotation:(float) n_rotation;
 - (float) getRotation;
+- (CCSprite*) getSelector;
 
 @end

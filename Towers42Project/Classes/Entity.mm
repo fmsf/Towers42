@@ -43,11 +43,19 @@
 	position = point;
 	CCSprite* mysprite = (CCSprite*)[textures objectAtIndex:currentFrame];
 	mysprite.position = point;
+	if(spriteSelector!=NULL){
+		spriteSelector.position = point;
+	}
 }
 
 - (CCSprite*) getSprite{
 	CCSprite* mysprite = (CCSprite*)[textures objectAtIndex:currentFrame];
 	return mysprite;
+}
+
+
+- (CCSprite*) getSelector{
+	return spriteSelector;
 }
 
 - (void) animate:(ccTime) dt{
@@ -61,6 +69,8 @@
 		// code here
 		currentFrame = 0;
 		addedToScene = false;
+		textures = [[NSMutableArray alloc] init];
+
 	}
 	return self;
 }

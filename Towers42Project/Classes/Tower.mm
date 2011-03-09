@@ -10,5 +10,23 @@
 
 
 @implementation Tower
+- (id)init {
+	
+    if ((self=[super init])) {
+		// code here
+		textures = [[NSMutableArray alloc] init];
+		CCSprite* firstSprite = [CCSprite spriteWithFile:@"TriangleCreep.png"];
+		position = ccp(100,160);
+		firstSprite.position = ccp(100,160);
+		[textures addObject:firstSprite];
+	}
+	return self;
+}
+
+- (void)dealloc {
+	// release here
+	
+    [super dealloc];
+}
 
 @end

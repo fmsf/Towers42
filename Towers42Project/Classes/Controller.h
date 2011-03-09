@@ -9,24 +9,56 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "Level.h"
+#import "Wave.h"
+
+// CGPoints ref: http://stackoverflow.com/questions/899600/how-can-i-add-cgpoint-objects-to-an-nsarray-the-easy-way
 
 @interface Controller : NSObject {
-	NSMutableArray* mapPath; // array of NSValues containing CGPoints ref: http://stackoverflow.com/questions/899600/how-can-i-add-cgpoint-objects-to-an-nsarray-the-easy-way
-	NSMutableArray* creeps; 
+	
+	/*
+	 *	Creep variables
+	 */
+	
+	float creepTimer;			// time since last creep spwaned (decrements)
+	float creepInterval;		// interval between creep spawns
+	
+	NSMutableArray* babies;		// creeps to be born
+	NSMutableArray* creeps;		// living the good life in game
+	NSMutableArray* elders;		// creeps to be dead
+	
+	/*
+	 *	Wave variables
+	 */
+	NSMutableArray* waves;
+	float timeTillNewWave;
+	
+	
+	/*
+	 *	Path variables
+	 */
+	
+	int				pathLenght;		// size of the path
+	float			pathTransform;	// transform to be applied to multiplayer second path
+	NSMutableArray* mapPath;		// array with path waypoints
+	NSMutableArray* mapDir;			// array containing the waypoint directions
+	
+	/*
+	 *	Tower variables
+	 */
+	
 	NSMutableArray* towers;
 	
-	NSMutableArray* mapDir; // array containing the waypoint directions
+	/*
+	 *	Miscelaneous
+	 */
 	
-	
-	Level* newLvl;
-	int		pathLenght;
-	float	pathTransform;
-	bool ready;
+	Level*	newLvl;
+	bool	ready;
 }
 
 - (NSMutableArray*) getMapPath;
 - (NSMutableArray*) getMapDir;
-- (NSMutableArray*) getCreeeps;
+- (NSMutableArray*) getCreeps;
 - (NSMutableArray*) getTowers;
 
 - (bool) execute:(float) delta;

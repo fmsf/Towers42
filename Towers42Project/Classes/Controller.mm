@@ -24,7 +24,7 @@
 	return mapDir;
 }
 
-- (NSMutableArray*) getCreeeps{
+- (NSMutableArray*) getCreeps{
 	return creeps;
 }
 
@@ -40,6 +40,10 @@
 	}
 	#endif
 	
+	for ( Wave* w in waves) {
+		[w update: delta];
+	}
+	
 	for ( Creep* c in creeps) {
 		[c updatePosition: delta];
 	}
@@ -53,7 +57,7 @@
 	pathTransform	= [n_level getLevelTransform];
 	
 	/*
-	 *Process waypoint directions
+	 *	Process waypoint directions
 	 */
 	
 	// allocate space for new direction array
@@ -102,7 +106,7 @@
 		
 		[mapDir addObject:val];
 	}
-
+	
 	return true;
 }
 
@@ -115,12 +119,19 @@
 		//mapPath = [[NSMutableArray alloc] init];
 		//mapDir	= [[NSMutableArray alloc] init];
 		creeps	= [[NSMutableArray alloc] init];
+		waves	= [[NSMutableArray alloc] init];
 		
 		newLvl = [[Level alloc] init];
 		
 		[self setNewLevel:newLvl];
 		
 		[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
+		
+		Wave* normalWave = [[Wave alloc] init];
+		
+		[normalWave initStuff: self: [[CreepNormal alloc] init] :4];
+		
+		[waves addObject: normalWave];
 		
 		NSValue* val = [mapPath objectAtIndex:0];
 		

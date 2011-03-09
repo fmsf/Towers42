@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Entity.h"
-#import "Controller.h"
+
+@class Controller;
 
 @interface Creep : Entity {
 	Controller* c_ref;

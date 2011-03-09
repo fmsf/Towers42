@@ -9,7 +9,7 @@
 #import <math.h>
 #import "Creep.h"
 #import "defs.h"
-
+#import "Controller.h"
 
 @implementation Creep
 
@@ -26,7 +26,9 @@
 }
 
 - (bool) updatePosition:(float) d_time {
-	int p_delta = 5; // box around waypoint that defines it as being reached
+	int p_delta = 0; // box around waypoint that defines it as being reached
+	
+	CGPoint prev;
 	
 	int distToWaypoint = abs(position.x - waypoint.x) + abs( position.y - waypoint.y );
 	
@@ -36,6 +38,9 @@
 		if (waypointIndex != [c_ref getPathLenght] ) {
 			// we haven't so continue to next waypoint
 			waypointIndex++;
+			
+			position.x = waypoint.x;
+			position.y = waypoint.y;
 			
 			NSValue *val	= [[c_ref getMapPath] objectAtIndex:waypointIndex+1];
 			waypoint		= [val CGPointValue]; // new waypoint coordinates
@@ -49,6 +54,7 @@
 			// multiply by velocity to get final movement vector (per second)
 			moveVector.x *= velocity;
 			moveVector.y *= velocity;
+			
 #ifdef GRAVE_DEBUG			
 			NSLog(@"New waypoint defined");
 #endif
@@ -60,10 +66,20 @@
 		}
 	}
 	
-	// Perform movement
+	prev.x = position.x;
+	prev.y = position.y;
 	
+	// Perform movement
 	position.x += moveVector.x * d_time;
 	position.y += moveVector.y * d_time;
+	
+	if ( prev.x < waypoint.x && position.x > waypoint.x ||
+		 prev.y < waypoint.y && position.y > waypoint.y	||
+		 prev.x > waypoint.x && position.x < waypoint.x ||
+		 prev.y > waypoint.y && position.y < waypoint.y	) {
+		position.y = waypoint.y;
+		position.x = waypoint.x;
+	}
 	
 	return true;
 }

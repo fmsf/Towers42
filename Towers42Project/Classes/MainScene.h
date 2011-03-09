@@ -15,10 +15,16 @@
 #import "defs.h"
 #import "Creep.h"
 
+#define TARGET_Y_OFFSET 70
+#define BOTTOM_LIMIT 100
+
 // HelloWorld Layer
 @interface MainScene : CCLayer{
 	Controller* controller;
 	GameGUI* myGui;
+	
+	CCSprite* target;
+	bool target_is_active;
 }
 
 // returns a Scene that contains the HelloWorld as the only child

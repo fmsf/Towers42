@@ -218,10 +218,11 @@
 		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
 		84451D9A131D009200B3027B /* Level.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451D99131D009200B3027B /* Level.mm */; };
 		84451DA3131D07C600B3027B /* CreepNormal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451DA2131D07C600B3027B /* CreepNormal.mm */; };
+		844B3710131E6C4C00203502 /* Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B370F131E6C4C00203502 /* Wave.m */; };
 		B6AD09C91318043300152052 /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09C81318043300152052 /* Controller.mm */; };
 		B6AD09CC1318052E00152052 /* Entity.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09CB1318052E00152052 /* Entity.mm */; };
 		B6AD09D11318095400152052 /* Creep.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09D01318095400152052 /* Creep.mm */; };
-		B6AD09D4131809D200152052 /* TestCreep.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09D3131809D200152052 /* TestCreep.m */; };
+		B6AD09D4131809D200152052 /* TestCreep.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09D3131809D200152052 /* TestCreep.mm */; };
 		B6AD09D813180B2600152052 /* Tower.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09D713180B2600152052 /* Tower.mm */; };
 		B6C39D52131D361D00914963 /* GameGUI.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6C39D51131D361D00914963 /* GameGUI.mm */; };
 		B6C39D55131D3F8800914963 /* menuMockUp.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C39D53131D3F8800914963 /* menuMockUp.png */; };
@@ -459,6 +460,8 @@
 		84451D9D131D00BC00B3027B /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		84451DA1131D07C600B3027B /* CreepNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepNormal.h; sourceTree = "<group>"; };
 		84451DA2131D07C600B3027B /* CreepNormal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepNormal.mm; sourceTree = "<group>"; };
+		844B370E131E6C4C00203502 /* Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
+		844B370F131E6C4C00203502 /* Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wave.m; sourceTree = "<group>"; };
 		B6AD09C71318043300152052 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		B6AD09C81318043300152052 /* Controller.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Controller.mm; sourceTree = "<group>"; };
 		B6AD09CA1318052E00152052 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
@@ -466,7 +469,7 @@
 		B6AD09CF1318095400152052 /* Creep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creep.h; sourceTree = "<group>"; };
 		B6AD09D01318095400152052 /* Creep.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Creep.mm; sourceTree = "<group>"; };
 		B6AD09D2131809D200152052 /* TestCreep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCreep.h; sourceTree = "<group>"; };
-		B6AD09D3131809D200152052 /* TestCreep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCreep.m; sourceTree = "<group>"; };
+		B6AD09D3131809D200152052 /* TestCreep.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestCreep.mm; sourceTree = "<group>"; };
 		B6AD09D613180B2600152052 /* Tower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tower.h; sourceTree = "<group>"; };
 		B6AD09D713180B2600152052 /* Tower.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Tower.mm; sourceTree = "<group>"; };
 		B6AD0A0513181F3900152052 /* defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
@@ -589,6 +592,8 @@
 				84451D99131D009200B3027B /* Level.mm */,
 				B6C39D50131D361D00914963 /* GameGUI.h */,
 				B6C39D51131D361D00914963 /* GameGUI.mm */,
+				844B370E131E6C4C00203502 /* Wave.h */,
+				844B370F131E6C4C00203502 /* Wave.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -888,7 +893,7 @@
 			isa = PBXGroup;
 			children = (
 				B6AD09D2131809D200152052 /* TestCreep.h */,
-				B6AD09D3131809D200152052 /* TestCreep.m */,
+				B6AD09D3131809D200152052 /* TestCreep.mm */,
 			);
 			name = TestElements;
 			sourceTree = "<group>";
@@ -1095,11 +1100,12 @@
 				B6AD09C91318043300152052 /* Controller.mm in Sources */,
 				B6AD09CC1318052E00152052 /* Entity.mm in Sources */,
 				B6AD09D11318095400152052 /* Creep.mm in Sources */,
-				B6AD09D4131809D200152052 /* TestCreep.m in Sources */,
+				B6AD09D4131809D200152052 /* TestCreep.mm in Sources */,
 				B6AD09D813180B2600152052 /* Tower.mm in Sources */,
 				84451D9A131D009200B3027B /* Level.mm in Sources */,
 				84451DA3131D07C600B3027B /* CreepNormal.mm in Sources */,
 				B6C39D52131D361D00914963 /* GameGUI.mm in Sources */,
+				844B3710131E6C4C00203502 /* Wave.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

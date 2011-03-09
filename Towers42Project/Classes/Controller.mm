@@ -24,7 +24,7 @@
 	return mapDir;
 }
 
-- (NSMutableArray*) getCreeeps{
+- (NSMutableArray*) getCreeps{
 	return creeps;
 }
 
@@ -53,7 +53,7 @@
 	pathTransform	= [n_level getLevelTransform];
 	
 	/*
-	 *Process waypoint directions
+	 *	Process waypoint directions
 	 */
 	
 	// allocate space for new direction array
@@ -102,7 +102,7 @@
 		
 		[mapDir addObject:val];
 	}
-
+	
 	return true;
 }
 

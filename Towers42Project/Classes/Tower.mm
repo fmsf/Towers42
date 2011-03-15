@@ -32,7 +32,7 @@
 }
 
 - (bool) tryToSelectByTouch:(int)x :(int) y{
-	if(abs(x-position.x)<TOWER_THRESHOLD && abs(y-position.y)<TOWER_THRESHOLD){
+	if(abs(x-position.x)+abs(y-position.y)<TOWER_THRESHOLD*TOWER_THRESHOLD){
 		spriteSelector.opacity = 255;
 		return true;
 	}else {

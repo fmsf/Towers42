@@ -61,7 +61,7 @@
 			
 		} else {
 			// reached the end of the path
-			NSLog(@"Reached the end of the path");
+			reachedEnd = true;
 			return false;
 		}
 	}

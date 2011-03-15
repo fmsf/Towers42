@@ -13,19 +13,24 @@
 
 @interface Wave : Entity {
 	
-	int size;			// number of creeps to be spawned
-	Creep* seed;		// type of creep to be spawned
-	int spawnInterval;	// time interval between creep spawn
-	
-	float curr_time;
+	Creep*		seed;		// type of creep to be spawned
 	Controller* c_ref;
 	
-	int num_launched;
+	float	spawnInterval;	// time interval between creep spawn
+	float	waveInterval;	// time interval between wave spawn
 	
-	CGPoint spawnPoint;
+	int		size;			// number of creeps to be spawned
+	int		num_launched;	// number of units already spawned
+	
+	float	wave_timer;		// wave timer
+	float	unit_timer;		// unit timer
+	
+	CGPoint spawnPoint;		// point in which the creeps will be spawned
+	
+	
 }
 
-- (void) initStuff:(Controller*) contr:(Creep*) instance:(int) n_size;
+- (void) initStuff:(Controller*) contr:(Creep*) instance:(int) n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn;
 
 - (Creep*) getWaveClass;
 - (int)   getWaveSize;

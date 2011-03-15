@@ -7,6 +7,7 @@
 //
 
 #import "Controller.h"
+#import "CreepFast.h"
 #import "CreepNormal.h"
 
 
@@ -125,21 +126,34 @@
 		
 		[self setNewLevel:newLvl];
 		
-		[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
+		//[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
 		
-		Wave* normalWave = [[Wave alloc] init];
+		Wave* wave = [[Wave alloc] init];
 		
-		[normalWave initStuff: self: [[CreepNormal alloc] init] :4];
+		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
+		[wave initStuff: self: [[CreepNormal alloc] init] :4 : 10.0f : 1.0f : 5.0f ];
 		
-		[waves addObject: normalWave];
+		[waves addObject: wave];
+		
+		[wave release];
+		
+		wave = [[Wave alloc] init];
+		
+		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
+		[wave initStuff: self: [[CreepFast alloc] init] :4 : 10.0f : 0.4f : 0.0f ];
+		
+		[waves addObject: wave];
+		
+		[wave release];
+		
 		
 		NSValue* val = [mapPath objectAtIndex:0];
-		
+		/*
 		for (Creep* c in creeps) {
 			[c initStuff:self :0];
 			[c setPosition: [val CGPointValue]];
 		}
-		
+		*/
 		/*
 		mapPath = [NSMutableArray arrayWithObjects:
 						[NSValue valueWithCGPoint:CGPointMake(100, 0)],

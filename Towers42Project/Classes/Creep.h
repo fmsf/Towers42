@@ -22,6 +22,8 @@
 	float velocity;
 	float armor;
 	float hp;
+	
+	bool reachedEnd;
 }
 
 - (void) initStuff:(Controller*) n_controller:(float) n_transform;

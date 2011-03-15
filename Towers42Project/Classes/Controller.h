@@ -31,7 +31,7 @@
 	 */
 	NSMutableArray* waves;
 	float timeTillNewWave;
-	
+	float timer;
 	
 	/*
 	 *	Path variables

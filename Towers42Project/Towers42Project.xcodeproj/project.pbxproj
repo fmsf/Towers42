@@ -218,6 +218,8 @@
 		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
 		84451D9A131D009200B3027B /* Level.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451D99131D009200B3027B /* Level.mm */; };
 		84451DA3131D07C600B3027B /* CreepNormal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451DA2131D07C600B3027B /* CreepNormal.mm */; };
+		84778D2413297E45004EC62F /* CreepFast.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84778D2313297E45004EC62F /* CreepFast.mm */; };
+		84778D2613297E9F004EC62F /* CircleCreep.png in Resources */ = {isa = PBXBuildFile; fileRef = 84778D2513297E9F004EC62F /* CircleCreep.png */; };
 		B683EA9313279D6B00005123 /* target-icon-th.png in Resources */ = {isa = PBXBuildFile; fileRef = B683EA9213279D6B00005123 /* target-icon-th.png */; };
 		B683EABD1327D68B00005123 /* Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = B683EABC1327D68B00005123 /* Wave.m */; };
 		B6AD09C91318043300152052 /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09C81318043300152052 /* Controller.mm */; };
@@ -462,6 +464,9 @@
 		84451D9D131D00BC00B3027B /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		84451DA1131D07C600B3027B /* CreepNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepNormal.h; sourceTree = "<group>"; };
 		84451DA2131D07C600B3027B /* CreepNormal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepNormal.mm; sourceTree = "<group>"; };
+		84778D2213297E45004EC62F /* CreepFast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepFast.h; sourceTree = "<group>"; };
+		84778D2313297E45004EC62F /* CreepFast.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepFast.mm; sourceTree = "<group>"; };
+		84778D2513297E9F004EC62F /* CircleCreep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleCreep.png; sourceTree = "<group>"; };
 		B683EA9213279D6B00005123 /* target-icon-th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "target-icon-th.png"; sourceTree = "<group>"; };
 		B683EABB1327D68B00005123 /* Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
 		B683EABC1327D68B00005123 /* Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wave.m; sourceTree = "<group>"; };
@@ -872,6 +877,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				84778D2513297E9F004EC62F /* CircleCreep.png */,
 				B6DA56D51327EFBE008082A4 /* towerseed.jpg */,
 				B6DA569C1327E442008082A4 /* towerSelector.png */,
 				B683EA9213279D6B00005123 /* target-icon-th.png */,
@@ -888,6 +894,8 @@
 		84451DA0131D075100B3027B /* Creeps */ = {
 			isa = PBXGroup;
 			children = (
+				84778D2213297E45004EC62F /* CreepFast.h */,
+				84778D2313297E45004EC62F /* CreepFast.mm */,
 				84451DA1131D07C600B3027B /* CreepNormal.h */,
 				84451DA2131D07C600B3027B /* CreepNormal.mm */,
 			);
@@ -1083,6 +1091,7 @@
 				B683EA9313279D6B00005123 /* target-icon-th.png in Resources */,
 				B6DA569E1327E442008082A4 /* towerSelector.png in Resources */,
 				B6DA56D61327EFBE008082A4 /* towerseed.jpg in Resources */,
+				84778D2613297E9F004EC62F /* CircleCreep.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1104,6 +1113,7 @@
 				84451DA3131D07C600B3027B /* CreepNormal.mm in Sources */,
 				B6C39D52131D361D00914963 /* GameGUI.mm in Sources */,
 				B683EABD1327D68B00005123 /* Wave.m in Sources */,
+				84778D2413297E45004EC62F /* CreepFast.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

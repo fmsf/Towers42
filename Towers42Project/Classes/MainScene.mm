@@ -103,6 +103,7 @@
 		}else if([c getStatus]==CREEP_ACTIVE){
 			CCSprite* sprite = [c getSprite];
 			sprite.position=[c getPosition];
+			sprite.rotation=[c getRotation];
 		}else if([c getStatus]==CREEP_DEAD){
 			[self removeChild:[c getSprite] cleanup:false];
 			[c setStatus:CREEP_TO_RELEASE];
@@ -117,15 +118,37 @@
     location = [[CCDirector sharedDirector] convertToGL:location];
 	if(target_is_active){
 		target.opacity =0;
-		if(location.y>BOTTOM_LIMIT-TARGET_Y_OFFSET){ 			//ADD NEW TOWER
-			NSMutableArray* towers  = [controller getTowers];
-			Tower* newTower = [[Tower alloc] init];
-			[newTower setPosition:ccp(location.x,location.y+TARGET_Y_OFFSET)];
-			[self addChild:[newTower getSprite] z:2];
-			[self addChild:[newTower getSelector] z:1];
-			[newTower inScene:true];
-			[towers addObject:newTower];
+		if(location.y>BOTTOM_LIMIT-TARGET_Y_OFFSET && selectedTower==NULL){ 			//ADD NEW TOWER
+			// CHECK IF TOWERS OVERLAP 
+			int target_x = location.x;
+			int target_y = location.y+TARGET_Y_OFFSET;
+			bool doNothing = false;
+			NSMutableArray* towers = [controller getTowers];
+			for(Tower* t in towers){
+				CGPoint towerPosition = [t getPosition];
+				if(towerPosition.x+TOWER_PROXIMITY_OFFSET>target_x &&
+				   towerPosition.x-TOWER_PROXIMITY_OFFSET<target_x &&
+				   towerPosition.y+TOWER_PROXIMITY_OFFSET>target_y &&
+				   towerPosition.y-TOWER_PROXIMITY_OFFSET<target_y){
+					doNothing = true;
+					break;
+				}								
+			}
+			
+			// IF THEY DONT CREATE NEW TOWER
+			if(!doNothing){
+				NSMutableArray* towers  = [controller getTowers];
+				Tower* newTower = [[Tower alloc] init];
+				[newTower setPosition:ccp(target_x,target_y)];
+				[self addChild:[newTower getSprite] z:2];
+				[self addChild:[newTower getSelector] z:1];
+				[newTower inScene:true];
+				[towers addObject:newTower];
+			}
 		}
+		[myGui towerSelected:selectedTower];
+	}else { // clicked inside gameGUI;
+//		if(
 	}
     
 }
@@ -141,8 +164,19 @@
 			target.position = ccp(location.x,location.y+TARGET_Y_OFFSET);
 			target.opacity = 150;
 			NSMutableArray* towers = [controller getTowers];
+			bool selectionHappens = false;
 			for(Tower* t in towers){
-				[t tryToSelectByTouch:location.x :location.y+TARGET_Y_OFFSET];
+				if([t tryToSelectByTouch:location.x :location.y+TARGET_Y_OFFSET]){
+					if(selectedTower!=NULL && selectedTower!= t){
+						[selectedTower disableTower];
+					}
+					selectedTower = t;
+					selectionHappens = true;
+					break;
+				}
+			}
+			if(!selectionHappens){
+				selectedTower = NULL;
 			}
 		}
 	}
@@ -153,7 +187,7 @@
 	UITouch *touch = [touches anyObject];
 	CGPoint location = [touch locationInView:[touch view]];
 	location = [[CCDirector sharedDirector] convertToGL:location];
-	if(location.y>BOTTOM_LIMIT-TARGET_Y_OFFSET){
+	if(location.y>BOTTOM_LIMIT){
 		target_is_active = true;
 		target.position = ccp(location.x,location.y+TARGET_Y_OFFSET);
 		target.opacity = 150;

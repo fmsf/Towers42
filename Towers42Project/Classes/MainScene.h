@@ -26,6 +26,7 @@
 	
 	CCSprite* target;
 	bool target_is_active;
+	Tower* selectedTower;
 }
 
 // returns a Scene that contains the HelloWorld as the only child

@@ -220,6 +220,7 @@
 		84451DA3131D07C600B3027B /* CreepNormal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451DA2131D07C600B3027B /* CreepNormal.mm */; };
 		84778D2413297E45004EC62F /* CreepFast.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84778D2313297E45004EC62F /* CreepFast.mm */; };
 		84778D2613297E9F004EC62F /* CircleCreep.png in Resources */ = {isa = PBXBuildFile; fileRef = 84778D2513297E9F004EC62F /* CircleCreep.png */; };
+		B6097322132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png in Resources */ = {isa = PBXBuildFile; fileRef = B6097321132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png */; };
 		B683EA9313279D6B00005123 /* target-icon-th.png in Resources */ = {isa = PBXBuildFile; fileRef = B683EA9213279D6B00005123 /* target-icon-th.png */; };
 		B683EABD1327D68B00005123 /* Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = B683EABC1327D68B00005123 /* Wave.m */; };
 		B6AD09C91318043300152052 /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09C81318043300152052 /* Controller.mm */; };
@@ -467,6 +468,7 @@
 		84778D2213297E45004EC62F /* CreepFast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepFast.h; sourceTree = "<group>"; };
 		84778D2313297E45004EC62F /* CreepFast.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepFast.mm; sourceTree = "<group>"; };
 		84778D2513297E9F004EC62F /* CircleCreep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleCreep.png; sourceTree = "<group>"; };
+		B6097321132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = towerOffensiveDeffensiveOptions.png; sourceTree = "<group>"; };
 		B683EA9213279D6B00005123 /* target-icon-th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "target-icon-th.png"; sourceTree = "<group>"; };
 		B683EABB1327D68B00005123 /* Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
 		B683EABC1327D68B00005123 /* Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wave.m; sourceTree = "<group>"; };
@@ -877,11 +879,11 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B6097323132F7DFC008414F5 /* MenuItems */,
 				84778D2513297E9F004EC62F /* CircleCreep.png */,
 				B6DA56D51327EFBE008082A4 /* towerseed.jpg */,
 				B6DA569C1327E442008082A4 /* towerSelector.png */,
 				B683EA9213279D6B00005123 /* target-icon-th.png */,
-				B6C39D53131D3F8800914963 /* menuMockUp.png */,
 				B6C39D54131D3F8800914963 /* TriangleCreep.png */,
 				50F414EC1069373D002A0D5E /* Default.png */,
 				50F414ED1069373D002A0D5E /* fps_images.png */,
@@ -900,6 +902,15 @@
 				84451DA2131D07C600B3027B /* CreepNormal.mm */,
 			);
 			name = Creeps;
+			sourceTree = "<group>";
+		};
+		B6097323132F7DFC008414F5 /* MenuItems */ = {
+			isa = PBXGroup;
+			children = (
+				B6097321132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png */,
+				B6C39D53131D3F8800914963 /* menuMockUp.png */,
+			);
+			name = MenuItems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1092,6 +1103,7 @@
 				B6DA569E1327E442008082A4 /* towerSelector.png in Resources */,
 				B6DA56D61327EFBE008082A4 /* towerseed.jpg in Resources */,
 				84778D2613297E9F004EC62F /* CircleCreep.png in Resources */,
+				B6097322132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

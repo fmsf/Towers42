@@ -8,7 +8,6 @@
 
 #import "GameGUI.h"
 
-
 @implementation GameGUI
 
 
@@ -22,13 +21,27 @@
 		// code here
 		spriteElements = [[NSMutableArray alloc] init];
 		
-		CCSprite* menuSprite = [CCSprite spriteWithFile:@"menuMockUp.png"];
+		menuSprite = [CCSprite spriteWithFile:@"menuMockUp.png"];
 		menuSprite.position = ccp(160,50);
-		
 		[spriteElements addObject:menuSprite];
+		
+		selectTowerType = [CCSprite spriteWithFile:@"towerOffensiveDeffensiveOptions.png"];
+		selectTowerType.position = ccp(160,67);
+		selectTowerType.opacity = 0;
+		[spriteElements addObject:selectTowerType];
+		
+		
 		
 	}
 	return self;
+}
+
+- (void) towerSelected:(Tower*) t{
+	if(t!=NULL){
+		selectTowerType.opacity = 255;
+	}else {
+		selectTowerType.opacity = 0;
+	}
 }
 
 @end

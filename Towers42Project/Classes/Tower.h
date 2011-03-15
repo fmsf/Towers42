@@ -9,17 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "Entity.h"
 #import "Creep.h"
-
-#define TOWER_THRESHOLD 20
+#import "defs.h"
 
 @interface Tower : Entity {
 	int radius;
 	Creep* target;
+	bool isSeed;
 }
 
 - (void) setRadius:(int) _radius;
 - (int) getRadius;
 - (void) setTarget:(Creep*)_target;
 - (bool) tryToSelectByTouch:(int)x :(int) y;
+- (void) disableTower;
 
 @end

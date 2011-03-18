@@ -22,7 +22,6 @@
 	float creepTimer;			// time since last creep spwaned (decrements)
 	float creepInterval;		// interval between creep spawns
 	
-	NSMutableArray* babies;		// creeps to be born
 	NSMutableArray* creeps;		// living the good life in game
 	NSMutableArray* elders;		// creeps to be dead
 	
@@ -67,5 +66,7 @@
 
 - (int) getPathLenght;
 - (bool) isReady;
+
+- (float*) getTimer;
 
 @end

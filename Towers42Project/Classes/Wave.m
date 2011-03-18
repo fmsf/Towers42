@@ -13,9 +13,14 @@
 @implementation Wave
 
 - (void) update: (float) d_time {
-	wave_timer += d_time;
 	
-	if ( wave_timer > waveInterval ) {
+	if (waveIndex >= num_waves) {
+		return;
+	}
+	
+	float waveTime = [[waveTimes objectAtIndex: waveIndex] floatValue];
+	
+	if ( *c_timer > waveTime ) {
 		
 		if ( unit_timer < spawnInterval ) {
 			
@@ -37,26 +42,52 @@
 			
 		} else {
 			num_launched = 0;
-			wave_timer = spawnInterval * size;
 			unit_timer = 0;
+			waveIndex++;
 		}
 	}
 }
 
-- (void) initStuff:(Controller*) contr:(Creep*) instance:(int) n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn {
+- (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv {
 	c_ref = contr;
-	seed = instance;
 	size = n_size;
 	num_launched = 0;
 	
 	spawnInterval = creep_intv;
-	waveInterval  = wave_intv;
 	
-	wave_timer = timeToSpawn;
+	waveIndex = 0;
 	unit_timer = 0.0f;
+	
+	c_timer = [c_ref getTimer];
+	
+	seed = instance;
+	//[seed retain];
 	
 	NSValue *val	= [[c_ref getMapPath] objectAtIndex:0];
 	spawnPoint		= [val CGPointValue];
+}
+
+/*
+- (void) setWaveInterval:(NSMutableArray*) wave_times {
+	waveTimes = wave_times;
+	
+	[waveTimes retain];
+}
+*/
+- (void) setWaveInterval:(float) wave_intv: (float) timeToSpawn: (int) n_waves {
+	
+	num_waves = n_waves;
+	
+	waveTimes = [[NSMutableArray alloc] init];
+	
+	float t = timeToSpawn;
+	
+	for (int n=0; n<num_waves; n++) {
+		
+		[waveTimes addObject: [NSNumber numberWithFloat:t]];
+		
+		t += wave_intv;
+	}
 }
 
 - (Creep*) getWaveClass {
@@ -77,6 +108,8 @@
 
 - (void)dealloc {
 	// release here
+	[waveTimes removeAllObjects];
+	[waveTimes release];
 	
     [super dealloc];
 }

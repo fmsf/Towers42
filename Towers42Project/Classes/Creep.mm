@@ -11,6 +11,9 @@
 #import "defs.h"
 #import "Controller.h"
 
+#define EASE_STEPS	10
+#define R_INTERVAL	0.01f
+
 @implementation Creep
 
 - (void) initStuff:(Controller*) n_controller:(float) n_transform {
@@ -39,25 +42,36 @@
 			// we haven't so continue to next waypoint
 			waypointIndex++;
 			
-			position.x = waypoint.x;
-			position.y = waypoint.y;
+			// Redundanct
+			//position.x = waypoint.x;
+			//position.y = waypoint.y;
 			
 			NSValue *val	= [[c_ref getMapPath] objectAtIndex:waypointIndex+1];
 			waypoint		= [val CGPointValue]; // new waypoint coordinates
+			
+			CGPoint prv_move = moveVector;
 			
 			val			= [[c_ref getMapDir] objectAtIndex:waypointIndex];
 			moveVector	= [val CGPointValue]; // new waypoint direction
 			
 			// calculate 
-			rotation = CC_RADIANS_TO_DEGREES(ccpAngle(ccp(0,1), moveVector));
+			float r = CC_RADIANS_TO_DEGREES(ccpAngle(ccp(0,1), moveVector));
+			
+			if (position.x > waypoint.x) {
+				r = -r;
+			}
+			
+			r_Iter		= 0;
+			r_Step		= abs(r - rotation) / EASE_STEPS;
+			r_NextStep	= (*[c_ref getTimer]) + R_INTERVAL;
+			
+			if (rotation > r) {
+				r_Step = -r_Step;
+			}
 			
 			// multiply by velocity to get final movement vector (per second)
 			moveVector.x *= velocity;
 			moveVector.y *= velocity;
-			
-#ifdef GRAVE_DEBUG			
-			NSLog(@"New waypoint defined");
-#endif
 			
 		} else {
 			// reached the end of the path
@@ -69,16 +83,44 @@
 	prev.x = position.x;
 	prev.y = position.y;
 	
-	// Perform movement
-	position.x += moveVector.x * d_time;
-	position.y += moveVector.y * d_time;
+	// Rotate if necessary
+	if ( !(r_Iter < EASE_STEPS && r_NextStep < (*[c_ref getTimer]))) {
+		
+		// Perform movement
+		position.x += moveVector.x * d_time;
+		position.y += moveVector.y * d_time;
+		
+	}else{
+		
+		position.x += moveVector.x * d_time * 0.5f;
+		position.y += moveVector.y * d_time * 0.5f;
+		
+		rotation	+= r_Step;
+		r_NextStep	+= R_INTERVAL;
+		
+		r_Iter++;
+	}
 	
-	if ( prev.x < waypoint.x && position.x > waypoint.x ||
-		 prev.y < waypoint.y && position.y > waypoint.y	||
-		 prev.x > waypoint.x && position.x < waypoint.x ||
-		 prev.y > waypoint.y && position.y < waypoint.y	) {
+	if ( prev.x < waypoint.x && position.x >= waypoint.x ||
+		 prev.y < waypoint.y && position.y >= waypoint.y ||
+		 prev.x > waypoint.x && position.x <= waypoint.x ||
+		 prev.y > waypoint.y && position.y <= waypoint.y ) {
+		/*
+		if (waypointIndex > 4) {
+			NSLog(@"(%.2f, %.2f)  (%.2f, %.2f) (%.2f, %.2f)\n", prev.x, prev.y, position.x, position.y, waypoint.x, waypoint.y);
+			
+			NSValue *val	= [[c_ref getMapPath] objectAtIndex:waypointIndex];
+			CGPoint t		= [val CGPointValue]; // new waypoint coordinates
+			
+			val			= [[c_ref getMapDir] objectAtIndex:waypointIndex];
+			CGPoint m	= [val CGPointValue]; // new waypoint direction
+			
+			NSLog(@"  start (%.2f, %.2f)  vector (%.7f, %.7f)\n", t.x, t.y, m.x, m.y);
+		}
+		*/
 		position.y = waypoint.y;
 		position.x = waypoint.x;
+		
 	}
 	
 	return true;

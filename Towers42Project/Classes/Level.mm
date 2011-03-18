@@ -43,7 +43,7 @@
 		levelPath = [[NSMutableArray alloc] initWithObjects:
 					 [NSValue valueWithCGPoint:CGPointMake(150, 100)],
 					 [NSValue valueWithCGPoint:CGPointMake(150, 200)],
-					 [NSValue valueWithCGPoint:CGPointMake(200, 250)],
+					 [NSValue valueWithCGPoint:CGPointMake(160, 300)],
 					 [NSValue valueWithCGPoint:CGPointMake(150, 250)],
 					 [NSValue valueWithCGPoint:CGPointMake(100, 200)],
 					 [NSValue valueWithCGPoint:CGPointMake(80,  230)],

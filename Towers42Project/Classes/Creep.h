@@ -18,10 +18,14 @@
 	CGPoint waypoint;
 	CGPoint moveVector;
 	
-	float pathTransform;
-	float velocity;
-	float armor;
-	float hp;
+	int		r_Iter;
+	float	r_Step;
+	float	r_NextStep;
+	
+	float	pathTransform;
+	float	velocity;
+	float	armor;
+	float	hp;
 	
 	bool reachedEnd;
 }

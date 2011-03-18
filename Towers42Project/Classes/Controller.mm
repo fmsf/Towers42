@@ -35,6 +35,8 @@
 
 - (bool) execute:(float) delta {
 	
+	timer += delta;
+	
 	#ifdef GRAVE_DEBUG
 	if (delta > 2) {
 		delta = 0;
@@ -97,7 +99,7 @@
 		v_lenght = sqrt(a);
 		
 		// divide the vector by it's lenght to normalize it
-		v_lenght = 1/v_lenght;
+		v_lenght = 1.0f/v_lenght;
 		
 		vector.x *= v_lenght;
 		vector.y *= v_lenght;
@@ -126,29 +128,33 @@
 		
 		[self setNewLevel:newLvl];
 		
+		timer = 0;
+		
 		//[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
 		
 		Wave* wave = [[Wave alloc] init];
 		
 		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
-		[wave initStuff: self: [[CreepNormal alloc] init] :4 : 10.0f : 1.0f : 5.0f ];
+		[wave initWave: self: [[CreepNormal alloc] init] :4 : 1.0f ];
+		[wave setWaveInterval: 10.0f: 0.0f: 5];
 		
 		[waves addObject: wave];
 		
 		[wave release];
-		
+		/*
 		wave = [[Wave alloc] init];
 		
 		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
-		[wave initStuff: self: [[CreepFast alloc] init] :4 : 10.0f : 0.4f : 0.0f ];
+		[wave initWave: self: [[CreepFast alloc] init] :4 : 0.4f ];
+		[wave setWaveInterval: 10.0f: 0.0f: 5];
 		
 		[waves addObject: wave];
 		
 		[wave release];
 		
-		
-		NSValue* val = [mapPath objectAtIndex:0];
 		/*
+		NSValue* val = [mapPath objectAtIndex:0];
+		
 		for (Creep* c in creeps) {
 			[c initStuff:self :0];
 			[c setPosition: [val CGPointValue]];
@@ -168,6 +174,10 @@
 		
 	}
 	return self;
+}
+
+- (float*) getTimer {
+	return &timer;
 }
 
 - (bool) isReady{

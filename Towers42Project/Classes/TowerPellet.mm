@@ -14,9 +14,11 @@
 
 - (id) initWithSeedTower:(Tower*) seed{
 	if((self=[super init])){
+		isSeed = false;
 		position = [seed getPosition];		
 		turret = [CCSprite spriteWithFile:@"pellet.png"];
 		[textures addObject:turret];
+		shootSpeed = 2;
 		for(CCSprite* s in textures){
 			s.position = position;
 		}
@@ -24,6 +26,7 @@
 	
 	return self;
 }
+
 
 
 

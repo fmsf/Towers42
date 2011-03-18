@@ -66,6 +66,16 @@
 	if([controller isReady]){
 		[controller execute: dt];
 		[self updateCreeps:[controller getCreeps]];
+		
+		// get new bullets
+		for(Tower* t in [controller getTowers]){
+			for(Bullet* b in [t getBullets]){
+				if(![b isOnScreen]){
+					[self addChild:[b getSprite]];
+					[b isOnScreen:true];
+				}
+			}
+		}
 	}
 }
 
@@ -90,6 +100,13 @@
 		glColor4f(0.3, 0.3, 1.0, 0.7);  
 		glLineWidth(3.0f);
 		ccDrawLine(p1,p2);
+	}
+	
+	
+	if(selectedTower!=NULL){
+		glColor4f(0.3, 0.3, 1.0, 0.7);  
+		glLineWidth(1.0f);
+		ccDrawCircle([selectedTower getPosition], [selectedTower getRadius], 0, 180, NO);
 	}
 
 }
@@ -165,6 +182,7 @@
 						}
 						[towers replaceObjectAtIndex:i withObject:newTower];
 						[seed dealloc];
+						selectedTower = newTower;
 					// CONTINUE WORKING HERE
 					}else {
 #ifdef DEBUG_ALL

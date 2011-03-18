@@ -10,18 +10,26 @@
 #import "Entity.h"
 #import "Creep.h"
 #import "defs.h"
+#import "Bullet.h"
 
 @interface Tower : Entity {
-	int radius;
+	float radius;
 	Creep* target;
 	bool isSeed;
 	CCSprite* turret;
+	NSMutableArray* bullets;
+	float shootTimer;
+	float shootSpeed;
 }
 
+- (void) shoot:(float) delta;
 - (void) setRadius:(int) _radius;
-- (int) getRadius;
+- (float) getRadius;
 - (void) setTarget:(Creep*)_target;
 - (bool) tryToSelectByTouch:(int)x :(int) y;
 - (void) disableTower;
+- (void) updateRotation;
+- (NSMutableArray*) getBullets;
+
 
 @end

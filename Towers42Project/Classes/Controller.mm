@@ -43,13 +43,22 @@
 	}
 	#endif
 	
+	for (Tower* t in towers){
+		[t shoot: delta];
+	}
+	
 	for ( Wave* w in waves) {
 		[w update: delta];
 	}
 	
 	for ( Creep* c in creeps) {
 		[c updatePosition: delta];
+		for( Tower* t in towers){
+			[t setTarget:c];
+			[t updateRotation];
+		}
 	}
+	
 	
 	return true;
 }
@@ -123,6 +132,7 @@
 		//mapDir	= [[NSMutableArray alloc] init];
 		creeps	= [[NSMutableArray alloc] init];
 		waves	= [[NSMutableArray alloc] init];
+		bullets = [[NSMutableArray alloc] init];
 		
 		newLvl = [[Level alloc] init];
 		

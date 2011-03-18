@@ -16,6 +16,7 @@
 #import "Creep.h"
 #import "Tower.h"
 #import "TowerPellet.h"
+#import "Bullet.h"
 
 #define TARGET_Y_OFFSET 70
 #define BOTTOM_LIMIT 100

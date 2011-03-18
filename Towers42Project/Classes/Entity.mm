@@ -53,6 +53,9 @@
 	return mysprite;
 }
 
+- (NSMutableArray*) getTextures{
+	return textures;
+}
 
 - (CCSprite*) getSelector{
 	return spriteSelector;
@@ -77,7 +80,12 @@
 
 - (void)dealloc {
 	// release here
-	
+	for(CCSprite* s in textures){
+		s.opacity = 0;
+	}
+	spriteSelector.opacity = 0;
+	[textures removeAllObjects];
+	[textures dealloc];
     [super dealloc];
 }
 

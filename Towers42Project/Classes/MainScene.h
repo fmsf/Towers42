@@ -15,6 +15,7 @@
 #import "defs.h"
 #import "Creep.h"
 #import "Tower.h"
+#import "TowerPellet.h"
 
 #define TARGET_Y_OFFSET 70
 #define BOTTOM_LIMIT 100
@@ -26,6 +27,7 @@
 	
 	CCSprite* target;
 	bool target_is_active;
+	bool click_in_menu;
 	Tower* selectedTower;
 }
 

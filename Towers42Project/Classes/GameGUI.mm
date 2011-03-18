@@ -39,9 +39,18 @@
 - (void) towerSelected:(Tower*) t{
 	if(t!=NULL){
 		selectTowerType.opacity = 255;
+		currentState = IN_TOWER_TYPE_SELECTION_MENU;
 	}else {
 		selectTowerType.opacity = 0;
 	}
+}
+
+- (bool) seedWaiting{
+	return currentState == IN_TOWER_TYPE_SELECTION_MENU;
+}
+
+- (bool) seedWaitingAndclickInOffensive:(int)x :(int)y{
+	return (x<160 && y<100 && y>40);
 }
 
 @end

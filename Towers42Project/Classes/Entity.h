@@ -32,5 +32,6 @@
 - (void) setRotation:(float) n_rotation;
 - (float) getRotation;
 - (CCSprite*) getSelector;
+- (NSMutableArray*) getTextures;
 
 @end

@@ -24,4 +24,9 @@
 - (NSMutableArray*) getElements;
 - (void) towerSelected:(Tower*) t;
 
+// STATE HANDLER FUNCTIONS
+- (bool) seedWaiting;
+- (bool) seedWaitingAndclickInOffensive:(int)x :(int)y;
+
+
 @end

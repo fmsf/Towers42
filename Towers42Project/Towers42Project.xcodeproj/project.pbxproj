@@ -221,6 +221,8 @@
 		84778D2413297E45004EC62F /* CreepFast.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84778D2313297E45004EC62F /* CreepFast.mm */; };
 		84778D2613297E9F004EC62F /* CircleCreep.png in Resources */ = {isa = PBXBuildFile; fileRef = 84778D2513297E9F004EC62F /* CircleCreep.png */; };
 		B6097322132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png in Resources */ = {isa = PBXBuildFile; fileRef = B6097321132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png */; };
+		B6097360132F89F9008414F5 /* TowerPellet.mm in Sources */ = {isa = PBXBuildFile; fileRef = B609735F132F89F9008414F5 /* TowerPellet.mm */; };
+		B6097369132F8F9C008414F5 /* pellet.png in Resources */ = {isa = PBXBuildFile; fileRef = B6097368132F8F9C008414F5 /* pellet.png */; };
 		B683EA9313279D6B00005123 /* target-icon-th.png in Resources */ = {isa = PBXBuildFile; fileRef = B683EA9213279D6B00005123 /* target-icon-th.png */; };
 		B683EABD1327D68B00005123 /* Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = B683EABC1327D68B00005123 /* Wave.m */; };
 		B6AD09C91318043300152052 /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09C81318043300152052 /* Controller.mm */; };
@@ -469,6 +471,9 @@
 		84778D2313297E45004EC62F /* CreepFast.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepFast.mm; sourceTree = "<group>"; };
 		84778D2513297E9F004EC62F /* CircleCreep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleCreep.png; sourceTree = "<group>"; };
 		B6097321132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = towerOffensiveDeffensiveOptions.png; sourceTree = "<group>"; };
+		B609735E132F89F9008414F5 /* TowerPellet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerPellet.h; sourceTree = "<group>"; };
+		B609735F132F89F9008414F5 /* TowerPellet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TowerPellet.mm; sourceTree = "<group>"; };
+		B6097368132F8F9C008414F5 /* pellet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pellet.png; sourceTree = "<group>"; };
 		B683EA9213279D6B00005123 /* target-icon-th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "target-icon-th.png"; sourceTree = "<group>"; };
 		B683EABB1327D68B00005123 /* Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
 		B683EABC1327D68B00005123 /* Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wave.m; sourceTree = "<group>"; };
@@ -583,21 +588,13 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B683EABB1327D68B00005123 /* Wave.h */,
-				B683EABC1327D68B00005123 /* Wave.m */,
-				84451DA0131D075100B3027B /* Creeps */,
+				B610885513336D3300BD1D68 /* Entities */,
 				506EDC2F102F528A00A389B3 /* MainScene.h */,
 				506EDC30102F528A00A389B3 /* MainScene.mm */,
 				1F3B9A2C0EF2145700286867 /* Towers42ProjectAppDelegate.h */,
 				1F3B9A2B0EF2145700286867 /* Towers42ProjectAppDelegate.m */,
 				B6AD09C71318043300152052 /* Controller.h */,
 				B6AD09C81318043300152052 /* Controller.mm */,
-				B6AD09CA1318052E00152052 /* Entity.h */,
-				B6AD09CB1318052E00152052 /* Entity.mm */,
-				B6AD09CF1318095400152052 /* Creep.h */,
-				B6AD09D01318095400152052 /* Creep.mm */,
-				B6AD09D613180B2600152052 /* Tower.h */,
-				B6AD09D713180B2600152052 /* Tower.mm */,
 				B6AD0A0513181F3900152052 /* defs.h */,
 				84451D9D131D00BC00B3027B /* Level.h */,
 				84451D99131D009200B3027B /* Level.mm */,
@@ -879,6 +876,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B6097361132F8F8D008414F5 /* Towers */,
 				B6097323132F7DFC008414F5 /* MenuItems */,
 				84778D2513297E9F004EC62F /* CircleCreep.png */,
 				B6DA56D51327EFBE008082A4 /* towerseed.jpg */,
@@ -896,6 +894,8 @@
 		84451DA0131D075100B3027B /* Creeps */ = {
 			isa = PBXGroup;
 			children = (
+				B6AD09CF1318095400152052 /* Creep.h */,
+				B6AD09D01318095400152052 /* Creep.mm */,
 				84778D2213297E45004EC62F /* CreepFast.h */,
 				84778D2313297E45004EC62F /* CreepFast.mm */,
 				84451DA1131D07C600B3027B /* CreepNormal.h */,
@@ -911,6 +911,38 @@
 				B6C39D53131D3F8800914963 /* menuMockUp.png */,
 			);
 			name = MenuItems;
+			sourceTree = "<group>";
+		};
+		B609735D132F89DA008414F5 /* Towers */ = {
+			isa = PBXGroup;
+			children = (
+				B6AD09D613180B2600152052 /* Tower.h */,
+				B6AD09D713180B2600152052 /* Tower.mm */,
+				B609735E132F89F9008414F5 /* TowerPellet.h */,
+				B609735F132F89F9008414F5 /* TowerPellet.mm */,
+			);
+			name = Towers;
+			sourceTree = "<group>";
+		};
+		B6097361132F8F8D008414F5 /* Towers */ = {
+			isa = PBXGroup;
+			children = (
+				B6097368132F8F9C008414F5 /* pellet.png */,
+			);
+			name = Towers;
+			sourceTree = "<group>";
+		};
+		B610885513336D3300BD1D68 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B6AD09CA1318052E00152052 /* Entity.h */,
+				B6AD09CB1318052E00152052 /* Entity.mm */,
+				B683EABB1327D68B00005123 /* Wave.h */,
+				B683EABC1327D68B00005123 /* Wave.m */,
+				B609735D132F89DA008414F5 /* Towers */,
+				84451DA0131D075100B3027B /* Creeps */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1104,6 +1136,7 @@
 				B6DA56D61327EFBE008082A4 /* towerseed.jpg in Resources */,
 				84778D2613297E9F004EC62F /* CircleCreep.png in Resources */,
 				B6097322132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png in Resources */,
+				B6097369132F8F9C008414F5 /* pellet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1126,6 +1159,7 @@
 				B6C39D52131D361D00914963 /* GameGUI.mm in Sources */,
 				B683EABD1327D68B00005123 /* Wave.m in Sources */,
 				84778D2413297E45004EC62F /* CreepFast.mm in Sources */,
+				B6097360132F89F9008414F5 /* TowerPellet.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

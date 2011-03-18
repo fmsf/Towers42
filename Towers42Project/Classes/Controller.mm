@@ -59,8 +59,17 @@
 		}
 	}
 	
+
+	[creeps removeObjectsInArray:elders];
+	[elders removeAllObjects];
+
 	
 	return true;
+}
+
+- (void) registerDying:(Creep*) n_elder {
+	
+	[elders addObject: n_elder];
 }
 
 - (bool) setNewLevel:(Level*) n_level {
@@ -131,8 +140,13 @@
 		//mapPath = [[NSMutableArray alloc] init];
 		//mapDir	= [[NSMutableArray alloc] init];
 		creeps	= [[NSMutableArray alloc] init];
+		elders	= [[NSMutableArray alloc] init];
+		dead	= [[NSMutableArray alloc] init];
+		
 		waves	= [[NSMutableArray alloc] init];
 		bullets = [[NSMutableArray alloc] init];
+		
+		
 		
 		newLvl = [[Level alloc] init];
 		
@@ -145,7 +159,7 @@
 		Wave* wave = [[Wave alloc] init];
 		
 		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
-		[wave initWave: self: [[CreepNormal alloc] init] :4 : 1.0f ];
+		[wave initWave: self: [[CreepNormal alloc] init] :10 : 0.1f ];
 		[wave setWaveInterval: 10.0f: 0.0f: 5];
 		
 		[waves addObject: wave];

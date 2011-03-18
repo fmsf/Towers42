@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B61088D51333A8DE00BD1D68</string>
+						<string>B61088DB1333A92900BD1D68</string>
 						<key>history</key>
 						<array>
 							<string>B610888D13337CA300BD1D68</string>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B61088D61333A8DE00BD1D68</string>
+						<string>B61088DC1333A92900BD1D68</string>
 						<key>history</key>
 						<array>
 							<string>B610888C13337B9100BD1D68</string>
@@ -296,7 +296,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B61088D71333A8DE00BD1D68</string>
+						<string>B61088DD1333A92900BD1D68</string>
 						<key>history</key>
 						<array>
 							<string>B610884613336BE600BD1D68</string>
@@ -399,9 +399,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
-									<integer>13</integer>
-									<integer>5</integer>
+									<integer>30</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -444,7 +442,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Tower.mm</string>
+								<string>Controller.mm</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -452,11 +450,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Tower.mm</string>
+										<string>Controller.mm</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B61088D41333A8DE00BD1D68</string>
+										<string>B61088DA1333A92900BD1D68</string>
 										<key>history</key>
 										<array>
 											<string>B6C39E6C131D57B100914963</string>
@@ -490,8 +488,8 @@
 											<string>B61088C51333A6BE00BD1D68</string>
 											<string>B61088C61333A6BE00BD1D68</string>
 											<string>B61088C71333A6BE00BD1D68</string>
-											<string>B61088C81333A6BE00BD1D68</string>
-											<string>B61088C91333A6BE00BD1D68</string>
+											<string>B61088D81333A92900BD1D68</string>
+											<string>B61088D91333A92900BD1D68</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

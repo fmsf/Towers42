@@ -15,7 +15,8 @@
 - (id) initWithSeedTower:(Tower*) seed{
 	if((self=[super init])){
 		isSeed = false;
-		position = [seed getPosition];		
+		position = [seed getPosition];
+		spriteSelector = [seed getSelector];
 		turret = [CCSprite spriteWithFile:@"pellet.png"];
 		[textures addObject:turret];
 		shootSpeed = 2;

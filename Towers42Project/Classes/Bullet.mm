@@ -26,8 +26,13 @@
 	position.y += movementVector.y;
 	if([textures count]>0){
 		for(CCSprite* s in textures){
-			s.position = position; // BUG PARA CORRIGIR AQUI
+			s.position = position;
 		}
+	}
+	if(abs(movementVector.x)<1 && abs(movementVector.y) < 1){
+		[target receiveAttack:damage :armorPenetration];
+		target = NULL;
+		return false;
 	}
 	return true;
 }
@@ -40,12 +45,18 @@
 	return onScreen;
 }
 
+- (bool) isDead{
+	return target==NULL;
+}
+
 - (id)init {
 	
     if ((self=[super init])) {
 		CCSprite* firstSprite = [CCSprite spriteWithFile:@"stuff_circle.png"];
 		[textures addObject:firstSprite];
 		velocity = 0.1f;
+		damage = 10.0f;
+		armorPenetration = 0;
 		onScreen = false;
 	}
 	return self;

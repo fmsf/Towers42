@@ -160,9 +160,9 @@
 	};
 	506EDC30102F528A00A389B3 /* MainScene.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 3588}}";
-			sepNavSelRange = "{1575, 0}";
-			sepNavVisRange = "{989, 1004}";
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 3458}}";
+			sepNavSelRange = "{2278, 0}";
+			sepNavVisRange = "{1452, 541}";
 			sepNavWindowFrame = "{{15, 4}, {1265, 774}}";
 		};
 	};
@@ -207,9 +207,16 @@
 	};
 	84451DA2131D07C600B3027B /* CreepNormal.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 578}}";
-			sepNavSelRange = "{209, 370}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 553}}";
+			sepNavSelRange = "{317, 0}";
 			sepNavVisRange = "{0, 586}";
+		};
+	};
+	84778D2313297E45004EC62F /* CreepFast.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 553}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 580}";
 		};
 	};
 	B60970451328149D008414F5 /* PBXBookmark */ = {
@@ -339,9 +346,9 @@
 	};
 	B609735F132F89F9008414F5 /* TowerPellet.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 598}}";
-			sepNavSelRange = "{292, 0}";
-			sepNavVisRange = "{3, 628}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 611}}";
+			sepNavSelRange = "{364, 0}";
+			sepNavVisRange = "{3, 665}";
 		};
 	};
 	B6097362132F8F95008414F5 /* PBXTextBookmark */ = {
@@ -423,7 +430,7 @@
 		fRef = B6AD09D713180B2600152052 /* Tower.mm */;
 		name = "Tower.mm: 52";
 		rLen = 0;
-		rLoc = 1917;
+		rLoc = 1944;
 		rType = 0;
 		vrLen = 1092;
 		vrLoc = 284;
@@ -433,7 +440,7 @@
 		fRef = B609735F132F89F9008414F5 /* TowerPellet.mm */;
 		name = "TowerPellet.mm: 17";
 		rLen = 0;
-		rLoc = 350;
+		rLoc = 387;
 		rType = 0;
 		vrLen = 427;
 		vrLoc = 0;
@@ -443,7 +450,7 @@
 		fRef = B609735F132F89F9008414F5 /* TowerPellet.mm */;
 		name = "TowerPellet.mm: 19";
 		rLen = 0;
-		rLoc = 490;
+		rLoc = 527;
 		rType = 0;
 		vrLen = 511;
 		vrLoc = 0;
@@ -453,7 +460,7 @@
 		fRef = B609735F132F89F9008414F5 /* TowerPellet.mm */;
 		name = "TowerPellet.mm: 19";
 		rLen = 0;
-		rLoc = 490;
+		rLoc = 527;
 		rType = 0;
 		vrLen = 511;
 		vrLoc = 0;
@@ -463,7 +470,7 @@
 		fRef = B609735F132F89F9008414F5 /* TowerPellet.mm */;
 		name = "TowerPellet.mm: 18";
 		rLen = 0;
-		rLoc = 490;
+		rLoc = 527;
 		rType = 0;
 		vrLen = 479;
 		vrLoc = 0;
@@ -500,7 +507,7 @@
 		fRef = B6AD09D713180B2600152052 /* Tower.mm */;
 		name = "Tower.mm: 52";
 		rLen = 0;
-		rLoc = 1917;
+		rLoc = 1944;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 471;
@@ -580,7 +587,7 @@
 		fRef = B609735F132F89F9008414F5 /* TowerPellet.mm */;
 		name = "TowerPellet.mm: 19";
 		rLen = 0;
-		rLoc = 428;
+		rLoc = 465;
 		rType = 0;
 		vrLen = 594;
 		vrLoc = 0;
@@ -620,7 +627,7 @@
 		fRef = B6AD09D713180B2600152052 /* Tower.mm */;
 		name = "Tower.mm: 52";
 		rLen = 0;
-		rLoc = 1917;
+		rLoc = 1944;
 		rType = 0;
 		vrLen = 868;
 		vrLoc = 146;
@@ -628,15 +635,15 @@
 	B61088851333765900BD1D68 /* Bullet.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1011, 576}}";
-			sepNavSelRange = "{411, 20}";
-			sepNavVisRange = "{0, 440}";
+			sepNavSelRange = "{345, 0}";
+			sepNavVisRange = "{0, 478}";
 		};
 	};
 	B61088861333765900BD1D68 /* Bullet.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 793}}";
-			sepNavSelRange = "{915, 0}";
-			sepNavVisRange = "{95, 847}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 884}}";
+			sepNavSelRange = "{739, 0}";
+			sepNavVisRange = "{148, 774}";
 		};
 	};
 	B610888C13337B9100BD1D68 /* PBXBookmark */ = {
@@ -652,7 +659,7 @@
 		fRef = B6AD09C81318043300152052 /* Controller.mm */;
 		name = "Controller.mm: 160";
 		rLen = 0;
-		rLoc = 3008;
+		rLoc = 3007;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 2752;
@@ -700,7 +707,7 @@
 		fRef = B6AD09C81318043300152052 /* Controller.mm */;
 		name = "Controller.mm: 165";
 		rLen = 0;
-		rLoc = 3008;
+		rLoc = 3007;
 		rType = 0;
 		vrLen = 717;
 		vrLoc = 2788;
@@ -800,7 +807,7 @@
 		fRef = B61088851333765900BD1D68 /* Bullet.h */;
 		name = "Bullet.h: 25";
 		rLen = 20;
-		rLoc = 411;
+		rLoc = 449;
 		rType = 0;
 		vrLen = 440;
 		vrLoc = 0;
@@ -810,7 +817,7 @@
 		fRef = B61088861333765900BD1D68 /* Bullet.mm */;
 		name = "Bullet.mm: 48";
 		rLen = 0;
-		rLoc = 915;
+		rLoc = 1077;
 		rType = 0;
 		vrLen = 847;
 		vrLoc = 95;
@@ -840,7 +847,7 @@
 		fRef = B6AD09D713180B2600152052 /* Tower.mm */;
 		name = "Tower.mm: 47";
 		rLen = 0;
-		rLoc = 924;
+		rLoc = 951;
 		rType = 0;
 		vrLen = 910;
 		vrLoc = 167;
@@ -850,7 +857,7 @@
 		fRef = B6AD09D713180B2600152052 /* Tower.mm */;
 		name = "Tower.mm: 106";
 		rLen = 0;
-		rLoc = 2212;
+		rLoc = 2239;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 1722;
@@ -890,7 +897,7 @@
 		fRef = B6AD09D713180B2600152052 /* Tower.mm */;
 		name = "Tower.mm: 106";
 		rLen = 0;
-		rLoc = 2212;
+		rLoc = 2239;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 1722;
@@ -930,7 +937,7 @@
 		fRef = B6AD09D713180B2600152052 /* Tower.mm */;
 		name = "Tower.mm: 106";
 		rLen = 0;
-		rLoc = 2212;
+		rLoc = 2239;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 1722;
@@ -960,7 +967,7 @@
 		fRef = B6AD09C81318043300152052 /* Controller.mm */;
 		name = "Controller.mm: 221";
 		rLen = 0;
-		rLoc = 4084;
+		rLoc = 4086;
 		rType = 0;
 		vrLen = 787;
 		vrLoc = 449;
@@ -970,7 +977,7 @@
 		fRef = B6AD09D01318095400152052 /* Creep.mm */;
 		name = "Creep.mm: 154";
 		rLen = 0;
-		rLoc = 3601;
+		rLoc = 3617;
 		rType = 0;
 		vrLen = 1246;
 		vrLoc = 879;
@@ -1075,14 +1082,14 @@
 	B6AD09C81318043300152052 /* Controller.mm */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {691, 3029}}";
-			sepNavSelRange = "{4084, 0}";
-			sepNavVisRange = "{449, 787}";
+			sepNavSelRange = "{4086, 0}";
+			sepNavVisRange = "{449, 750}";
 			sepNavWindowFrame = "{{-161, 1029}, {750, 774}}";
 		};
 	};
 	B6AD09CA1318052E00152052 /* Entity.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {691, 646}}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 623}}";
 			sepNavSelRange = "{384, 14}";
 			sepNavVisRange = "{0, 771}";
 		};
@@ -1103,9 +1110,9 @@
 	};
 	B6AD09D01318095400152052 /* Creep.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1206, 1937}}";
-			sepNavSelRange = "{3601, 0}";
-			sepNavVisRange = "{879, 1246}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 2002}}";
+			sepNavSelRange = "{3415, 0}";
+			sepNavVisRange = "{2708, 909}";
 			sepNavWindowFrame = "{{15, 4}, {1265, 774}}";
 		};
 	};
@@ -1119,9 +1126,9 @@
 	};
 	B6AD09D713180B2600152052 /* Tower.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 1612}}";
-			sepNavSelRange = "{2212, 0}";
-			sepNavVisRange = "{1722, 825}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1716}}";
+			sepNavSelRange = "{947, 0}";
+			sepNavVisRange = "{467, 788}";
 			sepNavWindowFrame = "{{602, 970}, {750, 774}}";
 		};
 	};

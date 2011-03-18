@@ -159,8 +159,8 @@
 		Wave* wave = [[Wave alloc] init];
 		
 		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
-		[wave initWave: self: [[CreepNormal alloc] init] :10 : 0.1f ];
-		[wave setWaveInterval: 10.0f: 0.0f: 5];
+		[wave initWave: self: [[CreepNormal alloc] init] :4 : 2.0f ];
+		[wave setWaveInterval: 10.0f: 0.0f: 1];
 		
 		[waves addObject: wave];
 		
@@ -170,11 +170,11 @@
 		
 		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
 		[wave initWave: self: [[CreepFast alloc] init] :4 : 0.4f ];
-		[wave setWaveInterval: 10.0f: 0.0f: 5];
+		[wave setWaveInterval: 10.0f: 20.0f: 1];
 		
 		[waves addObject: wave];
 		
-		[wave release];
+		[wave release];*/
 		
 		/*
 		NSValue* val = [mapPath objectAtIndex:0];

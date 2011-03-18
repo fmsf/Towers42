@@ -44,7 +44,9 @@
 		}
 	}
 	for(Bullet* b in bullets){
-		[b update];
+		if(![b update]){
+			target = NULL;
+		}
 	}
 }
 

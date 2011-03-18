@@ -22,3 +22,4 @@
 
 
 //#define FMSF_DEBUG
+#define DEBUG_ALL

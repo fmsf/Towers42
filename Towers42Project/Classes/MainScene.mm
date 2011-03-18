@@ -116,7 +116,7 @@
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:[touch view]];
     location = [[CCDirector sharedDirector] convertToGL:location];
-	if(target_is_active){
+	if(target_is_active && !click_in_menu){
 		target.opacity =0;
 		if(location.y>BOTTOM_LIMIT-TARGET_Y_OFFSET && selectedTower==NULL){ 			//ADD NEW TOWER
 			// CHECK IF TOWERS OVERLAP 
@@ -147,13 +147,43 @@
 			}
 		}
 		[myGui towerSelected:selectedTower];
+		
+		
+		
 	}else { // clicked inside gameGUI;
-//		if(
+		if(click_in_menu){
+			if([myGui seedWaiting]){
+				if([myGui seedWaitingAndclickInOffensive:location.x :location.y]){
+					NSMutableArray* towers  = [controller getTowers];
+					int i;
+					if(selectedTower!=NULL){
+						i = [towers indexOfObject:selectedTower];
+						Tower* seed = [towers objectAtIndex:i];
+						TowerPellet* newTower = [[TowerPellet alloc] initWithSeedTower:seed];
+						for(CCSprite* sprite in [newTower getTextures]){
+							[self addChild:sprite];
+						}
+						[towers replaceObjectAtIndex:i withObject:newTower];
+						[seed dealloc];
+					// CONTINUE WORKING HERE
+					}else {
+#ifdef DEBUG_ALL
+						NSLog(@"ERROR TOWER IS NULL");
+#endif
+					}
+					
+				}
+			}
+		}
 	}
-    
+    target_is_active = false;
+	click_in_menu = false;
 }
 
 -(void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+	if(click_in_menu){
+		return;
+	}
 	UITouch *touch = [touches anyObject];
 	CGPoint location = [touch locationInView:[touch view]];
 	location = [[CCDirector sharedDirector] convertToGL:location];
@@ -188,9 +218,12 @@
 	CGPoint location = [touch locationInView:[touch view]];
 	location = [[CCDirector sharedDirector] convertToGL:location];
 	if(location.y>BOTTOM_LIMIT){
+		click_in_menu = false;
 		target_is_active = true;
 		target.position = ccp(location.x,location.y+TARGET_Y_OFFSET);
 		target.opacity = 150;
+	}else{
+		click_in_menu = true;
 	}
 	
 }

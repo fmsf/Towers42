@@ -15,6 +15,7 @@
 	int radius;
 	Creep* target;
 	bool isSeed;
+	CCSprite* turret;
 }
 
 - (void) setRadius:(int) _radius;

@@ -76,6 +76,9 @@
 		} else {
 			// reached the end of the path
 			reachedEnd = true;
+			
+			[c_ref registerDying:self];
+			
 			return false;
 		}
 	}
@@ -83,14 +86,12 @@
 	prev.x = position.x;
 	prev.y = position.y;
 	
+	// Perform movement
+	position.x += moveVector.x * d_time;
+	position.y += moveVector.y * d_time;
+	
 	// Rotate if necessary
-	if ( !(r_Iter < EASE_STEPS && r_NextStep < (*[c_ref getTimer]))) {
-		
-		// Perform movement
-		position.x += moveVector.x * d_time;
-		position.y += moveVector.y * d_time;
-		
-	}else{
+	if ( r_Iter < EASE_STEPS && r_NextStep < (*[c_ref getTimer])) {
 		
 		position.x += moveVector.x * d_time * 0.5f;
 		position.y += moveVector.y * d_time * 0.5f;
@@ -126,8 +127,13 @@
 	return true;
 }
 
-- (void) receiveAttack:(float) damage: (float) armorPenetration{
+- (void) receiveAttack:(float) damage: (float) armorPenetration {
 	
+	hp -= damage - (armor - armorPenetration);
+	
+	if ( hp <= 0 ) {
+		[c_ref registerDying:self];
+	}
 }
 
 - (id)init {

@@ -23,7 +23,8 @@
 	float creepInterval;		// interval between creep spawns
 	
 	NSMutableArray* creeps;		// living the good life in game
-	NSMutableArray* elders;		// creeps to be dead
+	NSMutableArray* elders;		// creeps ready to die
+	NSMutableArray* dead;		// dead creeps
 	
 	/*
 	 *	Wave variables
@@ -54,6 +55,8 @@
 	Level*	newLvl;
 	bool	ready;
 }
+
+- (void) registerDying:(Creep*) dying;
 
 - (NSMutableArray*) getMapPath;
 - (NSMutableArray*) getMapDir;

@@ -43,6 +43,11 @@
 	}
 	#endif
 	
+	if(timer>2 && !used) {
+		[[waves objectAtIndex:0] powerSpeed];
+		used = true;
+	}
+	
 	for ( Wave* w in waves) {
 		[w update: delta];
 	}
@@ -135,7 +140,7 @@
 		
 		waves	= [[NSMutableArray alloc] init];
 		
-		
+		used = false;
 		
 		newLvl = [[Level alloc] init];
 		
@@ -164,7 +169,7 @@
 		[waves addObject: wave];
 		
 		[wave release];
-		
+		*/
 		/*
 		NSValue* val = [mapPath objectAtIndex:0];
 		

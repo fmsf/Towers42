@@ -14,7 +14,8 @@
 	float velocity;
 	CGPoint movementVector;
 	Creep* target;
-	
+	float damage;
+	float armorPenetration;
 	
 	bool onScreen;
 }
@@ -23,6 +24,7 @@
 - (bool) update;
 - (void) isOnScreen:(bool)t;
 - (bool) isOnScreen;
+- (void) clearTarget:(Creep*) creep;
 
 
 

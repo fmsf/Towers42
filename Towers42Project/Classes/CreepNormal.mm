@@ -15,9 +15,9 @@
 	
     if ((self=[super init])) {
 		// code here
-		hp		 = 20.0f;
+		default_hp = hp = 20.0f;
 		armor	 = 0.0f;
-		velocity = 50.0f;
+		velocity = 10.0f;
 		CCSprite* firstSprite = [CCSprite spriteWithFile:@"TriangleCreep.png"];
 		position = ccp(100,160);
 		firstSprite.position = ccp(100,160);

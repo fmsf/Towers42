@@ -130,7 +130,7 @@
 - (void) receiveAttack:(float) damage: (float) armorPenetration {
 	
 	hp -= damage - (armor - armorPenetration);
-	
+	NSLog(@"%f",hp);
 	if ( hp <= 0 ) {
 		[c_ref registerDying:self];
 	}

@@ -32,6 +32,19 @@
 	radius = _radius;
 }
 
+- (void) clearTarget{
+	target = NULL;
+}
+
+- (void) clearTarget:(Creep*) creep{
+	if(target == creep){
+		for(Bullet* b in bullets){
+			[b clearTarget:creep];
+		}
+		target = NULL;
+	}
+}
+
 - (void) shoot:(float) delta{
 	shootTimer -= delta;
 	if(shootTimer <= 0){
@@ -44,7 +57,9 @@
 		}
 	}
 	for(Bullet* b in bullets){
-		[b update];
+		if(![b update]){
+			target = NULL;
+		}
 	}
 }
 

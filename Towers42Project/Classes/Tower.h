@@ -30,6 +30,10 @@
 - (void) disableTower;
 - (void) updateRotation;
 - (NSMutableArray*) getBullets;
+- (void) clearTarget;
+- (void) clearTarget:(Creep*) creep;
+
+
 
 
 @end

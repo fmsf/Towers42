@@ -15,7 +15,7 @@
 	
     if ((self=[super init])) {
 		// code here
-		hp		 = 20.0f;
+		default_hp = hp = 20.0f;
 		armor	 = 0.0f;
 		velocity = 40.0f;
 		CCSprite* firstSprite = [CCSprite spriteWithFile:@"CircleCreep.png"];

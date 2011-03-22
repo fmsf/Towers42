@@ -43,7 +43,10 @@
 	}
 	#endif
 	
-
+	if(timer>2 && !used) {
+		[[waves objectAtIndex:0] powerSpeed];
+		used = true;
+	}
 	
 	for ( Wave* w in waves) {
 		[w update: delta];
@@ -82,6 +85,8 @@
 	mapPath			= [n_level getLevelPath];
 	pathLenght		= [n_level getLevelPathLenght];
 	pathTransform	= [n_level getLevelTransform];
+	
+	[mapPath retain];
 	
 	/*
 	 *	Process waypoint directions
@@ -141,6 +146,7 @@
 - (id)init {
 	
     if ((self=[super init])) {
+		
 		towers = [[NSMutableArray alloc] init];
 		// code here
 		//mapPath = [[NSMutableArray alloc] init];
@@ -152,11 +158,11 @@
 		waves	= [[NSMutableArray alloc] init];
 		bullets = [[NSMutableArray alloc] init];
 		
+		used = false;
 		
-		
-		newLvl = [[Level alloc] init];
-		
-		[self setNewLevel:newLvl];
+		Level* newlvl = [[Level alloc] init];
+		[self setNewLevel:newlvl];
+		[newlvl release];
 		
 		timer = 0;
 		
@@ -164,23 +170,28 @@
 		
 		Wave* wave = [[Wave alloc] init];
 		
+		
+		CreepNormal*	seedNormal	= [[CreepNormal alloc] init];
+		CreepFast*		seedFast	= [[CreepFast alloc] init];
+		
 		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
-		[wave initWave: self: [[CreepNormal alloc] init] :4 : 2.0f ];
+		[wave initWave: self: seedNormal :4 : 2.0f ];
 		[wave setWaveInterval: 10.0f: 0.0f: 1];
 		
 		[waves addObject: wave];
 		
 		[wave release];
-		
 		wave = [[Wave alloc] init];
 		
 		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
-		[wave initWave: self: [[CreepFast alloc] init] :4 : 0.4f ];
+		[wave initWave: self: seedFast :4 : 0.4f ];
 		[wave setWaveInterval: 10.0f: 20.0f: 1];
 		
 		[waves addObject: wave];
 		
-		[wave release];
+		[wave		release];
+		[seedNormal release];
+		[seedFast	release];
 		
 		/*
 		NSValue* val = [mapPath objectAtIndex:0];
@@ -216,9 +227,14 @@
 
 - (void)dealloc {
 	// release here
-	/*[mapPath	release];
+	[elders		release];
+	[dead		release];
+	[waves		release];
+	[towers		release];
+	[bullets	release];
+	[mapPath	release];
 	[mapDir		release];
-	[creeps		release];*/
+	[creeps		release];
 	
     [super dealloc];
 }

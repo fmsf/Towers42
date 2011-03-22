@@ -17,10 +17,8 @@
 	if (waveIndex >= num_waves) {
 		return;
 	}
-	
-	float waveTime = [[waveTimes objectAtIndex: waveIndex] floatValue];
-	
-	if ( *c_timer > waveTime ) {
+	NSLog(@"%f\n", [[waveTimes objectAtIndex: waveIndex] floatValue]);
+	if ( *c_timer > [[waveTimes objectAtIndex: waveIndex] floatValue] ) {
 		
 		if ( unit_timer < spawnInterval ) {
 			
@@ -61,19 +59,19 @@
 	c_timer = [c_ref getTimer];
 	
 	seed = instance;
-	//[seed retain];
+	[seed retain];
 	
 	NSValue *val	= [[c_ref getMapPath] objectAtIndex:0];
 	spawnPoint		= [val CGPointValue];
 }
 
-/*
+
 - (void) setWaveInterval:(NSMutableArray*) wave_times {
 	waveTimes = wave_times;
 	
 	[waveTimes retain];
 }
-*/
+
 - (void) setWaveInterval:(float) wave_intv: (float) timeToSpawn: (int) n_waves {
 	
 	num_waves = n_waves;
@@ -98,6 +96,14 @@
 	return size;
 }
 
+- (void) powerSpeed {
+	float time = [[waveTimes objectAtIndex: waveIndex] floatValue];
+	
+	[waveTimes replaceObjectAtIndex:waveIndex withObject:[NSNumber numberWithFloat: time - 5.0f]];
+	
+	//NSLog(@"%f = %f\n", [[waveTimes objectAtIndex: waveIndex] floatValue], time);
+}
+
 - (id)init {
 	
     if ((self=[super init])) {
@@ -108,8 +114,9 @@
 
 - (void)dealloc {
 	// release here
-	[waveTimes removeAllObjects];
+	//[waveTimes removeAllObjects];
 	[waveTimes release];
+	[seed release];
 	
     [super dealloc];
 }

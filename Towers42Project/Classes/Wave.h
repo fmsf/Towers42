@@ -34,7 +34,7 @@
 	NSMutableArray* waveTimes;	// contains wave release times
 }
 
-//- (void) setWaveInterval:(NSMutableArray*) wave_intv;
+- (void) setWaveInterval:(NSMutableArray*) wave_intv;
 - (void) setWaveInterval:(float) wave_intv: (float) timeToSpawn: (int) num_waves;
 
 - (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv;
@@ -43,5 +43,8 @@
 - (int)   getWaveSize;
 
 - (void) update:(float) d_time;
+
+
+- (void) powerSpeed;
 
 @end

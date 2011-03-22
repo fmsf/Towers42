@@ -59,7 +59,7 @@
 	c_timer = [c_ref getTimer];
 	
 	seed = instance;
-	//[seed retain];
+	[seed retain];
 	
 	NSValue *val	= [[c_ref getMapPath] objectAtIndex:0];
 	spawnPoint		= [val CGPointValue];
@@ -114,8 +114,9 @@
 
 - (void)dealloc {
 	// release here
-	[waveTimes removeAllObjects];
+	//[waveTimes removeAllObjects];
 	[waveTimes release];
+	[seed release];
 	
     [super dealloc];
 }

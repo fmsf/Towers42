@@ -84,7 +84,7 @@
 		s.opacity = 0;
 	}
 	spriteSelector.opacity = 0;
-	[textures removeAllObjects];
+	
 	[textures dealloc];
     [super dealloc];
 }

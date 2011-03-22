@@ -32,6 +32,8 @@
 - (NSMutableArray*) getBullets;
 - (void) clearTarget;
 - (void) clearTarget:(Creep*) creep;
+- (bool) isSeed;
+
 
 
 

@@ -18,7 +18,8 @@
 		default_hp = hp = 20.0f;
 		armor	 = 0.0f;
 		velocity = 40.0f;
-		CCSprite* firstSprite = [CCSprite spriteWithFile:@"CircleCreep.png"];
+		mainSpriteName = [NSString stringWithFormat:@"TriangleCreep.png"];
+		CCSprite* firstSprite = [CCSprite spriteWithFile:mainSpriteName];
 		position = ccp(100,160);
 		firstSprite.position = ccp(100,160);
 		[textures addObject:firstSprite];

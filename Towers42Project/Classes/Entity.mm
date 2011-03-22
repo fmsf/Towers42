@@ -11,6 +11,10 @@
 
 @implementation Entity
 
+- (NSString*) getMainSpriteName{
+	return mainSpriteName;
+}
+
 - (void) inScene:(bool)_b{
 	addedToScene = _b;
 }

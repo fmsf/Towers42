@@ -31,7 +31,7 @@
 	}
 	if(abs(movementVector.x)<1 && abs(movementVector.y) < 1){
 		[target receiveAttack:damage :armorPenetration];
-		target = NULL;
+		[self clearTarget];
 		return false;
 	}
 	return true;
@@ -41,10 +41,11 @@
 	onScreen = t;
 }
 
-- (void) clearTarget:(Creep*) creep{
-	if(target == creep){
-		target = NULL;
+- (void) clearTarget{
+	for(CCSprite* s in textures){
+		[s removeFromParentAndCleanup:YES];
 	}
+	target = NULL;
 }
 
 - (bool) isOnScreen{

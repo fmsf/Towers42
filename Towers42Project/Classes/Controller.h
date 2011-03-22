@@ -10,6 +10,7 @@
 #import "cocos2d.h"
 #import "Level.h"
 #import "Wave.h"
+#import "Tower.h"
 
 // CGPoints ref: http://stackoverflow.com/questions/899600/how-can-i-add-cgpoint-objects-to-an-nsarray-the-easy-way
 
@@ -44,6 +45,7 @@
 	 */
 	
 	NSMutableArray* towers;
+	NSMutableArray* bullets;
 	
 	/*
 	 *	Miscelaneous

@@ -223,6 +223,8 @@
 		B6097322132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png in Resources */ = {isa = PBXBuildFile; fileRef = B6097321132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png */; };
 		B6097360132F89F9008414F5 /* TowerPellet.mm in Sources */ = {isa = PBXBuildFile; fileRef = B609735F132F89F9008414F5 /* TowerPellet.mm */; };
 		B6097369132F8F9C008414F5 /* pellet.png in Resources */ = {isa = PBXBuildFile; fileRef = B6097368132F8F9C008414F5 /* pellet.png */; };
+		B61088871333765900BD1D68 /* Bullet.mm in Sources */ = {isa = PBXBuildFile; fileRef = B61088861333765900BD1D68 /* Bullet.mm */; };
+		B61088A3133389F400BD1D68 /* stuff_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B61088A2133389F400BD1D68 /* stuff_circle.png */; };
 		B683EA9313279D6B00005123 /* target-icon-th.png in Resources */ = {isa = PBXBuildFile; fileRef = B683EA9213279D6B00005123 /* target-icon-th.png */; };
 		B683EABD1327D68B00005123 /* Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = B683EABC1327D68B00005123 /* Wave.m */; };
 		B6AD09C91318043300152052 /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09C81318043300152052 /* Controller.mm */; };
@@ -474,6 +476,9 @@
 		B609735E132F89F9008414F5 /* TowerPellet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerPellet.h; sourceTree = "<group>"; };
 		B609735F132F89F9008414F5 /* TowerPellet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TowerPellet.mm; sourceTree = "<group>"; };
 		B6097368132F8F9C008414F5 /* pellet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pellet.png; sourceTree = "<group>"; };
+		B61088851333765900BD1D68 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		B61088861333765900BD1D68 /* Bullet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Bullet.mm; sourceTree = "<group>"; };
+		B61088A2133389F400BD1D68 /* stuff_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stuff_circle.png; sourceTree = "<group>"; };
 		B683EA9213279D6B00005123 /* target-icon-th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "target-icon-th.png"; sourceTree = "<group>"; };
 		B683EABB1327D68B00005123 /* Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
 		B683EABC1327D68B00005123 /* Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wave.m; sourceTree = "<group>"; };
@@ -876,6 +881,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B61088A4133389F700BD1D68 /* bullets */,
 				B6097361132F8F8D008414F5 /* Towers */,
 				B6097323132F7DFC008414F5 /* MenuItems */,
 				84778D2513297E9F004EC62F /* CircleCreep.png */,
@@ -939,10 +945,28 @@
 				B6AD09CB1318052E00152052 /* Entity.mm */,
 				B683EABB1327D68B00005123 /* Wave.h */,
 				B683EABC1327D68B00005123 /* Wave.m */,
+				B61088841333763900BD1D68 /* Bullets */,
 				B609735D132F89DA008414F5 /* Towers */,
 				84451DA0131D075100B3027B /* Creeps */,
 			);
 			name = Entities;
+			sourceTree = "<group>";
+		};
+		B61088841333763900BD1D68 /* Bullets */ = {
+			isa = PBXGroup;
+			children = (
+				B61088851333765900BD1D68 /* Bullet.h */,
+				B61088861333765900BD1D68 /* Bullet.mm */,
+			);
+			name = Bullets;
+			sourceTree = "<group>";
+		};
+		B61088A4133389F700BD1D68 /* bullets */ = {
+			isa = PBXGroup;
+			children = (
+				B61088A2133389F400BD1D68 /* stuff_circle.png */,
+			);
+			name = bullets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1137,6 +1161,7 @@
 				84778D2613297E9F004EC62F /* CircleCreep.png in Resources */,
 				B6097322132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png in Resources */,
 				B6097369132F8F9C008414F5 /* pellet.png in Resources */,
+				B61088A3133389F400BD1D68 /* stuff_circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1160,6 +1185,7 @@
 				B683EABD1327D68B00005123 /* Wave.m in Sources */,
 				84778D2413297E45004EC62F /* CreepFast.mm in Sources */,
 				B6097360132F89F9008414F5 /* TowerPellet.mm in Sources */,
+				B61088871333765900BD1D68 /* Bullet.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

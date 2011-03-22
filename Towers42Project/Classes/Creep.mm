@@ -10,6 +10,7 @@
 #import "Creep.h"
 #import "defs.h"
 #import "Controller.h"
+#import "PowerUp.h"
 
 #define EASE_STEPS	10
 #define R_INTERVAL	0.01f
@@ -130,10 +131,20 @@
 - (void) receiveAttack:(float) damage: (float) armorPenetration {
 	
 	hp -= damage - (armor - armorPenetration);
-	NSLog(@"%f",hp);
+	//NSLog(@"%f",hp);
 	if ( hp <= 0 ) {
 		[c_ref registerDying:self];
 	}
+}
+
+- (void) receivePowerUp: (PowerUp*) my_power {
+	hp		*= [my_power getHpModifier];
+	armor	*= [my_power getArmorModifier];
+	velocity *=[my_power getSpeedModifier];
+}
+
+- (float) getHPPercent {
+	return 1.0f;
 }
 
 - (id)init {

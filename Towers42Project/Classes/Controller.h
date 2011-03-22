@@ -29,6 +29,8 @@
 	 */
 	bool used;
 	NSMutableArray* waves;
+	float player1WaveTimer;
+	
 	float timer;
 	
 	/*
@@ -70,5 +72,6 @@
 - (bool) isReady;
 
 - (float*) getTimer;
+- (float*) getPlayer1WaveTimer;
 
 @end

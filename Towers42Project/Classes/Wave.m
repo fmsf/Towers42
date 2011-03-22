@@ -9,6 +9,7 @@
 #import "Creep.h"
 #import "Wave.h"
 #import "Controller.h"
+#import "PowerUp.h"
 
 @implementation Wave
 
@@ -17,7 +18,7 @@
 	if (waveIndex >= num_waves) {
 		return;
 	}
-	NSLog(@"%f\n", [[waveTimes objectAtIndex: waveIndex] floatValue]);
+	//NSLog(@"%f\n", [[waveTimes objectAtIndex: waveIndex] floatValue]);
 	if ( *c_timer > [[waveTimes objectAtIndex: waveIndex] floatValue] ) {
 		
 		if ( unit_timer < spawnInterval ) {
@@ -27,6 +28,10 @@
 		} else if ( num_launched < size ) {
 			
 			Creep* nc = [[[seed class] alloc] init];
+			
+			if ([my_powerUp isPowerUp]) {
+				[nc receivePowerUp:my_powerUp];
+			}
 			
 			[nc initStuff:c_ref : 0.0f];
 			[nc setPosition: spawnPoint];
@@ -42,6 +47,9 @@
 			num_launched = 0;
 			unit_timer = 0;
 			waveIndex++;
+			
+			if ([my_powerUp isPowerUp])
+				[my_powerUp resetPowerUp];
 		}
 	}
 }
@@ -56,13 +64,16 @@
 	waveIndex = 0;
 	unit_timer = 0.0f;
 	
-	c_timer = [c_ref getTimer];
+	c_timer			= [c_ref getPlayer1WaveTimer];
 	
 	seed = instance;
 	[seed retain];
 	
 	NSValue *val	= [[c_ref getMapPath] objectAtIndex:0];
 	spawnPoint		= [val CGPointValue];
+	
+	my_powerUp = [[PowerUp alloc] init];
+	[my_powerUp initPowerUp];
 }
 
 
@@ -96,11 +107,25 @@
 	return size;
 }
 
+- (float) getNextWaveTime {
+	if (*c_timer <= [[waveTimes objectAtIndex: waveIndex] floatValue]) {
+		return [[waveTimes objectAtIndex: waveIndex] floatValue];
+	} else {
+		NSLog(@"calculating wave displacement");
+		float timeDiff = [[waveTimes objectAtIndex: waveIndex] floatValue];
+		NSLog(@"start: %f", timeDiff);
+		timeDiff += (size-1) * spawnInterval;
+		NSLog(@"end: %f", timeDiff);
+		timeDiff = [[waveTimes objectAtIndex: waveIndex+1] floatValue] - timeDiff;
+		
+		NSLog(@"new wave Time: %f", timeDiff);
+		
+		return timeDiff;
+	}
+}
+
 - (void) powerSpeed {
-	float time = [[waveTimes objectAtIndex: waveIndex] floatValue];
-	
-	[waveTimes replaceObjectAtIndex:waveIndex withObject:[NSNumber numberWithFloat: time - 5.0f]];
-	
+	[my_powerUp addSpeedModifier:5.0f];
 	//NSLog(@"%f = %f\n", [[waveTimes objectAtIndex: waveIndex] floatValue], time);
 }
 
@@ -115,8 +140,9 @@
 - (void)dealloc {
 	// release here
 	//[waveTimes removeAllObjects];
-	[waveTimes release];
-	[seed release];
+	[waveTimes	release];
+	[seed		release];
+	[my_powerUp release];
 	
     [super dealloc];
 }

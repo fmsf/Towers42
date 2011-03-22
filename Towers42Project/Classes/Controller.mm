@@ -35,16 +35,15 @@
 
 - (bool) execute:(float) delta {
 	
-	timer += delta;
+	timer				+= delta;
+	player1WaveTimer	+= delta;
 	
-	#ifdef GRAVE_DEBUG
-	if (delta > 2) {
-		delta = 0;
-	}
-	#endif
-	
-	if(timer>2 && !used) {
-		[[waves objectAtIndex:0] powerSpeed];
+	if(timer>1 && !used) {
+		
+		player1WaveTimer += [[waves objectAtIndex:0] getNextWaveTime];
+		
+		//[[waves objectAtIndex:0] powerSpeed];
+		NSLog(@"used PowerUp");
 		used = true;
 	}
 	
@@ -163,7 +162,7 @@
 		[self setNewLevel:newlvl];
 		[newlvl release];
 		
-		timer = 0;
+		player1WaveTimer = timer = 0;
 		
 		//[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
 		
@@ -173,9 +172,10 @@
 		CreepNormal*	seedNormal	= [[CreepNormal alloc] init];
 		CreepFast*		seedFast	= [[CreepFast alloc] init];
 		
-		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
-		[wave initWave: self: seedNormal :4 : 2.0f ];
-		[wave setWaveInterval: 10.0f: 0.0f: 1];
+		//- (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv;
+		[wave initWave: self: seedNormal :4 : 1.0f ];
+		//- (void) setWaveInterval:(float) wave_intv: (float) timeToSpawn: (int) n_waves
+		[wave setWaveInterval: 10.0f: 0.0f: 2];
 		
 		[waves addObject: wave];
 		
@@ -218,6 +218,10 @@
 
 - (float*) getTimer {
 	return &timer;
+}
+
+- (float*) getPlayer1WaveTimer {
+	return &player1WaveTimer;
 }
 
 - (bool) isReady{

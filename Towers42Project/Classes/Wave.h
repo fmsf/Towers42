@@ -10,13 +10,16 @@
 
 @class Creep;
 @class Controller;
+@class PowerUp;
 
 @interface Wave : Entity {
 	
 	Creep*		seed;		// type of creep to be spawned
 	Controller* c_ref;
 	
-	float* c_timer;			// reference to controller's timer object
+	PowerUp* my_powerUp;	// Power ups assigned to this wave instance
+	
+	float* c_timer;			// reference to controller's wave timer object
 	
 	float	spawnInterval;	// time interval between creep spawn
 	float	waveInterval;	// time interval between wave spawn
@@ -39,11 +42,11 @@
 
 - (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv;
 
-- (Creep*) getWaveClass;
-- (int)   getWaveSize;
+- (Creep*)	getWaveClass;
+- (int)		getWaveSize;
+- (float)	getNextWaveTime;
 
 - (void) update:(float) d_time;
-
 
 - (void) powerSpeed;
 

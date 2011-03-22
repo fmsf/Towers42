@@ -26,6 +26,7 @@
 	float	velocity;
 	float	armor;
 	float	hp;
+	float   default_hp;
 	
 	bool reachedEnd;
 }
@@ -34,5 +35,6 @@
 
 - (bool) updatePosition:(float) d_time;
 - (void) receiveAttack:(float) damage: (float) armorPenetration;
+- (float) getHPPercent;
 
 @end

@@ -41,6 +41,12 @@
 	onScreen = t;
 }
 
+- (void) clearTarget:(Creep*) creep{
+	if(target == creep){
+		target = NULL;
+	}
+}
+
 - (bool) isOnScreen{
 	return onScreen;
 }

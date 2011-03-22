@@ -43,9 +43,7 @@
 	}
 	#endif
 	
-	for (Tower* t in towers){
-		[t shoot: delta];
-	}
+
 	
 	for ( Wave* w in waves) {
 		[w update: delta];
@@ -53,10 +51,17 @@
 	
 	for ( Creep* c in creeps) {
 		[c updatePosition: delta];
-		for( Tower* t in towers){
-			[t setTarget:c];
-			[t updateRotation];
+	}
+	
+	for (Tower* t in towers){
+		for(Creep* c in elders){
+			[t clearTarget:c];
 		}
+		for(Creep* c in creeps){
+			[t setTarget:c];
+			[t updateRotation];	
+		}
+		[t shoot: delta];
 	}
 	
 
@@ -165,7 +170,7 @@
 		[waves addObject: wave];
 		
 		[wave release];
-		/*
+		
 		wave = [[Wave alloc] init];
 		
 		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
@@ -174,7 +179,7 @@
 		
 		[waves addObject: wave];
 		
-		[wave release];*/
+		[wave release];
 		
 		/*
 		NSValue* val = [mapPath objectAtIndex:0];

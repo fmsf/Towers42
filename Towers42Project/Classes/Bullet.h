@@ -24,6 +24,7 @@
 - (bool) update;
 - (void) isOnScreen:(bool)t;
 - (bool) isOnScreen;
+- (void) clearTarget:(Creep*) creep;
 
 
 

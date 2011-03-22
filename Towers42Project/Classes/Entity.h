@@ -17,8 +17,12 @@
 	CGPoint position;
 	int active;
 	bool addedToScene;
-	CCSprite* spriteSelector;
 	float rotation;
+	
+	
+	CCSprite* spriteSelector;
+	NSString* mainSpriteName;
+	
 }
 
 - (void) inScene:(bool)_b;

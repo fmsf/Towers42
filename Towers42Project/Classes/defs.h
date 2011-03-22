@@ -20,6 +20,7 @@
 
 #define SEED_TOWER 1
 
+#define HP_BAR_SIZE_IN_PX 30
 
 //#define FMSF_DEBUG
-#define DEBUG_ALL
+//#define DEBUG_ALL

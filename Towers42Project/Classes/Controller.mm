@@ -54,14 +54,15 @@
 	}
 	
 	for (Tower* t in towers){
-		for(Creep* c in elders){
-			[t clearTarget:c];
-		}
+		if([t isSeed]) continue;		
 		for(Creep* c in creeps){
 			[t setTarget:c];
 			[t updateRotation];	
 		}
 		[t shoot: delta];
+	}
+	for(Tower* t in towers){
+		[t clearTarget];
 	}
 	
 

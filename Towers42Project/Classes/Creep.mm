@@ -29,6 +29,14 @@
 }
 
 - (bool) updatePosition:(float) d_time {
+	if([self getStatus]==CREEP_DEAD){
+		return false;
+	}
+	else if([self getStatus]==CREEP_TO_RELEASE){
+		[c_ref registerDying:self];
+		return false;
+	}
+	
 	int p_delta = 0; // box around waypoint that defines it as being reached
 	
 	CGPoint prev;
@@ -130,10 +138,13 @@
 - (void) receiveAttack:(float) damage: (float) armorPenetration {
 	
 	hp -= damage - (armor - armorPenetration);
-	NSLog(@"%f",hp);
 	if ( hp <= 0 ) {
-		[c_ref registerDying:self];
+		[self setStatus:CREEP_DEAD];
 	}
+}
+
+- (float) getHPPercent{
+	return ((hp / default_hp)*HP_BAR_SIZE_IN_PX);
 }
 
 - (id)init {

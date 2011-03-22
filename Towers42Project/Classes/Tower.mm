@@ -12,7 +12,7 @@
 @implementation Tower
 
 - (void) updateRotation{
-	if(target!=NULL){
+	if(target!=NULL && [target getStatus]==CREEP_ACTIVE){
 		CGPoint targetPosition = [target getPosition];
 		rotation = CC_RADIANS_TO_DEGREES(ccpAngle(ccp(0,1), ccp(targetPosition.x-position.x,targetPosition.y-position.y)));
 		if(targetPosition.x < position.x){
@@ -33,19 +33,36 @@
 }
 
 - (void) clearTarget{
-	target = NULL;
+	if([target getStatus] == CREEP_DEAD){
+		for(Bullet* b in bullets){
+			[b clearTarget];
+		}
+		[bullets removeAllObjects];
+		target = NULL;
+	}
 }
 
 - (void) clearTarget:(Creep*) creep{
 	if(target == creep){
 		for(Bullet* b in bullets){
-			[b clearTarget:creep];
+			[b clearTarget];
 		}
 		target = NULL;
 	}
 }
 
 - (void) shoot:(float) delta{
+	shootTimer -= delta;
+	if(isSeed || target==NULL) {
+		for(Bullet* b in bullets){
+			[b update];
+		}
+		return;
+	}
+	if([target getStatus] == CREEP_TO_RELEASE){
+		[self clearTarget];
+		return;		 
+	}
 	shootTimer -= delta;
 	if(shootTimer <= 0){
 		shootTimer = shootSpeed;
@@ -57,10 +74,9 @@
 		}
 	}
 	for(Bullet* b in bullets){
-		if(![b update]){
-			target = NULL;
-		}
+		[b update];
 	}
+	[self clearTarget];
 }
 
 - (float) getRadius{
@@ -68,7 +84,8 @@
 }
 
 - (void) setTarget:(Creep *)_target{
-	if(target!=NULL){
+	if([_target getStatus]!=CREEP_ACTIVE) return;
+	if(target!=NULL && target ==_target){
 		CGPoint targetPosition = [_target getPosition];
 		float c1 = targetPosition.x - position.x;
 		float c2 = targetPosition.y - position.y;

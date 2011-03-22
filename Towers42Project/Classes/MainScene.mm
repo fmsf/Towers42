@@ -67,7 +67,7 @@
 		[controller execute: dt];
 		[self updateCreeps:[controller getCreeps]];
 		
-		// get new bullets
+		// get new bullets that haven't been added as childs of cocos2d layer
 		for(Tower* t in [controller getTowers]){
 			for(Bullet* b in [t getBullets]){
 				if(![b isOnScreen]){
@@ -107,6 +107,19 @@
 		glColor4f(0.3, 0.3, 1.0, 0.7);  
 		glLineWidth(1.0f);
 		ccDrawCircle([selectedTower getPosition], [selectedTower getRadius], 0, 180, NO);
+	}
+	
+	
+	// DRAW LIFE LINES
+	for(Creep* c in [controller getCreeps]){
+		CGPoint position = [c getPosition];
+		float hp = [c getHPPercent];
+		glColor4f(1.0f, 0.3, 0.0, 1.0);  
+		glLineWidth(1.0f);
+		float padding = HP_BAR_SIZE_IN_PX/2;
+		CGPoint p1 = ccp(position.x-padding,position.y+10);
+		CGPoint p2 = ccp(position.x-padding+hp,position.y+10);
+		ccDrawLine(p1,p2);
 	}
 
 }
@@ -183,7 +196,6 @@
 						[towers replaceObjectAtIndex:i withObject:newTower];
 						[seed dealloc];
 						selectedTower = newTower;
-					// CONTINUE WORKING HERE
 					}else {
 #ifdef DEBUG_ALL
 						NSLog(@"ERROR TOWER IS NULL");

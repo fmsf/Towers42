@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+
 #import "Level.h"
 #import "Wave.h"
 #import "Tower.h"
@@ -28,7 +29,9 @@
 	 *	Wave variables
 	 */
 	bool used;
+	float waveTimer;
 	NSMutableArray* waves;
+	
 	float timer;
 	
 	/*
@@ -61,6 +64,7 @@
 - (NSMutableArray*) getMapDir;
 - (NSMutableArray*) getCreeps;
 - (NSMutableArray*) getTowers;
+- (NSMutableArray*) getWaves;
 
 - (bool) execute:(float) delta;
 
@@ -70,5 +74,6 @@
 - (bool) isReady;
 
 - (float*) getTimer;
+- (float*) getWaveTimer;
 
 @end

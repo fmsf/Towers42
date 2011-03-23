@@ -10,6 +10,7 @@
 #import "Entity.h"
 
 @class Controller;
+@class PowerUp;
 
 @interface Creep : Entity {
 	Controller* c_ref;
@@ -38,4 +39,5 @@
 - (void) receiveAttack:(float) damage: (float) armorPenetration;
 - (float) getHPPercent;
 
+- (void) receivePowerUp: (PowerUp*) my_power;
 @end

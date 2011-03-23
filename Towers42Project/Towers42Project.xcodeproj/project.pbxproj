@@ -218,6 +218,7 @@
 		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
 		84451D9A131D009200B3027B /* Level.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451D99131D009200B3027B /* Level.mm */; };
 		84451DA3131D07C600B3027B /* CreepNormal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451DA2131D07C600B3027B /* CreepNormal.mm */; };
+		8451A5D81338B83000B695FE /* PowerUp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8451A5D71338B83000B695FE /* PowerUp.mm */; };
 		84778D2413297E45004EC62F /* CreepFast.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84778D2313297E45004EC62F /* CreepFast.mm */; };
 		84778D2613297E9F004EC62F /* CircleCreep.png in Resources */ = {isa = PBXBuildFile; fileRef = 84778D2513297E9F004EC62F /* CircleCreep.png */; };
 		B6097322132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png in Resources */ = {isa = PBXBuildFile; fileRef = B6097321132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png */; };
@@ -475,6 +476,8 @@
 		84451D9D131D00BC00B3027B /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		84451DA1131D07C600B3027B /* CreepNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepNormal.h; sourceTree = "<group>"; };
 		84451DA2131D07C600B3027B /* CreepNormal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepNormal.mm; sourceTree = "<group>"; };
+		8451A5D61338B83000B695FE /* PowerUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerUp.h; sourceTree = "<group>"; };
+		8451A5D71338B83000B695FE /* PowerUp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PowerUp.mm; sourceTree = "<group>"; };
 		84778D2213297E45004EC62F /* CreepFast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepFast.h; sourceTree = "<group>"; };
 		84778D2313297E45004EC62F /* CreepFast.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepFast.mm; sourceTree = "<group>"; };
 		84778D2513297E9F004EC62F /* CircleCreep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleCreep.png; sourceTree = "<group>"; };
@@ -912,6 +915,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		842FFF11133A00C10037C594 /* Wave */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Wave;
+			sourceTree = "<group>";
+		};
 		84451DA0131D075100B3027B /* Creeps */ = {
 			isa = PBXGroup;
 			children = (
@@ -960,13 +970,16 @@
 		B610885513336D3300BD1D68 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				B683EABC1327D68B00005123 /* Wave.m */,
+				B683EABB1327D68B00005123 /* Wave.h */,
+				842FFF11133A00C10037C594 /* Wave */,
 				B6AD09CA1318052E00152052 /* Entity.h */,
 				B6AD09CB1318052E00152052 /* Entity.mm */,
-				B683EABB1327D68B00005123 /* Wave.h */,
-				B683EABC1327D68B00005123 /* Wave.m */,
 				B61088841333763900BD1D68 /* Bullets */,
 				B609735D132F89DA008414F5 /* Towers */,
 				84451DA0131D075100B3027B /* Creeps */,
+				8451A5D61338B83000B695FE /* PowerUp.h */,
+				8451A5D71338B83000B695FE /* PowerUp.mm */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -1216,6 +1229,7 @@
 				B6DB6BB91339FE6600F2EAE3 /* TowerMissile.mm in Sources */,
 				B6DB6BBE133A043700F2EAE3 /* BulletPellet.mm in Sources */,
 				B6DB6BEA133A05D100F2EAE3 /* BulletMissile.mm in Sources */,
+				8451A5D81338B83000B695FE /* PowerUp.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,8 @@
 #import "Creep.h"
 #import "defs.h"
 #import "Controller.h"
+#import "PowerUp.h"
+#import "MyQueue.h"
 
 #define EASE_STEPS	10
 #define R_INTERVAL	0.01f
@@ -141,6 +143,12 @@
 	if ( hp <= 0 ) {
 		[self setStatus:CREEP_DEAD];
 	}
+}
+
+- (void) receivePowerUp: (PowerUp*) my_power {
+	hp		*= [my_power getHpModifier];
+	armor	*= [my_power getArmorModifier];
+	velocity *=[my_power getSpeedModifier];
 }
 
 - (float) getHPPercent{

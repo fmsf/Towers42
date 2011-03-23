@@ -27,27 +27,30 @@
 	int		size;			// number of creeps to be spawned
 	int		num_waves;		// number of waves to be launched
 	int		num_launched;	// number of units already spawned
+	int		waveCount;		// current number of released waves
 	
 	//float	wave_timer;		// wave timer
 	float	unit_timer;		// unit timer
 	
 	CGPoint spawnPoint;		// point in which the creeps will be spawned
 	
-	int waveIndex;				// current wave index
-	NSMutableArray* waveTimes;	// contains wave release times
+	float	nextWaveAt;		// next wave time
+	bool	nextIsInstant;
 }
 
-- (void) setWaveInterval:(NSMutableArray*) wave_intv;
-- (void) setWaveInterval:(float) wave_intv: (float) timeToSpawn: (int) num_waves;
+- (void) setWaveInterval:(float) wave_intv: (int) num_waves;
 
 - (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv;
 
 - (Creep*)	getWaveClass;
 - (int)		getWaveSize;
-- (float)	getNextWaveTime;
+
+- (void)	setNextWaveAt:(float) time;
+- (void)	setNextWaveInstant:(float) currentTime;
 
 - (void) update:(float) d_time;
 
 - (void) powerSpeed;
+- (void) quickSpawn;
 
 @end

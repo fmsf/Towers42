@@ -33,22 +33,26 @@
 	return towers;
 }
 
+- (NSMutableArray*) getWaves{
+	return waves;
+}
+
 - (bool) execute:(float) delta {
 	
-	timer				+= delta;
-	player1WaveTimer	+= delta;
+	timer		+= delta;
+	waveTimer	+= delta;
 	
-	if(timer>1 && !used) {
+	if(timer>6 && !used) {
 		
-		player1WaveTimer += [[waves objectAtIndex:0] getNextWaveTime];
+		[[waves objectAtIndex:0] quickSpawn];
 		
 		//[[waves objectAtIndex:0] powerSpeed];
 		NSLog(@"used PowerUp");
 		used = true;
 	}
 	
-	for ( Wave* w in waves) {
-		[w update: delta];
+	if ([waves count] > 0) {
+		[[waves objectAtIndex:0] update: delta];
 	}
 	
 	for ( Creep* c in creeps) {
@@ -163,7 +167,7 @@
 		[self setNewLevel:newlvl];
 		[newlvl release];
 		
-		player1WaveTimer = timer = 0;
+		waveTimer = timer = 0;
 		
 		//[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
 		
@@ -175,8 +179,8 @@
 		
 		//- (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv;
 		[wave initWave: self: seedNormal :4 : 1.0f ];
-		//- (void) setWaveInterval:(float) wave_intv: (float) timeToSpawn: (int) n_waves
-		[wave setWaveInterval: 10.0f: 0.0f: 2];
+		//- (void) setWaveInterval:(float) wave_intv: (int) n_waves
+		[wave setWaveInterval: 6.0f: 2];
 		
 		[waves addObject: wave];
 		
@@ -185,7 +189,7 @@
 		
 		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
 		[wave initWave: self: seedFast :4 : 0.4f ];
-		[wave setWaveInterval: 10.0f: 20.0f: 1];
+		[wave setWaveInterval: 6.0f: 2];
 		
 		[waves addObject: wave];
 		
@@ -193,24 +197,8 @@
 		[seedNormal release];
 		[seedFast	release];
 		
-		/*
-		NSValue* val = [mapPath objectAtIndex:0];
+		[[waves objectAtIndex:0] setNextWaveAt: 0];
 		
-		for (Creep* c in creeps) {
-			[c initStuff:self :0];
-			[c setPosition: [val CGPointValue]];
-		}
-		*/
-		/*
-		mapPath = [NSMutableArray arrayWithObjects:
-						[NSValue valueWithCGPoint:CGPointMake(100, 0)],
-						[NSValue valueWithCGPoint:CGPointMake(100, 100)],
-						[NSValue valueWithCGPoint:CGPointMake(220, 280)],
-						[NSValue valueWithCGPoint:CGPointMake(220, 380)],
-						nil];
-		
-		creeps = [NSMutableArray arrayWithObjects:[[TestCreep alloc]init],nil];
-		 */
 		ready = true;
 		
 	}
@@ -221,8 +209,8 @@
 	return &timer;
 }
 
-- (float*) getPlayer1WaveTimer {
-	return &player1WaveTimer;
+- (float*) getWaveTimer {
+	return &waveTimer;
 }
 
 - (bool) isReady{

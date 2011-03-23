@@ -12,7 +12,14 @@
 #import "defs.h"
 #import "Bullet.h"
 
-@interface Tower : Entity {
+@protocol BulletSelector
+
+- (Bullet*) createNewBullet;
+
+@end
+
+
+@interface Tower : Entity <BulletSelector>{
 	float radius;
 	Creep* target;
 	bool isSeed;

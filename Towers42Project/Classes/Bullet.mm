@@ -17,11 +17,14 @@
 }
 
 - (bool) update{
-	if(target==NULL){
+	if(target==NULL || [target getStatus]==CREEP_DEAD || [target getStatus]== CREEP_TO_RELEASE){
+		[self clearTarget];
 		return false;
 	}
 	CGPoint targetPosition = [target getPosition];
-	movementVector = ccp((targetPosition.x-position.x)*velocity,(targetPosition.y-position.y)*velocity);
+	CGPoint distanceVector = ccp((targetPosition.x-position.x),(targetPosition.y-position.y));
+	float distance = sqrt(distanceVector.x*distanceVector.x+distanceVector.y+distanceVector.y);
+	movementVector = ccp((distanceVector.x/distance)*velocity,(distanceVector.y/distance)*velocity);
 	position.x += movementVector.x;
 	position.y += movementVector.y;
 	if([textures count]>0){
@@ -29,7 +32,8 @@
 			s.position = position;
 		}
 	}
-	if(abs(movementVector.x)<1 && abs(movementVector.y) < 1){
+//	if(abs(movementVector.x)<1 && abs(movementVector.y) < 1){
+	if(distance<=3){
 		[target receiveAttack:damage :armorPenetration];
 		[self clearTarget];
 		return false;
@@ -59,11 +63,11 @@
 - (id)init {
 	
     if ((self=[super init])) {
-		CCSprite* firstSprite = [CCSprite spriteWithFile:@"stuff_circle.png"];
+/*		CCSprite* firstSprite = [CCSprite spriteWithFile:@"stuff_circle.png"];
 		[textures addObject:firstSprite];
 		velocity = 0.1f;
 		damage = 10.0f;
-		armorPenetration = 0;
+		armorPenetration = 0;*/
 		onScreen = false;
 	}
 	return self;

@@ -13,11 +13,13 @@
 // GUI STATES
 #define BEGINING_STATE 0
 #define IN_TOWER_TYPE_SELECTION_MENU 1
+#define IN_TOWER_OFFENSIVE_SELECTION_MENU 2
 
 @interface GameGUI : NSObject {
 	NSMutableArray* spriteElements;
 	CCSprite* menuSprite;
 	CCSprite* selectTowerType;
+	CCSprite* selectOffensiveTowers;
 	int currentState;
 }
 
@@ -27,6 +29,12 @@
 // STATE HANDLER FUNCTIONS
 - (bool) seedWaiting;
 - (bool) seedWaitingAndclickInOffensive:(int)x :(int)y;
+
+- (bool)offensiveWaiting;
+- (void) activateOffensiveTowerSelector;
+- (bool) offensiveWaitingAndclickInPellet:(int)x :(int)y;
+- (bool) offensiveWaitingAndclickInMissile:(int)x :(int)y;
+
 
 
 @end

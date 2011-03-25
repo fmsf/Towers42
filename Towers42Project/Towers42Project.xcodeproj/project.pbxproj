@@ -918,6 +918,8 @@
 		842FFF11133A00C10037C594 /* Wave */ = {
 			isa = PBXGroup;
 			children = (
+				B683EABB1327D68B00005123 /* Wave.h */,
+				B683EABC1327D68B00005123 /* Wave.m */,
 			);
 			name = Wave;
 			sourceTree = "<group>";
@@ -970,8 +972,6 @@
 		B610885513336D3300BD1D68 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				B683EABC1327D68B00005123 /* Wave.m */,
-				B683EABB1327D68B00005123 /* Wave.h */,
 				842FFF11133A00C10037C594 /* Wave */,
 				B6AD09CA1318052E00152052 /* Entity.h */,
 				B6AD09CB1318052E00152052 /* Entity.mm */,

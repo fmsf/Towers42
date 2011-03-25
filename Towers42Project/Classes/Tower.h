@@ -27,8 +27,11 @@
 	NSMutableArray* bullets;
 	float shootTimer;
 	float shootSpeed;
+	NSMutableArray* creepList;
 }
 
+
+- (void) setCreepList:(NSMutableArray*) ptr;
 - (void) shoot:(float) delta;
 - (void) setRadius:(int) _radius;
 - (float) getRadius;

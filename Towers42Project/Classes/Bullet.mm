@@ -16,6 +16,10 @@
 	target = _target;
 }
 
+- (void) setCreepList:(NSMutableArray*) ptr{
+	creepList = ptr;
+}
+
 - (bool) update{
 	if(target==NULL || [target getStatus]==CREEP_DEAD || [target getStatus]== CREEP_TO_RELEASE){
 		[self clearTarget];
@@ -34,7 +38,18 @@
 	}
 //	if(abs(movementVector.x)<1 && abs(movementVector.y) < 1){
 	if(distance<=3){
-		[target receiveAttack:damage :armorPenetration];
+		if(splash_radius == 0){
+			[target receiveAttack:damage :armorPenetration];
+		}else {
+			for(Creep* creep in creepList){
+				CGPoint creepPosition = [creep getPosition];
+				float c1 = abs(creepPosition.x-position.x);
+				float c2 = abs(creepPosition.y-position.y);
+				if(c1*c1+c2*c2<=splash_radius*splash_radius){
+					[creep receiveAttack:damage :armorPenetration];
+				}
+			}
+		}
 		[self clearTarget];
 		return false;
 	}

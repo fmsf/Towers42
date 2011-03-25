@@ -16,11 +16,14 @@
 	Creep* target;
 	float damage;
 	float armorPenetration;
+	float splash_radius;
+	NSMutableArray* creepList;
 	
 	bool onScreen;
 }
 
 - (void) setTarget:(Creep*)_target;
+- (void) setCreepList:(NSMutableArray*) ptr;
 - (bool) update;
 - (void) isOnScreen:(bool)t;
 - (bool) isOnScreen;

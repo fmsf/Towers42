@@ -210,6 +210,7 @@
 							[self addChild:sprite];
 						}
 						[towers replaceObjectAtIndex:i withObject:newTower];
+						[newTower setCreepList:[controller getCreeps]];
 						[seed dealloc];
 						selectedTower = newTower;
 					}

@@ -24,6 +24,10 @@
 	}
 }
 
+- (void) setCreepList:(NSMutableArray*) ptr{
+	creepList = ptr;
+}
+
 - (NSMutableArray*) getBullets{
 	return bullets;
 }
@@ -68,6 +72,7 @@
 		shootTimer = shootSpeed;
 		if(target!=NULL){
 			Bullet* b = [self createNewBullet]; //[[Bullet alloc] init];
+			[b setCreepList: creepList];
 			[b setTarget: target];
 			[b setPosition:position];
 			[bullets addObject:b];

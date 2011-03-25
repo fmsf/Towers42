@@ -11,7 +11,7 @@
 #import "defs.h"
 #import "Controller.h"
 #import "PowerUp.h"
-#import "MyQueue.h"
+//#import "MyQueue.h"
 
 #define EASE_STEPS	10
 #define R_INTERVAL	0.01f

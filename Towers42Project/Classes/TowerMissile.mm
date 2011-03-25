@@ -22,7 +22,7 @@
 		spriteSelector = [seed getSelector];
 		turret = [CCSprite spriteWithFile:@"missileTurret.png"];
 		[textures addObject:turret];
-		shootSpeed = 2;
+		shootSpeed = 5;
 		shootTimer = 0.1;
 		for(CCSprite* s in textures){
 			s.position = position;

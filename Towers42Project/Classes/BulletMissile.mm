@@ -17,9 +17,10 @@
     if ((self=[super init])) {
 		CCSprite* firstSprite = [CCSprite spriteWithFile:@"missile.png"];
 		[textures addObject:firstSprite];
-		velocity = 0.1f;
-		damage = 1.0f;
+		velocity = 0.5f;
+		damage = 5.0f;
 		armorPenetration = 0;
+		splash_radius = 30;
 		onScreen = false;
 	}
 	return self;

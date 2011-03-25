@@ -16,9 +16,10 @@
     if ((self=[super init])) {
 		CCSprite* firstSprite = [CCSprite spriteWithFile:@"stuff_circle.png"];
 		[textures addObject:firstSprite];
-		velocity = 0.5f;
+		velocity = 1.0f;
 		damage = 10.0f;
 		armorPenetration = 0;
+		splash_radius = 0;
 		onScreen = false;
 	}
 	return self;

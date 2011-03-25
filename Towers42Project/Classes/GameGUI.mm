@@ -10,6 +10,23 @@
 
 @implementation GameGUI
 
+- (NSMutableArray*) setWaveList:(NSMutableArray*) ptr{
+	NSMutableArray* sprites = [[NSMutableArray alloc] init];
+	waveList = ptr;
+	for(Wave* wave in waveList){
+		
+		CCSprite* creepSprite;
+	}
+	
+}
+
+- (void) updateWaveList{
+	for(Wave* wave in waveList){
+		
+	}
+}
+
+
 
 - (NSMutableArray*) getElements{
 	return spriteElements;
@@ -40,6 +57,7 @@
 	}
 	return self;
 }
+
 
 - (void) towerSelected:(Tower*) t{
 	if(t!=NULL){

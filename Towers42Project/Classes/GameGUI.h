@@ -21,6 +21,7 @@
 	CCSprite* selectTowerType;
 	CCSprite* selectOffensiveTowers;
 	int currentState;
+	NSMutableArray* waveList;
 }
 
 - (NSMutableArray*) getElements;

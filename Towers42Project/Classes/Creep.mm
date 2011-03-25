@@ -24,7 +24,8 @@
 	waypointIndex	= 0;
 	
 	waypoint		= [[[c_ref getMapPath] objectAtIndex:waypointIndex+1] CGPointValue];
-	moveVector		= [[[c_ref getMapDir]  objectAtIndex:waypointIndex] CGPointValue];
+	
+	moveVector = ccp(0,1);
 	
 	moveVector.x *= velocity;
 	moveVector.y *= velocity;
@@ -52,17 +53,38 @@
 			// we haven't so continue to next waypoint
 			waypointIndex++;
 			
-			// Redundanct
-			//position.x = waypoint.x;
-			//position.y = waypoint.y;
-			
 			NSValue *val	= [[c_ref getMapPath] objectAtIndex:waypointIndex+1];
 			waypoint		= [val CGPointValue]; // new waypoint coordinates
 			
 			CGPoint prv_move = moveVector;
 			
-			val			= [[c_ref getMapDir] objectAtIndex:waypointIndex];
-			moveVector	= [val CGPointValue]; // new waypoint direction
+			/*
+			 * Calculate movement vector
+			 */
+			
+			float a, b, v_lenght;
+			
+			moveVector.x = waypoint.x;
+			moveVector.x -= position.x;
+			
+			
+			moveVector.y = waypoint.y;
+			moveVector.y -= position.y;
+			
+			// calculate the vectors lenght: lenght = sqrt( x*x + y*y )
+			a =		moveVector.x;
+			a *=	moveVector.x;
+			b =		moveVector.y;
+			b *=	moveVector.y;
+			
+			a += b;
+			v_lenght = sqrt(a);
+			
+			// divide the vector by it's lenght to normalize it
+			v_lenght = 1/v_lenght;
+			
+			moveVector.x *= v_lenght;
+			moveVector.y *= v_lenght;
 			
 			// calculate 
 			float r = CC_RADIANS_TO_DEGREES(ccpAngle(ccp(0,1), moveVector));
@@ -103,9 +125,6 @@
 	// Rotate if necessary
 	if ( r_Iter < EASE_STEPS && r_NextStep < (*[c_ref getTimer])) {
 		
-		position.x += moveVector.x * d_time * 0.5f;
-		position.y += moveVector.y * d_time * 0.5f;
-		
 		rotation	+= r_Step;
 		r_NextStep	+= R_INTERVAL;
 		
@@ -116,19 +135,7 @@
 		 prev.y < waypoint.y && position.y >= waypoint.y ||
 		 prev.x > waypoint.x && position.x <= waypoint.x ||
 		 prev.y > waypoint.y && position.y <= waypoint.y ) {
-		/*
-		if (waypointIndex > 4) {
-			NSLog(@"(%.2f, %.2f)  (%.2f, %.2f) (%.2f, %.2f)\n", prev.x, prev.y, position.x, position.y, waypoint.x, waypoint.y);
-			
-			NSValue *val	= [[c_ref getMapPath] objectAtIndex:waypointIndex];
-			CGPoint t		= [val CGPointValue]; // new waypoint coordinates
-			
-			val			= [[c_ref getMapDir] objectAtIndex:waypointIndex];
-			CGPoint m	= [val CGPointValue]; // new waypoint direction
-			
-			NSLog(@"  start (%.2f, %.2f)  vector (%.7f, %.7f)\n", t.x, t.y, m.x, m.y);
-		}
-		*/
+		
 		position.y = waypoint.y;
 		position.x = waypoint.x;
 		

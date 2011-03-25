@@ -44,6 +44,7 @@
 
 - (Creep*)	getWaveClass;
 - (int)		getWaveSize;
+- (float)	getTimeTillWave;
 
 - (void)	setNextWaveAt:(float) time;
 - (void)	setNextWaveInstant:(float) currentTime;

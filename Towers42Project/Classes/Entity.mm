@@ -11,6 +11,10 @@
 
 @implementation Entity
 
+- (void) addSprite:(CCSprite*) newSprite{
+	[textures addObject: newSprite];
+}
+
 - (NSString*) getMainSpriteName{
 	return mainSpriteName;
 }

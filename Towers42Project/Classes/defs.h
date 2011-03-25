@@ -22,5 +22,8 @@
 
 #define HP_BAR_SIZE_IN_PX 30
 
+
+#define CREEP_BAR_Y_IN_PX 30
+
 //#define FMSF_DEBUG
 //#define DEBUG_ALL

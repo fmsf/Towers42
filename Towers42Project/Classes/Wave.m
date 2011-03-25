@@ -79,6 +79,10 @@
 	nextWaveAt = time + spawnInterval;
 }
 
+- (float) getTimeTillWave {
+	return nextWaveAt - (*c_timer);
+}
+
 - (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv {
 	c_ref = contr;
 	size = n_size;

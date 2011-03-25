@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "Tower.h"
+#import "defs.h"
+#import "Wave.h"
 
 // GUI STATES
 #define BEGINING_STATE 0
@@ -26,6 +28,10 @@
 
 - (NSMutableArray*) getElements;
 - (void) towerSelected:(Tower*) t;
+
+- (NSMutableArray*) setWaveList:(NSMutableArray*) ptr;
+- (void) updateWaveList;
+
 
 // STATE HANDLER FUNCTIONS
 - (bool) seedWaiting;

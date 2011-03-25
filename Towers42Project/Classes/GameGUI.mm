@@ -14,15 +14,21 @@
 	NSMutableArray* sprites = [[NSMutableArray alloc] init];
 	waveList = ptr;
 	for(Wave* wave in waveList){
-		
-		CCSprite* creepSprite;
+		CCSprite* creepSprite = [CCSprite spriteWithFile:[[wave getWaveClass] getMainSpriteName]];
+		float _x = [wave getTimeTillWave];
+		creepSprite.position = ccp(_x,CREEP_BAR_Y_IN_PX);
+		[wave addSprite:creepSprite];
+		[sprites addObject:creepSprite];
 	}
+	return sprites;
 	
 }
 
 - (void) updateWaveList{
 	for(Wave* wave in waveList){
-		
+		CCSprite* creepSprite = [wave getSprite];
+		float _x = [wave getTimeTillWave];
+		creepSprite.position = ccp(_x,CREEP_BAR_Y_IN_PX);
 	}
 }
 

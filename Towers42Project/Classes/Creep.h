@@ -23,7 +23,6 @@
 	float	r_Step;
 	float	r_NextStep;
 	
-	float	pathTransform;
 	float	velocity;
 	float	armor;
 	float	hp;
@@ -33,11 +32,13 @@
 	
 }
 
-- (void) initStuff:(Controller*) n_controller:(float) n_transform;
+- (void) initStuff:(Controller*) n_controller;
 
 - (bool) updatePosition:(float) d_time;
 - (void) receiveAttack:(float) damage: (float) armorPenetration;
 - (float) getHPPercent;
+
+- (void) onDeath;
 
 - (void) receivePowerUp: (PowerUp*) my_power;
 @end

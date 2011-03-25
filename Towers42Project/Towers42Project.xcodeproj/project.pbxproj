@@ -218,6 +218,8 @@
 		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
 		84451D9A131D009200B3027B /* Level.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451D99131D009200B3027B /* Level.mm */; };
 		84451DA3131D07C600B3027B /* CreepNormal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84451DA2131D07C600B3027B /* CreepNormal.mm */; };
+		844CA028133CB1E200D54329 /* CreepSpawn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 844CA027133CB1E200D54329 /* CreepSpawn.mm */; };
+		844CA02B133CB52E00D54329 /* CreepSpawnUnderlings.mm in Sources */ = {isa = PBXBuildFile; fileRef = 844CA02A133CB52E00D54329 /* CreepSpawnUnderlings.mm */; };
 		8451A5D81338B83000B695FE /* PowerUp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8451A5D71338B83000B695FE /* PowerUp.mm */; };
 		84778D2413297E45004EC62F /* CreepFast.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84778D2313297E45004EC62F /* CreepFast.mm */; };
 		84778D2613297E9F004EC62F /* CircleCreep.png in Resources */ = {isa = PBXBuildFile; fileRef = 84778D2513297E9F004EC62F /* CircleCreep.png */; };
@@ -476,6 +478,10 @@
 		84451D9D131D00BC00B3027B /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		84451DA1131D07C600B3027B /* CreepNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepNormal.h; sourceTree = "<group>"; };
 		84451DA2131D07C600B3027B /* CreepNormal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepNormal.mm; sourceTree = "<group>"; };
+		844CA026133CB1E200D54329 /* CreepSpawn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepSpawn.h; sourceTree = "<group>"; };
+		844CA027133CB1E200D54329 /* CreepSpawn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepSpawn.mm; sourceTree = "<group>"; };
+		844CA029133CB52E00D54329 /* CreepSpawnUnderlings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepSpawnUnderlings.h; sourceTree = "<group>"; };
+		844CA02A133CB52E00D54329 /* CreepSpawnUnderlings.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepSpawnUnderlings.mm; sourceTree = "<group>"; };
 		8451A5D61338B83000B695FE /* PowerUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerUp.h; sourceTree = "<group>"; };
 		8451A5D71338B83000B695FE /* PowerUp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PowerUp.mm; sourceTree = "<group>"; };
 		84778D2213297E45004EC62F /* CreepFast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepFast.h; sourceTree = "<group>"; };
@@ -933,6 +939,10 @@
 				84778D2313297E45004EC62F /* CreepFast.mm */,
 				84451DA1131D07C600B3027B /* CreepNormal.h */,
 				84451DA2131D07C600B3027B /* CreepNormal.mm */,
+				844CA026133CB1E200D54329 /* CreepSpawn.h */,
+				844CA027133CB1E200D54329 /* CreepSpawn.mm */,
+				844CA029133CB52E00D54329 /* CreepSpawnUnderlings.h */,
+				844CA02A133CB52E00D54329 /* CreepSpawnUnderlings.mm */,
 			);
 			name = Creeps;
 			sourceTree = "<group>";
@@ -1230,6 +1240,8 @@
 				B6DB6BBE133A043700F2EAE3 /* BulletPellet.mm in Sources */,
 				B6DB6BEA133A05D100F2EAE3 /* BulletMissile.mm in Sources */,
 				8451A5D81338B83000B695FE /* PowerUp.mm in Sources */,
+				844CA028133CB1E200D54329 /* CreepSpawn.mm in Sources */,
+				844CA02B133CB52E00D54329 /* CreepSpawnUnderlings.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

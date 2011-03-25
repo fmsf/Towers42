@@ -18,9 +18,8 @@
 
 @implementation Creep
 
-- (void) initStuff:(Controller*) n_controller:(float) n_transform {
+- (void) initStuff:(Controller*) n_controller{
 	c_ref			= n_controller;
-	pathTransform	= n_transform;
 	waypointIndex	= 0;
 	
 	waypoint		= [[[c_ref getMapPath] objectAtIndex:waypointIndex+1] CGPointValue];
@@ -148,7 +147,7 @@
 	
 	hp -= damage - (armor - armorPenetration);
 	if ( hp <= 0 ) {
-		[self setStatus:CREEP_DEAD];
+		[self onDeath];
 	}
 }
 
@@ -158,8 +157,12 @@
 	velocity *=[my_power getSpeedModifier];
 }
 
-- (float) getHPPercent{
+- (float) getHPPercent {
 	return ((hp / default_hp)*HP_BAR_SIZE_IN_PX);
+}
+
+- (void) onDeath {
+	[self setStatus:CREEP_DEAD];
 }
 
 - (id)init {

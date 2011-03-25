@@ -41,7 +41,6 @@
 	int				pathLenght;		// size of the path
 	float			pathTransform;	// transform to be applied to multiplayer second path
 	NSMutableArray* mapPath;		// array with path waypoints
-	NSMutableArray* mapDir;			// array containing the waypoint directions
 	
 	/*
 	 *	Tower variables
@@ -61,7 +60,6 @@
 - (void) registerDying:(Creep*) dying;
 
 - (NSMutableArray*) getMapPath;
-- (NSMutableArray*) getMapDir;
 - (NSMutableArray*) getCreeps;
 - (NSMutableArray*) getTowers;
 - (NSMutableArray*) getWaves;

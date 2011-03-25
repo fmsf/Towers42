@@ -67,7 +67,7 @@
 	if(shootTimer <= 0){
 		shootTimer = shootSpeed;
 		if(target!=NULL){
-			Bullet* b = [[Bullet alloc] init];
+			Bullet* b = [self createNewBullet]; //[[Bullet alloc] init];
 			[b setTarget: target];
 			[b setPosition:position];
 			[bullets addObject:b];

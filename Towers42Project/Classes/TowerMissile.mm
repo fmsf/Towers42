@@ -1,28 +1,26 @@
 //
-//  TowerPellet.mm
+//  TowerMissile.mm
 //  Towers42Project
 //
-//  Created by Francisco M. Silva Ferreira on 3/15/11.
+//  Created by Francisco M. Silva Ferreira on 3/23/11.
 //  Copyright 2011 Student. All rights reserved.
 //
 
-#import "TowerPellet.h"
+#import "TowerMissile.h"
 
 
-@implementation TowerPellet
-
+@implementation TowerMissile
 
 - (Bullet*) createNewBullet{
-	return [[BulletPellet alloc] init];
+	return [[BulletMissile alloc] init];
 }
-
 
 - (id) initWithSeedTower:(Tower*) seed{
 	if((self=[super init])){
 		isSeed = false;
 		position = [seed getPosition];
 		spriteSelector = [seed getSelector];
-		turret = [CCSprite spriteWithFile:@"pellet.png"];
+		turret = [CCSprite spriteWithFile:@"missileTurret.png"];
 		[textures addObject:turret];
 		shootSpeed = 2;
 		shootTimer = 0.1;
@@ -48,5 +46,6 @@
 	
     [super dealloc];
 }
+
 
 @end

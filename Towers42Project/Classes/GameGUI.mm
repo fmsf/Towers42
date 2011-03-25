@@ -31,6 +31,11 @@
 		[spriteElements addObject:selectTowerType];
 		
 		
+		selectOffensiveTowers = [CCSprite spriteWithFile:@"towerOffensiveSelector.png"];
+		selectOffensiveTowers.position = ccp(160,67);
+		selectOffensiveTowers.opacity = 0;
+		[spriteElements addObject:selectOffensiveTowers];
+		
 		
 	}
 	return self;
@@ -42,6 +47,7 @@
 		currentState = IN_TOWER_TYPE_SELECTION_MENU;
 	}else {
 		selectTowerType.opacity = 0;
+		currentState = BEGINING_STATE;
 	}
 }
 
@@ -51,6 +57,24 @@
 
 - (bool) seedWaitingAndclickInOffensive:(int)x :(int)y{
 	return (x<160 && y<100 && y>40);
+}
+
+- (void) activateOffensiveTowerSelector{
+	currentState = IN_TOWER_OFFENSIVE_SELECTION_MENU;
+	selectTowerType.opacity = 0;
+	selectOffensiveTowers.opacity = 255;
+}
+
+- (bool) offensiveWaiting{
+	return currentState == IN_TOWER_OFFENSIVE_SELECTION_MENU;
+}
+
+- (bool) offensiveWaitingAndclickInPellet:(int)x :(int)y{
+	return (y<100 && y>40 && x>15 && x<60);
+}
+
+- (bool) offensiveWaitingAndclickInMissile:(int)x :(int)y{
+	return (y<100 && y>40 && x>85 && x<140);	
 }
 
 @end

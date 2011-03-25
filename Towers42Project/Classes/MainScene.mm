@@ -184,7 +184,45 @@
 		if(click_in_menu){
 			if([myGui seedWaiting]){
 				if([myGui seedWaitingAndclickInOffensive:location.x :location.y]){
+					[myGui activateOffensiveTowerSelector];
+				}
+			}else if([myGui offensiveWaiting]){
+				if(selectedTower!=NULL){
+					
+					// GET THE SELECTED SEED
 					NSMutableArray* towers  = [controller getTowers];
+					int i;
+					i = [towers indexOfObject:selectedTower];
+					Tower* seed = [towers objectAtIndex:i];
+					Tower* newTower = NULL;					
+					if([myGui offensiveWaitingAndclickInPellet:location.x :location.y]){
+						newTower = [[TowerPellet alloc] initWithSeedTower:seed];
+						
+					}else if([myGui offensiveWaitingAndclickInMissile:location.x :location.y]){
+						// BUILD MISSILE HERE
+						newTower = [[TowerMissile alloc] initWithSeedTower:seed];
+					}
+					
+					if(newTower !=NULL){
+						// ADD NEW TOWER TO LIST
+						
+						for(CCSprite* sprite in [newTower getTextures]){
+							[self addChild:sprite];
+						}
+						[towers replaceObjectAtIndex:i withObject:newTower];
+						[seed dealloc];
+						selectedTower = newTower;
+					}
+					
+				}else {
+#ifdef DEBUG_ALL
+					NSLog(@"ERROR TOWER IS NULL");
+#endif
+				}
+			}
+		}
+	}
+					/*NSMutableArray* towers  = [controller getTowers];
 					int i;
 					if(selectedTower!=NULL){
 						i = [towers indexOfObject:selectedTower];
@@ -200,12 +238,9 @@
 #ifdef DEBUG_ALL
 						NSLog(@"ERROR TOWER IS NULL");
 #endif
-					}
+					}*/
 					
-				}
-			}
-		}
-	}
+	
     target_is_active = false;
 	click_in_menu = false;
 }

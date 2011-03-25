@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Tower.h"
 #import "cocos2d.h"
 
-@interface TowerPellet : Tower {
+#import "Tower.h"
+#import "BulletPellet.h"
+
+@interface TowerPellet : Tower <BulletSelector> {
 
 }
 

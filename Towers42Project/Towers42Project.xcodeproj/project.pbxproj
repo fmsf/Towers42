@@ -237,6 +237,12 @@
 		B6C39D56131D3F8800914963 /* TriangleCreep.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C39D54131D3F8800914963 /* TriangleCreep.png */; };
 		B6DA569E1327E442008082A4 /* towerSelector.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DA569C1327E442008082A4 /* towerSelector.png */; };
 		B6DA56D61327EFBE008082A4 /* towerseed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6DA56D51327EFBE008082A4 /* towerseed.jpg */; };
+		B6DB6BB91339FE6600F2EAE3 /* TowerMissile.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6DB6BB81339FE6600F2EAE3 /* TowerMissile.mm */; };
+		B6DB6BBE133A043700F2EAE3 /* BulletPellet.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6DB6BBD133A043700F2EAE3 /* BulletPellet.mm */; };
+		B6DB6BEA133A05D100F2EAE3 /* BulletMissile.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6DB6BE9133A05D100F2EAE3 /* BulletMissile.mm */; };
+		B6DB6BEC133A075300F2EAE3 /* missileTurret.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DB6BEB133A075300F2EAE3 /* missileTurret.png */; };
+		B6DB6BFC133A0AF400F2EAE3 /* towerOffensiveSelector.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DB6BFB133A0AF400F2EAE3 /* towerOffensiveSelector.png */; };
+		B6DB6C08133A0F9C00F2EAE3 /* missile.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DB6C07133A0F9C00F2EAE3 /* missile.png */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
 		DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */; };
@@ -500,6 +506,15 @@
 		B6C39D54131D3F8800914963 /* TriangleCreep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TriangleCreep.png; sourceTree = "<group>"; };
 		B6DA569C1327E442008082A4 /* towerSelector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = towerSelector.png; sourceTree = "<group>"; };
 		B6DA56D51327EFBE008082A4 /* towerseed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = towerseed.jpg; sourceTree = "<group>"; };
+		B6DB6BB71339FE6600F2EAE3 /* TowerMissile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerMissile.h; sourceTree = "<group>"; };
+		B6DB6BB81339FE6600F2EAE3 /* TowerMissile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TowerMissile.mm; sourceTree = "<group>"; };
+		B6DB6BBC133A043700F2EAE3 /* BulletPellet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletPellet.h; sourceTree = "<group>"; };
+		B6DB6BBD133A043700F2EAE3 /* BulletPellet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BulletPellet.mm; sourceTree = "<group>"; };
+		B6DB6BE8133A05D100F2EAE3 /* BulletMissile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletMissile.h; sourceTree = "<group>"; };
+		B6DB6BE9133A05D100F2EAE3 /* BulletMissile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BulletMissile.mm; sourceTree = "<group>"; };
+		B6DB6BEB133A075300F2EAE3 /* missileTurret.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missileTurret.png; sourceTree = "<group>"; };
+		B6DB6BFB133A0AF400F2EAE3 /* towerOffensiveSelector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = towerOffensiveSelector.png; sourceTree = "<group>"; };
+		B6DB6C07133A0F9C00F2EAE3 /* missile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missile.png; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -923,6 +938,7 @@
 		B6097323132F7DFC008414F5 /* MenuItems */ = {
 			isa = PBXGroup;
 			children = (
+				B6DB6BFB133A0AF400F2EAE3 /* towerOffensiveSelector.png */,
 				B6097321132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png */,
 				B6C39D53131D3F8800914963 /* menuMockUp.png */,
 			);
@@ -936,6 +952,8 @@
 				B6AD09D713180B2600152052 /* Tower.mm */,
 				B609735E132F89F9008414F5 /* TowerPellet.h */,
 				B609735F132F89F9008414F5 /* TowerPellet.mm */,
+				B6DB6BB71339FE6600F2EAE3 /* TowerMissile.h */,
+				B6DB6BB81339FE6600F2EAE3 /* TowerMissile.mm */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -943,6 +961,7 @@
 		B6097361132F8F8D008414F5 /* Towers */ = {
 			isa = PBXGroup;
 			children = (
+				B6DB6BEB133A075300F2EAE3 /* missileTurret.png */,
 				B6097368132F8F9C008414F5 /* pellet.png */,
 			);
 			name = Towers;
@@ -970,6 +989,10 @@
 			children = (
 				B61088851333765900BD1D68 /* Bullet.h */,
 				B61088861333765900BD1D68 /* Bullet.mm */,
+				B6DB6BBC133A043700F2EAE3 /* BulletPellet.h */,
+				B6DB6BBD133A043700F2EAE3 /* BulletPellet.mm */,
+				B6DB6BE8133A05D100F2EAE3 /* BulletMissile.h */,
+				B6DB6BE9133A05D100F2EAE3 /* BulletMissile.mm */,
 			);
 			name = Bullets;
 			sourceTree = "<group>";
@@ -977,6 +1000,7 @@
 		B61088A4133389F700BD1D68 /* bullets */ = {
 			isa = PBXGroup;
 			children = (
+				B6DB6C07133A0F9C00F2EAE3 /* missile.png */,
 				B61088A2133389F400BD1D68 /* stuff_circle.png */,
 			);
 			name = bullets;
@@ -1175,6 +1199,9 @@
 				B6097322132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png in Resources */,
 				B6097369132F8F9C008414F5 /* pellet.png in Resources */,
 				B61088A3133389F400BD1D68 /* stuff_circle.png in Resources */,
+				B6DB6BEC133A075300F2EAE3 /* missileTurret.png in Resources */,
+				B6DB6BFC133A0AF400F2EAE3 /* towerOffensiveSelector.png in Resources */,
+				B6DB6C08133A0F9C00F2EAE3 /* missile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1199,6 +1226,9 @@
 				84778D2413297E45004EC62F /* CreepFast.mm in Sources */,
 				B6097360132F89F9008414F5 /* TowerPellet.mm in Sources */,
 				B61088871333765900BD1D68 /* Bullet.mm in Sources */,
+				B6DB6BB91339FE6600F2EAE3 /* TowerMissile.mm in Sources */,
+				B6DB6BBE133A043700F2EAE3 /* BulletPellet.mm in Sources */,
+				B6DB6BEA133A05D100F2EAE3 /* BulletMissile.mm in Sources */,
 				8451A5D81338B83000B695FE /* PowerUp.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

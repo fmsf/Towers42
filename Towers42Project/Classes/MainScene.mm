@@ -52,6 +52,9 @@
 		// add the label as a child to this Layer
 		//[self addChild: label];
 		controller = [[Controller alloc] init];
+		for(CCSprite *sprite in [myGui setWaveList:[controller getWaves]]){
+			[self addChild:sprite];
+		}
 		
 				
 		

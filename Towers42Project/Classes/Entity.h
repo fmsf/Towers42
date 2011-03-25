@@ -30,6 +30,7 @@
 - (CGPoint) getPosition;
 - (void) setPosition:(CGPoint) point;
 - (CCSprite*) getSprite;
+- (void) addSprite:(CCSprite*) newSprite;
 - (void) animate:(ccTime) dt;
 - (int) getStatus;
 - (void) setStatus:(int) new_status;
@@ -37,5 +38,6 @@
 - (float) getRotation;
 - (CCSprite*) getSelector;
 - (NSMutableArray*) getTextures;
+- (NSString*) getMainSpriteName;
 
 @end

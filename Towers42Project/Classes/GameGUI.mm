@@ -39,7 +39,7 @@
 		float _x = offset * SECONDS_IN_PX + CREEP_BAR_LEFT_OFFSET;
 		inc_x += _x;
 		creepSprite.position = ccp(inc_x,CREEP_BAR_Y_IN_PX);
-        if(_x<0) {
+        if(offset<0) {
             creepSprite.opacity = 0;
         }
             

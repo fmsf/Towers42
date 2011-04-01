@@ -38,14 +38,14 @@
 	timer		+= delta;
 	waveTimer	+= delta;
 	
-	if(timer>1 && !used) {
+	/*if(timer>1 && !used) {
 		
 		[[waves objectAtIndex:0] quickSpawn];
 		
 		//[[waves objectAtIndex:0] powerSpeed];
 		NSLog(@"used PowerUp");
 		used = true;
-	}
+	}*/
 	
 	if ([waves count] > 0) {
 		[[waves objectAtIndex:0] update: delta];
@@ -122,9 +122,10 @@
 		CreepFast*		seedFast	= [[CreepFast alloc] init];
 		
 		//- (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv;
-		[wave initWave: self: seedNormal :4 : 1.0f ];
+		for(int i=0;i<10;i++){
+		[wave initWave: self: seedNormal :10 : 1.0f ];
 		//- (void) setWaveInterval:(float) wave_intv: (int) n_waves
-		[wave setWaveInterval: 10.0f: 2];
+		[wave setWaveInterval: 10.0f: 1];
 		
 		[waves addObject: wave];
 		
@@ -132,12 +133,13 @@
 		wave = [[Wave alloc] init];
 		
 		//n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
-		[wave initWave: self: seedFast :10 : 3.0f ];
-		[wave setWaveInterval: 10.0f: 3];
-		
+		[wave initWave: self: seedFast :10 : 1.0f ];
+		[wave setWaveInterval: 10.0f: 1];		
 		[waves addObject: wave];
-		
 		[wave		release];
+
+		}
+		
 		[seedNormal release];
 		[seedFast	release];
 		

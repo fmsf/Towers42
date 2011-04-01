@@ -24,7 +24,7 @@
 		spriteSelector = [seed getSelector];
 		turret = [CCSprite spriteWithFile:@"pellet.png"];
 		[textures addObject:turret];
-		shootSpeed = 2;
+		shootSpeed = 0.5;
 		shootTimer = 0.1;
 		for(CCSprite* s in textures){
 			s.position = position;

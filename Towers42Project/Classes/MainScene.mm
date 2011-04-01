@@ -69,7 +69,7 @@
 	if([controller isReady]){
 		[controller execute: dt];
 		[self updateCreeps:[controller getCreeps]];
-		
+		[myGui updateWaveList];
 		// get new bullets that haven't been added as childs of cocos2d layer
 		for(Tower* t in [controller getTowers]){
 			for(Bullet* b in [t getBullets]){

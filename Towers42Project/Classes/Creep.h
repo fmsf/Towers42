@@ -39,6 +39,8 @@
 - (float) getHPPercent;
 
 - (void) onDeath;
+- (void) setWaypoint: (int) index;
+- (void) updateMovementVector;
 
 - (void) receivePowerUp: (PowerUp*) my_power;
 @end

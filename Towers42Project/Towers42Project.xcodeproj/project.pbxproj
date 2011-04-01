@@ -237,6 +237,7 @@
 		B6C39D52131D361D00914963 /* GameGUI.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6C39D51131D361D00914963 /* GameGUI.mm */; };
 		B6C39D55131D3F8800914963 /* menuMockUp.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C39D53131D3F8800914963 /* menuMockUp.png */; };
 		B6C39D56131D3F8800914963 /* TriangleCreep.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C39D54131D3F8800914963 /* TriangleCreep.png */; };
+		B6C44AA41345D45000F687D4 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C44AA31345D45000F687D4 /* MainMenu.m */; };
 		B6DA569E1327E442008082A4 /* towerSelector.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DA569C1327E442008082A4 /* towerSelector.png */; };
 		B6DA56D61327EFBE008082A4 /* towerseed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6DA56D51327EFBE008082A4 /* towerseed.jpg */; };
 		B6DB6BB91339FE6600F2EAE3 /* TowerMissile.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6DB6BB81339FE6600F2EAE3 /* TowerMissile.mm */; };
@@ -510,6 +511,8 @@
 		B6C39D51131D361D00914963 /* GameGUI.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameGUI.mm; sourceTree = "<group>"; };
 		B6C39D53131D3F8800914963 /* menuMockUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuMockUp.png; sourceTree = "<group>"; };
 		B6C39D54131D3F8800914963 /* TriangleCreep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TriangleCreep.png; sourceTree = "<group>"; };
+		B6C44AA21345D45000F687D4 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		B6C44AA31345D45000F687D4 /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
 		B6DA569C1327E442008082A4 /* towerSelector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = towerSelector.png; sourceTree = "<group>"; };
 		B6DA56D51327EFBE008082A4 /* towerseed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = towerseed.jpg; sourceTree = "<group>"; };
 		B6DB6BB71339FE6600F2EAE3 /* TowerMissile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerMissile.h; sourceTree = "<group>"; };
@@ -617,6 +620,7 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B6C44AA11345D3C000F687D4 /* Menus */,
 				B610885513336D3300BD1D68 /* Entities */,
 				506EDC2F102F528A00A389B3 /* MainScene.h */,
 				506EDC30102F528A00A389B3 /* MainScene.mm */,
@@ -1016,6 +1020,15 @@
 			name = bullets;
 			sourceTree = "<group>";
 		};
+		B6C44AA11345D3C000F687D4 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				B6C44AA21345D45000F687D4 /* MainMenu.h */,
+				B6C44AA31345D45000F687D4 /* MainMenu.m */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1242,6 +1255,7 @@
 				8451A5D81338B83000B695FE /* PowerUp.mm in Sources */,
 				844CA028133CB1E200D54329 /* CreepSpawn.mm in Sources */,
 				844CA02B133CB52E00D54329 /* CreepSpawnUnderlings.mm in Sources */,
+				B6C44AA41345D45000F687D4 /* MainMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1366,6 +1380,7 @@
 				GCC_PREFIX_HEADER = Towers42Project_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -1388,6 +1403,7 @@
 				GCC_PREFIX_HEADER = Towers42Project_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",

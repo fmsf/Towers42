@@ -18,9 +18,8 @@
 
 @implementation Creep
 
-- (void) initStuff:(Controller*) n_controller:(float) n_transform {
+- (void) initStuff:(Controller*) n_controller{
 	c_ref			= n_controller;
-	pathTransform	= n_transform;
 	waypointIndex	= 0;
 	
 	waypoint		= [[[c_ref getMapPath] objectAtIndex:waypointIndex+1] CGPointValue];
@@ -58,52 +57,7 @@
 			
 			CGPoint prv_move = moveVector;
 			
-			/*
-			 * Calculate movement vector
-			 */
-			
-			float a, b, v_lenght;
-			
-			moveVector.x = waypoint.x;
-			moveVector.x -= position.x;
-			
-			
-			moveVector.y = waypoint.y;
-			moveVector.y -= position.y;
-			
-			// calculate the vectors lenght: lenght = sqrt( x*x + y*y )
-			a =		moveVector.x;
-			a *=	moveVector.x;
-			b =		moveVector.y;
-			b *=	moveVector.y;
-			
-			a += b;
-			v_lenght = sqrt(a);
-			
-			// divide the vector by it's lenght to normalize it
-			v_lenght = 1/v_lenght;
-			
-			moveVector.x *= v_lenght;
-			moveVector.y *= v_lenght;
-			
-			// calculate 
-			float r = CC_RADIANS_TO_DEGREES(ccpAngle(ccp(0,1), moveVector));
-			
-			if (position.x > waypoint.x) {
-				r = -r;
-			}
-			
-			r_Iter		= 0;
-			r_Step		= abs(r - rotation) / EASE_STEPS;
-			r_NextStep	= (*[c_ref getTimer]) + R_INTERVAL;
-			
-			if (rotation > r) {
-				r_Step = -r_Step;
-			}
-			
-			// multiply by velocity to get final movement vector (per second)
-			moveVector.x *= velocity;
-			moveVector.y *= velocity;
+			[self updateMovementVector];
 			
 		} else {
 			// reached the end of the path
@@ -148,7 +102,7 @@
 	
 	hp -= damage - (armor - armorPenetration);
 	if ( hp <= 0 ) {
-		[self setStatus:CREEP_DEAD];
+		[self onDeath];
 	}
 }
 
@@ -158,8 +112,70 @@
 	velocity *=[my_power getSpeedModifier];
 }
 
-- (float) getHPPercent{
+- (float) getHPPercent {
 	return ((hp / default_hp)*HP_BAR_SIZE_IN_PX);
+}
+
+- (void) onDeath {
+	[self setStatus:CREEP_DEAD];
+}
+
+- (void) updateMovementVector {
+	/*
+	 * Calculate movement vector
+	 */
+	
+	float a, b, v_lenght;
+	
+	moveVector.x = waypoint.x;
+	moveVector.x -= position.x;
+	
+	
+	moveVector.y = waypoint.y;
+	moveVector.y -= position.y;
+	
+	// calculate the vectors lenght: lenght = sqrt( x*x + y*y )
+	a =		moveVector.x;
+	a *=	moveVector.x;
+	b =		moveVector.y;
+	b *=	moveVector.y;
+	
+	a += b;
+	v_lenght = sqrt(a);
+	
+	// divide the vector by it's lenght to normalize it
+	v_lenght = 1/v_lenght;
+	
+	moveVector.x *= v_lenght;
+	moveVector.y *= v_lenght;
+	
+	// calculate 
+	float r = CC_RADIANS_TO_DEGREES(ccpAngle(ccp(0,1), moveVector));
+	
+	if (position.x > waypoint.x) {
+		r = -r;
+	}
+	
+	r_Iter		= 0;
+	r_Step		= abs(r - rotation) / EASE_STEPS;
+	r_NextStep	= (*[c_ref getTimer]) + R_INTERVAL;
+	
+	if (rotation > r) {
+		r_Step = -r_Step;
+	}
+	
+	// multiply by velocity to get final movement vector (per second)
+	moveVector.x *= velocity;
+	moveVector.y *= velocity;
+}
+
+- (void) setWaypoint: (int) index {
+	waypointIndex = index;
+	
+	NSValue *val	= [[c_ref getMapPath] objectAtIndex:waypointIndex+1];
+	waypoint		= [val CGPointValue]; // new waypoint coordinates
+	
+	[self updateMovementVector];
 }
 
 - (id)init {

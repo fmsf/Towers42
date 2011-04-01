@@ -30,7 +30,7 @@
 				[nc receivePowerUp:my_powerUp];
 			}
 			
-			[nc initStuff:c_ref : 0.0f];
+			[nc initStuff: c_ref];
 			[nc setPosition: spawnPoint];
 			
 			[[c_ref getCreeps] addObject: nc];

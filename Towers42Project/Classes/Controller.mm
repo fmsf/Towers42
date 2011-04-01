@@ -9,7 +9,7 @@
 #import "Controller.h"
 #import "CreepFast.h"
 #import "CreepNormal.h"
-
+#import "CreepSpawn.h"
 
 @implementation Controller
 
@@ -118,7 +118,7 @@
 		Wave* wave = [[Wave alloc] init];
 		
 		
-		CreepNormal*	seedNormal	= [[CreepNormal alloc] init];
+		CreepSpawn*	seedNormal	= [[CreepSpawn alloc] init];
 		CreepFast*		seedFast	= [[CreepFast alloc] init];
 		
 		//- (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv;

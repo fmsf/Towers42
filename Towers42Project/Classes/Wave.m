@@ -83,6 +83,10 @@
 	return nextWaveAt - (*c_timer);
 }
 
+- (float)   getWaveInterval {
+    return waveInterval;
+}
+
 - (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv {
 	c_ref = contr;
 	size = n_size;

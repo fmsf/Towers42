@@ -55,9 +55,10 @@
 	
 	Level*	newLvl;
 	bool	ready;
+    float   totalMonies;
 }
 
-- (void) registerDying:(Creep*) dying;
+- (void) registerDying:(Creep*) n_elder :(bool) killed;
 
 - (NSMutableArray*) getMapPath;
 - (NSMutableArray*) getCreeps;

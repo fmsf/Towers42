@@ -21,6 +21,7 @@
 		creepSprite.position = ccp(inc_x,CREEP_BAR_Y_IN_PX);
 		[wave addSprite:creepSprite];
 		[sprites addObject:creepSprite];
+        [creepSprite release];
 	}
 	return sprites;
 	

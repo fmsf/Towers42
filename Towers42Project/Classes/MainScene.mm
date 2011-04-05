@@ -52,11 +52,10 @@
 		// add the label as a child to this Layer
 		//[self addChild: label];
 		controller = [[Controller alloc] init];
-		for(CCSprite *sprite in [myGui setWaveList:[controller getWaves]]){
+        wavelst = [myGui setWaveList:[controller getWaves]];
+		for(CCSprite *sprite in wavelst){
 			[self addChild:sprite];
-		}
-		
-				
+		}	
 		
 		[self schedule:@selector(tick:)];
 	}
@@ -282,6 +281,7 @@
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc
 {
+    [wavelst release];
 	// in case you have something to dealloc, do it in this method
 	// in this particular example nothing needs to be released.
 	// cocos2d will automatically release all the children (Label)

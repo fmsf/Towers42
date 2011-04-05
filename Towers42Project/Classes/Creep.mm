@@ -35,7 +35,7 @@
 		return false;
 	}
 	else if([self getStatus]==CREEP_TO_RELEASE){
-		[c_ref registerDying:self];
+		[c_ref registerDying:self: !reachedEnd];
 		return false;
 	}
 	
@@ -97,6 +97,10 @@
 	}
 	
 	return true;
+}
+
+- (float) getValue {
+    return value;
 }
 
 - (void) receiveAttack:(float) damage: (float) armorPenetration {

@@ -30,6 +30,7 @@
 	
 	bool reachedEnd;
 	
+    float value;
 }
 
 - (void) initStuff:(Controller*) n_controller;
@@ -41,6 +42,7 @@
 - (void) onDeath;
 - (void) setWaypoint: (int) index;
 - (void) updateMovementVector;
+- (float) getValue;
 
 - (void) receivePowerUp: (PowerUp*) my_power;
 @end

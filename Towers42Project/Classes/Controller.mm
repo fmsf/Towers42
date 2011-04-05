@@ -67,15 +67,19 @@
 	for(Tower* t in towers){
 		[t clearTarget];
 	}
-
+    
 	[creeps removeObjectsInArray:elders];
 	[elders removeAllObjects];
 	
 	return true;
 }
 
-- (void) registerDying:(Creep*) n_elder {
-	
+- (void) registerDying:(Creep*) n_elder :(bool) killed {
+    
+    if (killed) {
+        totalMonies += [n_elder getValue];
+    }
+    
 	[elders addObject: n_elder];
 }
 
@@ -93,7 +97,7 @@
 - (id)init {
 	
     if ((self=[super init])) {
-		
+		totalMonies = 0;
 		towers = [[NSMutableArray alloc] init];
 		// code here
 		//mapPath = [[NSMutableArray alloc] init];
@@ -115,7 +119,7 @@
 		
 		//[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
 		
-		Wave* wave = [[Wave alloc] init];
+		Wave* wave;// = [[Wave alloc] init];
 		
 		
 		CreepSpawn*     seedSpawn	= [[CreepSpawn alloc] init];
@@ -134,7 +138,7 @@
             wave = [[Wave alloc] init];
             
             //n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
-            [wave initWave: self: seedFast :5 : 0.5f ];
+            [wave initWave: self: seedFast :5 : 0.1f ];
             [wave setWaveInterval: 5.0f: 1];		
             [waves addObject: wave];
             [wave  release];

@@ -29,6 +29,10 @@
 - (void) updateWaveList{
 	float inc_x = 0;
     
+    if ([waveList count] == 0) {
+        return ;
+    }
+    
     Wave* first = [waveList objectAtIndex:0];
     
     float offset = [first getTimeTillWave] - [first getWaveInterval];
@@ -37,12 +41,12 @@
 		CCSprite* creepSprite = [wave getSprite];
         offset += [wave getWaveInterval];
 		float _x = offset * SECONDS_IN_PX + CREEP_BAR_LEFT_OFFSET;
+        
 		inc_x += _x;
 		creepSprite.position = ccp(inc_x,CREEP_BAR_Y_IN_PX);
         if(offset<0) {
             creepSprite.opacity = 0;
         }
-            
 	}
 }
 

@@ -26,28 +26,41 @@
 	
 }
 
-- (void) updateWaveList{
-	float inc_x = 0;
+- (void) updateWaveList {
+    int numWaves = [waveList count];
     
-    if ([waveList count] == 0) {
+    if ( numWaves == 0) {
         return ;
     }
     
-    Wave* first = [waveList objectAtIndex:0];
+    Wave* wave = [waveList objectAtIndex:0];
     
-    float offset = [first getTimeTillWave] - [first getWaveInterval];
+    CCSprite* creepSprite;
     
-	for(Wave* wave in waveList){
-		CCSprite* creepSprite = [wave getSprite];
-        offset += [wave getWaveInterval];
-		float _x = offset * SECONDS_IN_PX + CREEP_BAR_LEFT_OFFSET;
+    float offset = [wave getTimeTillWave];
+    float _x = offset * SECONDS_IN_PX + CREEP_BAR_LEFT_OFFSET;
+    
+    creepSprite = [wave getSprite];
+    creepSprite.position = ccp(_x, CREEP_BAR_Y_IN_PX);
+    
+    if(offset<0) {
+        creepSprite.opacity = 0;
+    }
+    
+    for (int i=1; i<numWaves; i++) {
+        wave =  [waveList objectAtIndex:i];
         
-		inc_x += _x;
-		creepSprite.position = ccp(inc_x,CREEP_BAR_Y_IN_PX);
+        creepSprite = [wave getSprite];
+        offset += [wave getWaveInterval];
+        
+		_x = offset * SECONDS_IN_PX + CREEP_BAR_LEFT_OFFSET;
+        
+		creepSprite.position = ccp(_x, CREEP_BAR_Y_IN_PX);
+        
         if(offset<0) {
             creepSprite.opacity = 0;
         }
-	}
+    }
 }
 
 

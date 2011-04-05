@@ -230,6 +230,7 @@
 		B61088A3133389F400BD1D68 /* stuff_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B61088A2133389F400BD1D68 /* stuff_circle.png */; };
 		B683EA9313279D6B00005123 /* target-icon-th.png in Resources */ = {isa = PBXBuildFile; fileRef = B683EA9213279D6B00005123 /* target-icon-th.png */; };
 		B683EABD1327D68B00005123 /* Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = B683EABC1327D68B00005123 /* Wave.m */; };
+		B6A61B531345DDD30031FBE0 /* CreepSpawn.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A61B521345DDD30031FBE0 /* CreepSpawn.png */; };
 		B6AD09C91318043300152052 /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09C81318043300152052 /* Controller.mm */; };
 		B6AD09CC1318052E00152052 /* Entity.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09CB1318052E00152052 /* Entity.mm */; };
 		B6AD09D11318095400152052 /* Creep.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AD09D01318095400152052 /* Creep.mm */; };
@@ -498,6 +499,7 @@
 		B683EA9213279D6B00005123 /* target-icon-th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "target-icon-th.png"; sourceTree = "<group>"; };
 		B683EABB1327D68B00005123 /* Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
 		B683EABC1327D68B00005123 /* Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wave.m; sourceTree = "<group>"; };
+		B6A61B521345DDD30031FBE0 /* CreepSpawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreepSpawn.png; sourceTree = "<group>"; };
 		B6AD09C71318043300152052 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		B6AD09C81318043300152052 /* Controller.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Controller.mm; sourceTree = "<group>"; };
 		B6AD09CA1318052E00152052 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
@@ -913,6 +915,7 @@
 				B6097361132F8F8D008414F5 /* Towers */,
 				B6097323132F7DFC008414F5 /* MenuItems */,
 				84778D2513297E9F004EC62F /* CircleCreep.png */,
+				B6A61B521345DDD30031FBE0 /* CreepSpawn.png */,
 				B6DA56D51327EFBE008082A4 /* towerseed.jpg */,
 				B6DA569C1327E442008082A4 /* towerSelector.png */,
 				B683EA9213279D6B00005123 /* target-icon-th.png */,
@@ -1225,6 +1228,7 @@
 				B6DB6BEC133A075300F2EAE3 /* missileTurret.png in Resources */,
 				B6DB6BFC133A0AF400F2EAE3 /* towerOffensiveSelector.png in Resources */,
 				B6DB6C08133A0F9C00F2EAE3 /* missile.png in Resources */,
+				B6A61B531345DDD30031FBE0 /* CreepSpawn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

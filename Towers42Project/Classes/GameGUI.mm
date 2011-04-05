@@ -27,6 +27,7 @@
 }
 
 - (void) updateWaveList{
+    if([waveList count]==0) return;
 	float inc_x = 0;
     
     Wave* first = [waveList objectAtIndex:0];
@@ -86,6 +87,7 @@
 	}else {
 		selectTowerType.opacity = 0;
 		currentState = BEGINING_STATE;
+        selectOffensiveTowers.opacity = 0;
 	}
 }
 

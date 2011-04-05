@@ -148,6 +148,7 @@
 	return self;
 }
 
+
 - (void)dealloc {
 	// release here
 	[seed		release];

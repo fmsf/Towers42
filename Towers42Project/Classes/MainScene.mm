@@ -226,25 +226,7 @@
 			}
 		}
 	}
-					/*NSMutableArray* towers  = [controller getTowers];
-					int i;
-					if(selectedTower!=NULL){
-						i = [towers indexOfObject:selectedTower];
-						Tower* seed = [towers objectAtIndex:i];
-						TowerPellet* newTower = [[TowerPellet alloc] initWithSeedTower:seed];
-						for(CCSprite* sprite in [newTower getTextures]){
-							[self addChild:sprite];
-						}
-						[towers replaceObjectAtIndex:i withObject:newTower];
-						[seed dealloc];
-						selectedTower = newTower;
-					}else {
-#ifdef DEBUG_ALL
-						NSLog(@"ERROR TOWER IS NULL");
-#endif
-					}*/
-					
-	
+                
     target_is_active = false;
 	click_in_menu = false;
 }

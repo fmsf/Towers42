@@ -118,13 +118,13 @@
 		Wave* wave = [[Wave alloc] init];
 		
 		
-		CreepSpawn*     seedNormal	= [[CreepSpawn alloc] init];
+		CreepSpawn*     seedSpawn	= [[CreepSpawn alloc] init];
 		CreepFast*		seedFast	= [[CreepFast alloc] init];
 		
 		//- (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv;
 		for(int i=0;i<10;i++){
             wave = [[Wave alloc] init];
-            [wave initWave: self: seedNormal :5 : 0.5f ];
+            [wave initWave: self: seedSpawn :5 : 0.5f ];
             //- (void) setWaveInterval:(float) wave_intv: (int) n_waves
             [wave setWaveInterval: 5.0f: 1];
             
@@ -141,7 +141,7 @@
 
 		}
         
-		[seedNormal release];
+		[seedSpawn release];
 		[seedFast	release];
 		
 		[[waves objectAtIndex:0] setNextWaveAt: 0];

@@ -63,7 +63,8 @@
 			// reached the end of the path
 			reachedEnd = true;
 			
-			[c_ref registerDying:self];
+			//[c_ref registerDying:self];
+            [self setStatus:CREEP_DEAD];
 			
 			return false;
 		}

@@ -1283,12 +1283,9 @@
 				844CA028133CB1E200D54329 /* CreepSpawn.mm in Sources */,
 				844CA02B133CB52E00D54329 /* CreepSpawnUnderlings.mm in Sources */,
 				B6C44AA41345D45000F687D4 /* MainMenu.m in Sources */,
-<<<<<<< HEAD
 				84C4C6CE136AD882004B0319 /* LevelTest.m in Sources */,
-=======
 				B636A8C2134B1D6D00D37A2E /* TowerLaser.mm in Sources */,
 				B636A8C5134B1F4E00D37A2E /* LaserBullet.mm in Sources */,
->>>>>>> 3940450ce4cdff25fa664e932410b3f6896bc615
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

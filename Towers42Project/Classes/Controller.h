@@ -55,10 +55,13 @@
 	
 	Level*	newLvl;
 	bool	ready;
-    float   totalMonies;
+    int   totalMoney;
 }
 
-- (void) registerDying:(Creep*) n_elder :(bool) killed;
+- (void) registerNewEarning: (int) itemValue;
+- (void) registerNewPurchase:(int) itemPrice;
+
+- (void) registerDying:(Creep*) n_elder;
 
 - (NSMutableArray*) getMapPath;
 - (NSMutableArray*) getCreeps;

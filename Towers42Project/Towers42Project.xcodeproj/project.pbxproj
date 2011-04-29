@@ -223,6 +223,7 @@
 		8451A5D81338B83000B695FE /* PowerUp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8451A5D71338B83000B695FE /* PowerUp.mm */; };
 		84778D2413297E45004EC62F /* CreepFast.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84778D2313297E45004EC62F /* CreepFast.mm */; };
 		84778D2613297E9F004EC62F /* CircleCreep.png in Resources */ = {isa = PBXBuildFile; fileRef = 84778D2513297E9F004EC62F /* CircleCreep.png */; };
+		84C4C6CE136AD882004B0319 /* LevelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C4C6CD136AD882004B0319 /* LevelTest.m */; };
 		B6097322132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png in Resources */ = {isa = PBXBuildFile; fileRef = B6097321132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png */; };
 		B6097360132F89F9008414F5 /* TowerPellet.mm in Sources */ = {isa = PBXBuildFile; fileRef = B609735F132F89F9008414F5 /* TowerPellet.mm */; };
 		B6097369132F8F9C008414F5 /* pellet.png in Resources */ = {isa = PBXBuildFile; fileRef = B6097368132F8F9C008414F5 /* pellet.png */; };
@@ -491,6 +492,8 @@
 		84778D2213297E45004EC62F /* CreepFast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepFast.h; sourceTree = "<group>"; };
 		84778D2313297E45004EC62F /* CreepFast.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreepFast.mm; sourceTree = "<group>"; };
 		84778D2513297E9F004EC62F /* CircleCreep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleCreep.png; sourceTree = "<group>"; };
+		84C4C6CC136AD882004B0319 /* LevelTest.h */ = {isa = PBXFileReference; fileEncoding = 4; path = LevelTest.h; sourceTree = "<group>"; };
+		84C4C6CD136AD882004B0319 /* LevelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTest.m; sourceTree = "<group>"; };
 		B6097321132F7DF9008414F5 /* towerOffensiveDeffensiveOptions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = towerOffensiveDeffensiveOptions.png; sourceTree = "<group>"; };
 		B609735E132F89F9008414F5 /* TowerPellet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerPellet.h; sourceTree = "<group>"; };
 		B609735F132F89F9008414F5 /* TowerPellet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TowerPellet.mm; sourceTree = "<group>"; };
@@ -637,8 +640,6 @@
 				B6AD09C71318043300152052 /* Controller.h */,
 				B6AD09C81318043300152052 /* Controller.mm */,
 				B6AD0A0513181F3900152052 /* defs.h */,
-				84451D9D131D00BC00B3027B /* Level.h */,
-				84451D99131D009200B3027B /* Level.mm */,
 				B6C39D50131D361D00914963 /* GameGUI.h */,
 				B6C39D51131D361D00914963 /* GameGUI.mm */,
 			);
@@ -960,6 +961,17 @@
 			name = Creeps;
 			sourceTree = "<group>";
 		};
+		84C4C6CB136AD818004B0319 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				84451D9D131D00BC00B3027B /* Level.h */,
+				84451D99131D009200B3027B /* Level.mm */,
+				84C4C6CC136AD882004B0319 /* LevelTest.h */,
+				84C4C6CD136AD882004B0319 /* LevelTest.m */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
 		B6097323132F7DFC008414F5 /* MenuItems */ = {
 			isa = PBXGroup;
 			children = (
@@ -997,6 +1009,7 @@
 		B610885513336D3300BD1D68 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				84C4C6CB136AD818004B0319 /* Levels */,
 				842FFF11133A00C10037C594 /* Wave */,
 				B6AD09CA1318052E00152052 /* Entity.h */,
 				B6AD09CB1318052E00152052 /* Entity.mm */,
@@ -1270,8 +1283,12 @@
 				844CA028133CB1E200D54329 /* CreepSpawn.mm in Sources */,
 				844CA02B133CB52E00D54329 /* CreepSpawnUnderlings.mm in Sources */,
 				B6C44AA41345D45000F687D4 /* MainMenu.m in Sources */,
+<<<<<<< HEAD
+				84C4C6CE136AD882004B0319 /* LevelTest.m in Sources */,
+=======
 				B636A8C2134B1D6D00D37A2E /* TowerLaser.mm in Sources */,
 				B636A8C5134B1F4E00D37A2E /* LaserBullet.mm in Sources */,
+>>>>>>> 3940450ce4cdff25fa664e932410b3f6896bc615
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

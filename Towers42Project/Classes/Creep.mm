@@ -28,6 +28,8 @@
 	
 	moveVector.x *= velocity;
 	moveVector.y *= velocity;
+    
+    reachedEnd = false;
 }
 
 - (bool) updatePosition:(float) d_time {
@@ -35,7 +37,7 @@
 		return false;
 	}
 	else if([self getStatus]==CREEP_TO_RELEASE){
-		[c_ref registerDying:self: !reachedEnd];
+		[c_ref registerDying:self];
 		return false;
 	}
 	
@@ -99,7 +101,7 @@
 	return true;
 }
 
-- (float) getValue {
+- (int) getValue {
     return value;
 }
 
@@ -107,6 +109,7 @@
 	
 	hp -= damage - (armor - armorPenetration);
 	if ( hp <= 0 ) {
+        [c_ref registerNewEarning: value];
 		[self onDeath];
 	}
 }

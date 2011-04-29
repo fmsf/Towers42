@@ -10,6 +10,8 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
+#import "Wave.h"
+
 @interface Level : NSObject {
 	NSMutableArray* levelPath;
 	float x_transform;
@@ -23,5 +25,7 @@
 - (void) setLevelPath:(NSMutableArray*) n_levelPath;
 - (void) setTransform:(float) n_transform;
 - (void) setPathLenght:(int) n_pathLenght;
+
+- (NSMutableArray*) generateWaveList: (Controller*) c_ref;
 
 @end

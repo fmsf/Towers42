@@ -123,6 +123,19 @@
 		CGPoint p2 = ccp(position.x-padding+hp,position.y+10);
 		ccDrawLine(p1,p2);
 	}
+    
+    // DRAW LASERS
+    
+    glColor4f(0.0f, 1.0, 0.0, 1.0);  
+    glLineWidth(1.0f);
+    for(Tower *t in [controller getTowers]){
+        if([t class] == [TowerLaser class]){
+            if([t getTarget]!=NULL){
+                Creep* target_ = [t getTarget];
+                ccDrawLine([t getPosition], [target_ getPosition]);
+            }
+        }
+    }
 
 }
 
@@ -203,8 +216,16 @@
 					}else if([myGui offensiveWaitingAndclickInMissile:location.x :location.y]){
 						// BUILD MISSILE HERE
 						newTower = [[TowerMissile alloc] initWithSeedTower:seed];
+<<<<<<< HEAD
 					}
                     
+=======
+					}else if([myGui offensiveWaitingAndclickInLaser:location.x :location.y]){
+                        // BUILD LASER HERE
+                        newTower = [[TowerLaser alloc] initWithSeedTower:seed];
+                    }
+					
+>>>>>>> 3940450ce4cdff25fa664e932410b3f6896bc615
 					if(newTower !=NULL){
 						// ADD NEW TOWER TO LIST
 						

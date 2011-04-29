@@ -135,4 +135,8 @@
 	return (y<100 && y>40 && x>85 && x<140);	
 }
 
+- (bool) offensiveWaitingAndclickInLaser:(int)x :(int)y{
+	return (y<100 && y>40 && x>160 && x<200);	
+}
+
 @end

@@ -41,6 +41,8 @@
 - (void) activateOffensiveTowerSelector;
 - (bool) offensiveWaitingAndclickInPellet:(int)x :(int)y;
 - (bool) offensiveWaitingAndclickInMissile:(int)x :(int)y;
+- (bool) offensiveWaitingAndclickInLaser:(int)x :(int)y;
+
 
 
 

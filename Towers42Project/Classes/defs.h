@@ -27,5 +27,8 @@
 #define SECONDS_IN_PX 5
 #define CREEP_BAR_LEFT_OFFSET 50
 
+
+#define PI 3.14159265
+
 //#define FMSF_DEBUG
 //#define DEBUG_ALL

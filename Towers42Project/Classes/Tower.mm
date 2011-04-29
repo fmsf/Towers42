@@ -36,6 +36,13 @@
 	return bullets;
 }
 
+- (Creep*) getTarget{
+	if(target!=NULL && [target getStatus]==CREEP_ACTIVE){
+        return target;
+    }
+    return NULL;
+}
+
 - (void) setRadius:(int) _radius{
 	radius = _radius;
 }

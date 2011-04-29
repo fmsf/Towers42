@@ -229,6 +229,8 @@
 		B6097369132F8F9C008414F5 /* pellet.png in Resources */ = {isa = PBXBuildFile; fileRef = B6097368132F8F9C008414F5 /* pellet.png */; };
 		B61088871333765900BD1D68 /* Bullet.mm in Sources */ = {isa = PBXBuildFile; fileRef = B61088861333765900BD1D68 /* Bullet.mm */; };
 		B61088A3133389F400BD1D68 /* stuff_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B61088A2133389F400BD1D68 /* stuff_circle.png */; };
+		B636A8C2134B1D6D00D37A2E /* TowerLaser.mm in Sources */ = {isa = PBXBuildFile; fileRef = B636A8C1134B1D6D00D37A2E /* TowerLaser.mm */; };
+		B636A8C5134B1F4E00D37A2E /* LaserBullet.mm in Sources */ = {isa = PBXBuildFile; fileRef = B636A8C4134B1F4E00D37A2E /* LaserBullet.mm */; };
 		B683EA9313279D6B00005123 /* target-icon-th.png in Resources */ = {isa = PBXBuildFile; fileRef = B683EA9213279D6B00005123 /* target-icon-th.png */; };
 		B683EABD1327D68B00005123 /* Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = B683EABC1327D68B00005123 /* Wave.m */; };
 		B6A61B531345DDD30031FBE0 /* CreepSpawn.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A61B521345DDD30031FBE0 /* CreepSpawn.png */; };
@@ -499,6 +501,10 @@
 		B61088851333765900BD1D68 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
 		B61088861333765900BD1D68 /* Bullet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Bullet.mm; sourceTree = "<group>"; };
 		B61088A2133389F400BD1D68 /* stuff_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stuff_circle.png; sourceTree = "<group>"; };
+		B636A8C0134B1D6D00D37A2E /* TowerLaser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerLaser.h; sourceTree = "<group>"; };
+		B636A8C1134B1D6D00D37A2E /* TowerLaser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TowerLaser.mm; sourceTree = "<group>"; };
+		B636A8C3134B1F4E00D37A2E /* LaserBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaserBullet.h; sourceTree = "<group>"; };
+		B636A8C4134B1F4E00D37A2E /* LaserBullet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LaserBullet.mm; sourceTree = "<group>"; };
 		B683EA9213279D6B00005123 /* target-icon-th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "target-icon-th.png"; sourceTree = "<group>"; };
 		B683EABB1327D68B00005123 /* Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
 		B683EABC1327D68B00005123 /* Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wave.m; sourceTree = "<group>"; };
@@ -985,6 +991,8 @@
 				B609735F132F89F9008414F5 /* TowerPellet.mm */,
 				B6DB6BB71339FE6600F2EAE3 /* TowerMissile.h */,
 				B6DB6BB81339FE6600F2EAE3 /* TowerMissile.mm */,
+				B636A8C0134B1D6D00D37A2E /* TowerLaser.h */,
+				B636A8C1134B1D6D00D37A2E /* TowerLaser.mm */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -1023,6 +1031,8 @@
 				B6DB6BBD133A043700F2EAE3 /* BulletPellet.mm */,
 				B6DB6BE8133A05D100F2EAE3 /* BulletMissile.h */,
 				B6DB6BE9133A05D100F2EAE3 /* BulletMissile.mm */,
+				B636A8C3134B1F4E00D37A2E /* LaserBullet.h */,
+				B636A8C4134B1F4E00D37A2E /* LaserBullet.mm */,
 			);
 			name = Bullets;
 			sourceTree = "<group>";
@@ -1273,7 +1283,12 @@
 				844CA028133CB1E200D54329 /* CreepSpawn.mm in Sources */,
 				844CA02B133CB52E00D54329 /* CreepSpawnUnderlings.mm in Sources */,
 				B6C44AA41345D45000F687D4 /* MainMenu.m in Sources */,
+<<<<<<< HEAD
 				84C4C6CE136AD882004B0319 /* LevelTest.m in Sources */,
+=======
+				B636A8C2134B1D6D00D37A2E /* TowerLaser.mm in Sources */,
+				B636A8C5134B1F4E00D37A2E /* LaserBullet.mm in Sources */,
+>>>>>>> 3940450ce4cdff25fa664e932410b3f6896bc615
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

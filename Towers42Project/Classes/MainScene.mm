@@ -217,16 +217,10 @@
 					}else if([myGui offensiveWaitingAndclickInMissile:location.x :location.y]){
 						// BUILD MISSILE HERE
 						newTower = [[TowerMissile alloc] initWithSeedTower:seed];
-<<<<<<< HEAD
-					}
-                    
-=======
 					}else if([myGui offensiveWaitingAndclickInLaser:location.x :location.y]){
                         // BUILD LASER HERE
                         newTower = [[TowerLaser alloc] initWithSeedTower:seed];
-                    }
-					
->>>>>>> 3940450ce4cdff25fa664e932410b3f6896bc615
+                    }                
 					if(newTower !=NULL){
 						// ADD NEW TOWER TO LIST
 						

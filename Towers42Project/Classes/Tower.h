@@ -20,6 +20,7 @@
 
 
 @interface Tower : Entity <BulletSelector>{
+    int price;
 	float radius;
 	Creep* target;
 	bool isSeed;
@@ -43,7 +44,7 @@
 - (void) clearTarget;
 - (void) clearTarget:(Creep*) creep;
 - (bool) isSeed;
-
+- (int) getPrice;
 
 
 

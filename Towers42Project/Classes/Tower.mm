@@ -11,6 +11,10 @@
 
 @implementation Tower
 
+- (int) getPrice {
+    return price;
+}
+
 - (void) updateRotation{
 	if(target!=NULL && [target getStatus]==CREEP_ACTIVE){
 		CGPoint targetPosition = [target getPosition];

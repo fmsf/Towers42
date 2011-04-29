@@ -204,7 +204,7 @@
 						// BUILD MISSILE HERE
 						newTower = [[TowerMissile alloc] initWithSeedTower:seed];
 					}
-					
+                    
 					if(newTower !=NULL){
 						// ADD NEW TOWER TO LIST
 						
@@ -215,6 +215,8 @@
 						[newTower setCreepList:[controller getCreeps]];
 						[seed dealloc];
 						selectedTower = newTower;
+                        
+                        [controller registerNewPurchase: [newTower getPrice] ];
 					}
 					
 				}else {

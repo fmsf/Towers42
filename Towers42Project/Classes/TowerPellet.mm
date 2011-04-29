@@ -19,6 +19,7 @@
 
 - (id) initWithSeedTower:(Tower*) seed{
 	if((self=[super init])){
+        price = 5;
 		isSeed = false;
 		position = [seed getPosition];
 		spriteSelector = [seed getSelector];

@@ -36,24 +36,14 @@
 	x_transform = n_transform;
 }
 
+- (NSMutableArray*) generateWaveList:(Controller*) c_ref {
+    return NULL;
+}
+
 - (id)init {
 	
     if ((self=[super init])) {
 		// code here
-		levelPath = [[NSMutableArray alloc] initWithObjects:
-					 [NSValue valueWithCGPoint:CGPointMake(150, 100)],
-					 [NSValue valueWithCGPoint:CGPointMake(150, 200)],
-					 [NSValue valueWithCGPoint:CGPointMake(160, 300)],
-					 [NSValue valueWithCGPoint:CGPointMake(150, 250)],
-					 [NSValue valueWithCGPoint:CGPointMake(100, 200)],
-					 [NSValue valueWithCGPoint:CGPointMake(80,  230)],
-					 [NSValue valueWithCGPoint:CGPointMake(100, 380)],
-					 [NSValue valueWithCGPoint:CGPointMake(160, 480)],
-				   NULL];
-		
-		x_transform = 0.0f;
-		
-		pathLenght=8;
 		
 	}
 	return self;
@@ -61,7 +51,8 @@
 
 - (void)dealloc {
 	// release here
-	
+    [levelPath release];
+    
     [super dealloc];
 }
 

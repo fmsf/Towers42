@@ -7,9 +7,12 @@
 //
 
 #import "Controller.h"
+
 #import "CreepFast.h"
 #import "CreepNormal.h"
 #import "CreepSpawn.h"
+
+#import "LevelTest.h"
 
 @implementation Controller
 
@@ -74,11 +77,17 @@
 	return true;
 }
 
-- (void) registerDying:(Creep*) n_elder :(bool) killed {
-    
-    if (killed) {
-        totalMonies += [n_elder getValue];
-    }
+- (void) registerNewEarning: (int) itemValue {
+    totalMoney += itemValue;
+    NSLog(@"money: %d (+%d)", totalMoney, itemValue);
+}
+
+- (void) registerNewPurchase:(int) itemPrice {
+    totalMoney -= itemPrice;
+    NSLog(@"money: %d (-%d)", totalMoney, itemPrice);
+}
+
+- (void) registerDying:(Creep*) n_elder {
     
 	[elders addObject: n_elder];
 }
@@ -88,16 +97,20 @@
 	pathLenght		= [n_level getLevelPathLenght];
 	pathTransform	= [n_level getLevelTransform];
 	
+    waves = [n_level generateWaveList: self];
+    
+    [[waves objectAtIndex:0] setNextWaveAt: 0];
+    
 	[mapPath retain];
+    [waves retain];
 	
 	return true;
 }
 
-
 - (id)init {
 	
     if ((self=[super init])) {
-		totalMonies = 0;
+		totalMoney = 0;
 		towers = [[NSMutableArray alloc] init];
 		// code here
 		//mapPath = [[NSMutableArray alloc] init];
@@ -105,51 +118,17 @@
 		creeps	= [[NSMutableArray alloc] init];
 		elders	= [[NSMutableArray alloc] init];
 		dead	= [[NSMutableArray alloc] init];
-		
-		waves	= [[NSMutableArray alloc] init];
+        
 		bullets = [[NSMutableArray alloc] init];
 		
 		used = false;
 		
-		Level* newlvl = [[Level alloc] init];
+		Level* newlvl = [[LevelTest alloc] init];
 		[self setNewLevel:newlvl];
 		[newlvl release];
 		
 		waveTimer = timer = 0;
-		
-		//[creeps addObject:[[CreepNormal alloc] init]];//[NSMutableArray arrayWithObjects:[[CreepNormal alloc] init],nil];
-		
-		Wave* wave;// = [[Wave alloc] init];
-		
-		
-		CreepSpawn*     seedSpawn	= [[CreepSpawn alloc] init];
-		CreepFast*		seedFast	= [[CreepFast alloc] init];
-		
-		//- (void) initWave:(Controller*) contr:(Creep*) instance:(int) n_size: (float) creep_intv;
-		for(int i=0;i<10;i++){
-            wave = [[Wave alloc] init];
-            [wave initWave: self: seedSpawn :5 : 0.5f ];
-            //- (void) setWaveInterval:(float) wave_intv: (int) n_waves
-            [wave setWaveInterval: 5.0f: 1];
-            
-            [waves addObject: wave];
-            
-            [wave release];
-            wave = [[Wave alloc] init];
-            
-            //n_size: (float) wave_intv: (float) creep_intv: (float) timeToSpawn
-            [wave initWave: self: seedFast :5 : 0.1f ];
-            [wave setWaveInterval: 5.0f: 1];		
-            [waves addObject: wave];
-            [wave  release];
-
-		}
         
-		[seedSpawn release];
-		[seedFast	release];
-		
-		[[waves objectAtIndex:0] setNextWaveAt: 0];
-		
 		ready = true;
 		
 	}

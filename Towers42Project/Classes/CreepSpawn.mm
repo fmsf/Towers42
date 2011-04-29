@@ -41,7 +41,7 @@
 	
     if ((self=[super init])) {
 		// code here
-        value = 0;
+        value = 2;
 		default_hp = hp = 20.0f;
 		armor	 = 0.0f;
 		velocity = 10.0f;

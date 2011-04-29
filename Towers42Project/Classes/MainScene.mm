@@ -132,7 +132,8 @@
         if([t class] == [TowerLaser class]){
             if([t getTarget]!=NULL){
                 Creep* target_ = [t getTarget];
-                ccDrawLine([t getPosition], [target_ getPosition]);
+                TowerLaser *tl = (TowerLaser*) t;
+                ccDrawLine([tl getPosition], [tl getLaserEnd]);
             }
         }
     }

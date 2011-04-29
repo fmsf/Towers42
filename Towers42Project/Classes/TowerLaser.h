@@ -12,7 +12,9 @@
 #import "LaserBullet.h"
 
 @interface TowerLaser : Tower <BulletSelector> {
-    
+    CGPoint laserEnd;    
 }
+
+- (CGPoint) getLaserEnd;
 
 @end

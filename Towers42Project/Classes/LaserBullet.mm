@@ -17,7 +17,7 @@
 		CCSprite* firstSprite = [CCSprite spriteWithFile:@"missile.png"];
 		[textures addObject:firstSprite];
 		velocity = 10.0f;
-		damage = 5.0f;
+		damage = 0.5f;
         range = 100;
 		armorPenetration = 0;
 		splash_radius = 30;

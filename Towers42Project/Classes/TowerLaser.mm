@@ -22,7 +22,7 @@
 		spriteSelector = [seed getSelector];
 		turret = [CCSprite spriteWithFile:@"missileTurret.png"];
 		[textures addObject:turret];
-		shootSpeed = 5;
+		shootSpeed = 0.1;
 		shootTimer = 0.1;
 		for(CCSprite* s in textures){
 			s.position = position;
@@ -30,6 +30,10 @@
 	}
 	
 	return self;
+}
+
+- (CGPoint) getLaserEnd{
+    return laserEnd;
 }
 
 - (void) shoot:(float) delta{
@@ -51,14 +55,17 @@
             CGPoint targetPosition = [target getPosition];
             /*float angle = ccpAngle(position, targetPosition);
             float perpendicular = angle + PI/2;*/
-            float correction = 1;
+            float correction = 400;
             
             NSMutableArray* targetList = [[NSMutableArray alloc] init];
             
+            CGPoint p = laserEnd = ccp(position.x-2*(position.x-targetPosition.x), position.y-2*(position.y-targetPosition.y));
+            
             for(Creep* creep in creepList){
-                CGPoint p = [creep getPosition];
-                float crossproduct = abs((p.y-position.y)*(targetPosition.x-position.x)-(p.x-position.x)*(targetPosition.y-position.y));
-                NSLog(@"%f",crossproduct);
+                CGPoint creepPos = [creep getPosition];
+                //float crossproduct = abs((p.y-position.y)*(targetPosition.x-position.x)-(p.x-position.x)*(targetPosition.y-position.y));
+                
+                float crossproduct = abs((creepPos.y-position.y)*(p.x-position.x)-(creepPos.x-position.x)*(p.y-position.y));
                 if(crossproduct<correction){
                     [targetList addObject:creep];
                 }
@@ -67,6 +74,7 @@
             [bullet setCreepList:targetList];
             [bullet setTarget:target];
             [bullets addObject:bullet];
+            [bullet update];
 		}
 	}
 	[self clearTarget];

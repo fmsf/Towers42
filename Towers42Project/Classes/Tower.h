@@ -43,6 +43,7 @@
 - (void) clearTarget;
 - (void) clearTarget:(Creep*) creep;
 - (bool) isSeed;
+- (Creep*) getTarget;
 
 
 

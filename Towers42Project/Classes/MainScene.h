@@ -18,6 +18,7 @@
 #import "TowerPellet.h"
 #import "Bullet.h"
 #import "TowerMissile.h"
+#import "TowerLaser.h"
 
 #define TARGET_Y_OFFSET 70
 #define BOTTOM_LIMIT 100

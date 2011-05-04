@@ -33,7 +33,7 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init] )) {
-		CCSprite *background = [CCSprite spriteWithFile:@"tower42_diagonal_menu.png"];
+		CCSprite *background = [CCSprite spriteWithFile:@"tower42_bg.png"];
         background.position = ccp(160,240);
         [self addChild:background];
         
@@ -58,13 +58,13 @@
         
         elementsEnabled[3] = [CCSprite spriteWithFile:@"btn_achievements_click.png"];
         elementsDisabled[3] = [CCSprite spriteWithFile:@"btn_achievements_normal.png"]; 
-        elementsEnabled[3].position = elementsDisabled[3].position = ccp(165,140);
+        elementsEnabled[3].position = elementsDisabled[3].position = ccp(150,130);
         [self addChild:elementsEnabled[3] z:2];
         [self addChild:elementsDisabled[3] z:2];
         
         elementsEnabled[4] = [CCSprite spriteWithFile:@"btn_options_click.png"];
         elementsDisabled[4] = [CCSprite spriteWithFile:@"btn_options_normal.png"]; 
-        elementsEnabled[4].position = elementsDisabled[4].position = ccp(165,100);
+        elementsEnabled[4].position = elementsDisabled[4].position = ccp(165,85);
         [self addChild:elementsEnabled[4] z:1];
         [self addChild:elementsDisabled[4] z:1];
         

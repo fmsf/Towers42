@@ -9,6 +9,7 @@
 #import "Towers42ProjectAppDelegate.h"
 #import "cocos2d.h"
 #import "MainScene.h"
+#import "WelcomeMenu.h"
 
 @implementation Towers42ProjectAppDelegate
 
@@ -42,6 +43,11 @@
 	
 	// Turn on multiple touches
 	EAGLView *view = [director openGLView];
+    
+    	// Enables High Res mode (Retina Display) on iPhone 4 and maintains low res on all other devices
+    if( ! [director enableRetinaDisplay:YES] )
+        CCLOG(@"Retina Display Not supported");
+    
 	[view setMultipleTouchEnabled:YES];
 	
 	// Default texture format for PNG/BMP/TIFF/JPEG/GIF images
@@ -50,7 +56,7 @@
 	[CCTexture2D setDefaultAlphaPixelFormat:kTexture2DPixelFormat_RGBA8888];	
 	
 		
-	[[CCDirector sharedDirector] runWithScene: [MainScene scene]];
+	[[CCDirector sharedDirector] runWithScene: [WelcomeMenu scene]];
 }
 
 

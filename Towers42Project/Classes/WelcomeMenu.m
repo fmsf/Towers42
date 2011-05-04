@@ -33,40 +33,40 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init] )) {
-		CCSprite *background = [CCSprite spriteWithFile:@"tower42_bg.png"];
+		CCSprite *background = [CCSprite spriteWithFile:@"tower42_diagonal_menu.png"];
         background.position = ccp(160,240);
         [self addChild:background];
         
         elementsEnabled[0] = [CCSprite spriteWithFile:@"btn_multiplayer_click.png"];
         elementsDisabled[0] = [CCSprite spriteWithFile:@"btn_multiplayer_normal.png"];
         elementsEnabled[0].position = elementsDisabled[0].position = ccp(165,260);
-        [self addChild:elementsEnabled[0]];
-        [self addChild:elementsDisabled[0]];
+        [self addChild:elementsEnabled[0] z:5];
+        [self addChild:elementsDisabled[0] z:5];
         
         
         elementsEnabled[1] = [CCSprite spriteWithFile:@"btn_campaign_click.png"];
         elementsDisabled[1] = [CCSprite spriteWithFile:@"btn_campaign_normal.png"];         
-        elementsEnabled[1].position = elementsDisabled[1].position = ccp(165,260);
-        [self addChild:elementsEnabled[1]];
-        [self addChild:elementsDisabled[1]];
+        elementsEnabled[1].position = elementsDisabled[1].position = ccp(155,215);
+        [self addChild:elementsEnabled[1] z:4];
+        [self addChild:elementsDisabled[1] z:4];
         
         elementsEnabled[2] = [CCSprite spriteWithFile:@"btn_survival_click.png"];
         elementsDisabled[2] = [CCSprite spriteWithFile:@"btn_survival_normal.png"]; 
-        elementsEnabled[2].position = elementsDisabled[2].position = ccp(165,260);
-        [self addChild:elementsEnabled[2]];
-        [self addChild:elementsDisabled[2]];
+        elementsEnabled[2].position = elementsDisabled[2].position = ccp(170,175);
+        [self addChild:elementsEnabled[2] z:3];
+        [self addChild:elementsDisabled[2] z:3];
         
         elementsEnabled[3] = [CCSprite spriteWithFile:@"btn_achievements_click.png"];
         elementsDisabled[3] = [CCSprite spriteWithFile:@"btn_achievements_normal.png"]; 
-        elementsEnabled[3].position = elementsDisabled[3].position = ccp(165,260);
-        [self addChild:elementsEnabled[3]];
-        [self addChild:elementsDisabled[3]];
+        elementsEnabled[3].position = elementsDisabled[3].position = ccp(165,140);
+        [self addChild:elementsEnabled[3] z:2];
+        [self addChild:elementsDisabled[3] z:2];
         
         elementsEnabled[4] = [CCSprite spriteWithFile:@"btn_options_click.png"];
         elementsDisabled[4] = [CCSprite spriteWithFile:@"btn_options_normal.png"]; 
-        elementsEnabled[4].position = elementsDisabled[4].position = ccp(165,260);
-        [self addChild:elementsEnabled[4]];
-        [self addChild:elementsDisabled[4]];
+        elementsEnabled[4].position = elementsDisabled[4].position = ccp(165,100);
+        [self addChild:elementsEnabled[4] z:1];
+        [self addChild:elementsDisabled[4] z:1];
         
         for(int i=0;i<5;i++){
             elementsEnabled[i].opacity = 0;

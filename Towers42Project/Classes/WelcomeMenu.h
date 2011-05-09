@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-
+#import "MainScene.h"
 
 @interface WelcomeMenu : CCLayer {
     CCSprite* elementsEnabled[5];

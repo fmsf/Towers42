@@ -33,6 +33,9 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init] )) {
+        
+        self.isTouchEnabled = YES;
+        
 		CCSprite *background = [CCSprite spriteWithFile:@"tower42_bg.png"];
         background.position = ccp(160,240);
         [self addChild:background];
@@ -82,6 +85,11 @@
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:[touch view]];
     location = [[CCDirector sharedDirector] convertToGL:location];
+    if(abs(elementsEnabled[2].position.x-location.x)<100 && abs(elementsEnabled[2].position.y-location.y)<30){
+        [[CCDirector sharedDirector] replaceScene:[MainScene scene]];
+    }else{
+        NSLog(@"%d %d",abs(elementsEnabled[2].position.x-location.x),abs(elementsEnabled[2].position.y-location.y));
+    }
 
 }
 

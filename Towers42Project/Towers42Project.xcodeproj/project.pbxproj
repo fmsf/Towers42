@@ -628,6 +628,56 @@
 			name = Creeps;
 			sourceTree = "<group>";
 		};
+		84B8E1C913784ACE0048E1E7 /* Single Target */ = {
+			isa = PBXGroup;
+			children = (
+				B6DB6BBC133A043700F2EAE3 /* BulletPellet.h */,
+				B6DB6BBD133A043700F2EAE3 /* BulletPellet.mm */,
+				B609735E132F89F9008414F5 /* TowerPellet.h */,
+				B609735F132F89F9008414F5 /* TowerPellet.mm */,
+			);
+			name = "Single Target";
+			sourceTree = "<group>";
+		};
+		84B8E1CB13784AE30048E1E7 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B6DB6BE8133A05D100F2EAE3 /* BulletMissile.h */,
+				B6DB6BE9133A05D100F2EAE3 /* BulletMissile.mm */,
+				B6DB6BB71339FE6600F2EAE3 /* TowerMissile.h */,
+				B6DB6BB81339FE6600F2EAE3 /* TowerMissile.mm */,
+			);
+			name = Splash;
+			sourceTree = "<group>";
+		};
+		84B8E1CC13784B0A0048E1E7 /* Multi Target */ = {
+			isa = PBXGroup;
+			children = (
+				B636A8C3134B1F4E00D37A2E /* LaserBullet.h */,
+				B636A8C4134B1F4E00D37A2E /* LaserBullet.mm */,
+				B636A8C0134B1D6D00D37A2E /* TowerLaser.h */,
+				B636A8C1134B1D6D00D37A2E /* TowerLaser.mm */,
+			);
+			name = "Multi Target";
+			sourceTree = "<group>";
+		};
+		84B8E1CD13784B490048E1E7 /* Defensive */ = {
+			isa = PBXGroup;
+			children = (
+				84B8E1CC13784B0A0048E1E7 /* Multi Target */,
+				84B8E1CB13784AE30048E1E7 /* Splash */,
+				84B8E1C913784ACE0048E1E7 /* Single Target */,
+			);
+			name = Defensive;
+			sourceTree = "<group>";
+		};
+		84B8E1CE13784B520048E1E7 /* Offensive */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Offensive;
+			sourceTree = "<group>";
+		};
 		84C4C6CB136AD818004B0319 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,12 +704,10 @@
 			children = (
 				B6AD09D613180B2600152052 /* Tower.h */,
 				B6AD09D713180B2600152052 /* Tower.mm */,
-				B609735E132F89F9008414F5 /* TowerPellet.h */,
-				B609735F132F89F9008414F5 /* TowerPellet.mm */,
-				B6DB6BB71339FE6600F2EAE3 /* TowerMissile.h */,
-				B6DB6BB81339FE6600F2EAE3 /* TowerMissile.mm */,
-				B636A8C0134B1D6D00D37A2E /* TowerLaser.h */,
-				B636A8C1134B1D6D00D37A2E /* TowerLaser.mm */,
+				B61088851333765900BD1D68 /* Bullet.h */,
+				B61088861333765900BD1D68 /* Bullet.mm */,
+				84B8E1CE13784B520048E1E7 /* Offensive */,
+				84B8E1CD13784B490048E1E7 /* Defensive */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -692,14 +740,6 @@
 		B61088841333763900BD1D68 /* Bullets */ = {
 			isa = PBXGroup;
 			children = (
-				B61088851333765900BD1D68 /* Bullet.h */,
-				B61088861333765900BD1D68 /* Bullet.mm */,
-				B6DB6BBC133A043700F2EAE3 /* BulletPellet.h */,
-				B6DB6BBD133A043700F2EAE3 /* BulletPellet.mm */,
-				B6DB6BE8133A05D100F2EAE3 /* BulletMissile.h */,
-				B6DB6BE9133A05D100F2EAE3 /* BulletMissile.mm */,
-				B636A8C3134B1F4E00D37A2E /* LaserBullet.h */,
-				B636A8C4134B1F4E00D37A2E /* LaserBullet.mm */,
 			);
 			name = Bullets;
 			sourceTree = "<group>";
